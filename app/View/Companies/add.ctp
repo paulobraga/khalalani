@@ -6,6 +6,7 @@
                                 'div'=>false
                             ),
                             'class'=>'grid_12',
+                            'type'=>'file'
                         ));?>
 			<!--<form action="" class="grid_12">-->
 				<fieldset>
@@ -57,10 +58,19 @@
 					</div>
                                         <div class="row">
 						<label for="f1_normal_input">
-							<strong><?php echo __('Website');?></strong>
+							<strong><?php echo __('Categories');?></strong>
 						</label>
 						<div>
                                                     <?php echo $this->Form->input('Category');?>
+							<!--<input type="text" name=f1_normal_input id=f1_normal_input />-->
+						</div>
+					</div>
+                                        <div class="row">
+						<label for="f1_normal_input">
+							<strong><?php echo __('logo');?></strong>
+						</label>
+						<div>
+                                                    <?php echo $this->Form->input('logo',array('type'=>'file'));?>
 							<!--<input type="text" name=f1_normal_input id=f1_normal_input />-->
 						</div>
 					</div>
