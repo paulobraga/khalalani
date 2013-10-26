@@ -26,9 +26,19 @@
 			<?php echo h($user['User']['modified']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Name'); ?></dt>
+		<dt><?php echo __('First Name'); ?></dt>
 		<dd>
-			<?php echo h($user['User']['name']); ?>
+			<?php echo h($user['User']['first_name']); ?>
+			&nbsp;
+		</dd>
+                <dt><?php echo __('Middle Name'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['middle_name']); ?>
+			&nbsp;
+		</dd>
+                <dt><?php echo __('Last Name'); ?></dt>
+		<dd>
+			<?php echo h($user['User']['last_name']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Status'); ?></dt>

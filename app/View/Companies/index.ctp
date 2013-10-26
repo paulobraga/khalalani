@@ -20,8 +20,8 @@
                             <th><?php echo __('Id'); ?></th>
                             <th><?php echo __('Name'); ?></th>
                             <th><?php echo __('Website'); ?></th>
-                            <th><?php echo __(''); ?></th>
-                            <th><?php echo __(''); ?></th>
+                            <th><?php echo __('Email'); ?></th>
+                            <th><?php echo __('Actions'); ?></th>
                         </tr>
                     </thead>
                     <tbody>

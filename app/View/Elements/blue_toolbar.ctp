@@ -5,12 +5,12 @@
 					<img src="/khalalani/img/mangoadmin/img/layout/content/toolbar/user/avatar.png">
 					<span>3</span>
 				</div>
-				<span>Administrator</span>
+				<span><?php echo $this->Session->read('Auth.User.first_name').' '.$this->Session->read('Auth.User.last_name');?></span>
 				<ul>
 					<li><a href="javascript:$$.settings();">Settings</a></li>
 					<li><a href="pages_profile.html">Profile</a></li>
 					<li class="line"></li>
-					<li><a href="login.html">Logout</a></li>
+					<li><a href="<?php echo $this->Html->url(array('controller'=>'users','action'=>'logout'));?>"><?php echo __('Logout'); ?></a></li>
 				</ul>
 			</div>
 			<ul class="shortcuts">

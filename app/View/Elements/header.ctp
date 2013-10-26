@@ -2,8 +2,8 @@
 	<header class="container_12">
 	
 		<!-- Your logos -->
-		<a href="dashboard.html"><img src="/khalalani/img/mangoadmin/img/logo.png" alt="Mango" width="191" height="60"></a>
-		<a class="phone-title" href="dashboard.html"><img src="/khalalani/img/mangoadmin/img/logo-mobile.png" alt="Mango" height="22" width="70" /></a>
+		<a href="<?php echo $this->Html->url(array('controller'=>'pages','action'=>'dashboard'));?>"><img src="/khalalani/img/mangoadmin/img/logo.png" alt="Mango" width="191" height="60"></a>
+		<a class="phone-title" href="<?php echo $this->Html->url(array('controller'=>'pages','action'=>'dashboard'));?>"><img src="/khalalani/img/mangoadmin/img/logo-mobile.png" alt="Mango" height="22" width="70" /></a>
 		
 		<div class="buttons">
 			<a href="statistics.html">

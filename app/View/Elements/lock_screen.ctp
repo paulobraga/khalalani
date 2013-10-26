@@ -1,7 +1,7 @@
 <!-- The lock screen -->
 <div id="lock-screen" title="Screen Locked">
 
-    <a href="login.html" class="header right button grey flat">Logout</a>
+    <a href="<?php echo $this->Html->url(array('controller'=>'users','action'=>'logout'));?>" class="header right button grey flat"><?php echo __('Logout');?></a>
 
     <p>Due to the inactivity of this session, your account was temporarily locked.</p>
     <p>To unlock your account, simply slide the button and enter your password.</p>

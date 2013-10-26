@@ -102,7 +102,7 @@
 					
 					<li><a href="javascript:void(0);" id="btn-lock"><span>--:--</span>Lock screen</a></li>
 					
-					<li class="red"><a href="login.html">Logout</a></li>
+					<li class="red"><a href="<?php echo $this->Html->url(array('controller'=>'users','action'=>'logout'));?>"><?php echo __('Logout'); ?></a></li>
 					
 				</ul>
 			</div><!-- End of .right -->

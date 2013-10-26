@@ -5,7 +5,7 @@
 				<!-- Navigation -->
 				<nav><ul class="collapsible accordion">
 				
-					<li><a href="dashboard.html"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/dashboard.png" alt="" height=16 width=16>Dashboard</a></li>
+					<li><a href="<?php echo $this->Html->url(array('controller'=>'pages','action'=>'dashboard'));?>"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/dashboard.png" alt="" height=16 width=16>Dashboard</a></li>
 					<li>
 						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/ui-layered-pane.png" alt="" height=16 width=16>Empresas<span class="badge">4</span></a>
 						<ul>
