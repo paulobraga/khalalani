@@ -6,7 +6,9 @@
                                 'div'=>false
                             ),
                             'class'=>'grid_12',
-                        ));?>
+                        ));
+                        echo $this->Form->input('id');
+                        ?>
 			<!--<form action="" class="grid_12">-->
 				<fieldset>
 					<legend>Input Fields</legend>

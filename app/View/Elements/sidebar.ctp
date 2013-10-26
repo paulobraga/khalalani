@@ -62,6 +62,17 @@
 							<li><a href="pages_error_404.html">Error Page (404)</a></li>
 						</ul>
 					</li>
+                                        <li>
+						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/document-horizontal.png" alt="" height=16 width=16>Admin</a>
+						<ul>
+							<li><a href="<?php echo $this->Html->url(array('controller'=>'categories','action'=>'index'));?>"><?php echo __('Categories of Comapnies');?></a></li>
+							<li><a href="pages_profile.html">Profile</a></li>
+							<li><a href="pages_invoice.html">Invoice<span class="badge grey">1 open</span></a></li>
+							<li><a href="pages_faq.html">FAQ</a></li>
+							<li><a href="pages_search.html">Search</a></li>
+							<li><a href="pages_error_404.html">Error Page (404)</a></li>
+						</ul>
+					</li>
 					
 				</ul></nav><!-- End of nav -->				
 			</div><!-- End of .top -->
