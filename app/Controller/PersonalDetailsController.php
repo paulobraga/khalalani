@@ -47,12 +47,13 @@ class PersonalDetailsController extends AppController {
 				$this->Session->setFlash(__('The personal detail could not be saved. Please, try again.'));
 			}
 		}
+		$maritalStatuses = $this->PersonalDetail->MaritalStatus->find('list');
 		$nationalities = $this->PersonalDetail->Nationality->find('list');
 		$countries = $this->PersonalDetail->Country->find('list');
 		$provinces = $this->PersonalDetail->Province->find('list');
 		$cities = $this->PersonalDetail->City->find('list');
 		$users = $this->PersonalDetail->User->find('list');
-		$this->set(compact('nationalities', 'countries', 'provinces', 'cities', 'users'));
+		$this->set(compact('maritalStatuses', 'nationalities', 'countries', 'provinces', 'cities', 'users'));
 	}
 
 /**
@@ -77,12 +78,13 @@ class PersonalDetailsController extends AppController {
 			$options = array('conditions' => array('PersonalDetail.' . $this->PersonalDetail->primaryKey => $id));
 			$this->request->data = $this->PersonalDetail->find('first', $options);
 		}
+		$maritalStatuses = $this->PersonalDetail->MaritalStatus->find('list');
 		$nationalities = $this->PersonalDetail->Nationality->find('list');
 		$countries = $this->PersonalDetail->Country->find('list');
 		$provinces = $this->PersonalDetail->Province->find('list');
 		$cities = $this->PersonalDetail->City->find('list');
 		$users = $this->PersonalDetail->User->find('list');
-		$this->set(compact('nationalities', 'countries', 'provinces', 'cities', 'users'));
+		$this->set(compact('maritalStatuses', 'nationalities', 'countries', 'provinces', 'cities', 'users'));
 	}
 
 /**

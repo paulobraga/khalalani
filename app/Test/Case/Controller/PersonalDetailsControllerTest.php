@@ -14,6 +14,7 @@ class PersonalDetailsControllerTest extends ControllerTestCase {
  */
 	public $fixtures = array(
 		'app.personal_detail',
+		'app.marital_status',
 		'app.nationality',
 		'app.consumer',
 		'app.user',
@@ -33,9 +34,9 @@ class PersonalDetailsControllerTest extends ControllerTestCase {
 		'app.operator',
 		'app.category',
 		'app.companies_category',
-		'app.complaints_comment',
-		'app.companies_like',
-		'app.complaints_like'
+		'app.complaint_comment',
+		'app.company_like',
+		'app.complaint_like'
 	);
 
 /**

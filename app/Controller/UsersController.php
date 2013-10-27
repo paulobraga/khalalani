@@ -33,7 +33,7 @@ class UsersController extends AppController {
         $this->User->contain(
                 array(
                     'Group',
-                    'PersonalDetail' => array('Nationality','Country','Province','City'),
+                    'PersonalDetail' => array('Nationality','Country','Province','City','MaritalStatus'),
                     'ContactDetail' => array('Country','Province','City'),
                     'EducationDetail' => array('Course','Level', 'Country')
                 )

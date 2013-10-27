@@ -9,7 +9,7 @@
 		echo $this->Form->input('last_name');
 		echo $this->Form->input('gender');
 		echo $this->Form->input('birthday');
-		echo $this->Form->input('marital_status');
+		echo $this->Form->input('marital_status_id');
 		echo $this->Form->input('nationality_id');
 		echo $this->Form->input('country_id');
 		echo $this->Form->input('province_id');
@@ -25,6 +25,8 @@
 
 		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('PersonalDetail.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('PersonalDetail.id'))); ?></li>
 		<li><?php echo $this->Html->link(__('List Personal Details'), array('action' => 'index')); ?></li>
+		<li><?php echo $this->Html->link(__('List Marital Statuses'), array('controller' => 'marital_statuses', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Marital Status'), array('controller' => 'marital_statuses', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Nationalities'), array('controller' => 'nationalities', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Nationality'), array('controller' => 'nationalities', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Countries'), array('controller' => 'countries', 'action' => 'index')); ?> </li>

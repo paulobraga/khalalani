@@ -33,7 +33,7 @@
 		</dd>
 		<dt><?php echo __('Marital Status'); ?></dt>
 		<dd>
-			<?php echo h($personalDetail['PersonalDetail']['marital_status']); ?>
+			<?php echo $this->Html->link($personalDetail['MaritalStatus']['name'], array('controller' => 'marital_statuses', 'action' => 'view', $personalDetail['MaritalStatus']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Nationality'); ?></dt>
@@ -70,6 +70,8 @@
 		<li><?php echo $this->Form->postLink(__('Delete Personal Detail'), array('action' => 'delete', $personalDetail['PersonalDetail']['id']), null, __('Are you sure you want to delete # %s?', $personalDetail['PersonalDetail']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Personal Details'), array('action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Personal Detail'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Marital Statuses'), array('controller' => 'marital_statuses', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Marital Status'), array('controller' => 'marital_statuses', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Nationalities'), array('controller' => 'nationalities', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Nationality'), array('controller' => 'nationalities', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Countries'), array('controller' => 'countries', 'action' => 'index')); ?> </li>

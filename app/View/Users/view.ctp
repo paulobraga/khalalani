@@ -54,7 +54,7 @@
                         <th><?php echo __('Gender') . ':'; ?></th><td><?php echo $this->Field->f(h($user['PersonalDetail']['gender'])); ?></td>
                     </tr>
                     <tr>
-                        <th><?php echo __('Marital Status') . ':'; ?></th><td><?php echo $this->Field->f(h($user['PersonalDetail']['marital_status'])); ?></td>
+                        <th><?php echo __('Marital Status') . ':'; ?></th><td><?php echo $this->Field->f(h($user['PersonalDetail']['MaritalStatus']['name'])); ?></td>
                     </tr>
                     <tr>
                         <th><?php echo __('Nationality') . ':'; ?></th><td><?php echo $this->Field->f(h($user['PersonalDetail']['Nationality']['name'])); ?></td>

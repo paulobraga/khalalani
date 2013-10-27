@@ -1,42 +1,48 @@
-<div class="nationalities index">
-	<h2><?php echo __('Nationalities'); ?></h2>
-	<table cellpadding="0" cellspacing="0">
-	<tr>
-			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('name'); ?></th>
-			<th class="actions"><?php echo __('Actions'); ?></th>
-	</tr>
-	<?php foreach ($nationalities as $nationality): ?>
-	<tr>
-		<td><?php echo h($nationality['Nationality']['id']); ?>&nbsp;</td>
-		<td><?php echo h($nationality['Nationality']['name']); ?>&nbsp;</td>
-		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $nationality['Nationality']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $nationality['Nationality']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $nationality['Nationality']['id']), null, __('Are you sure you want to delete # %s?', $nationality['Nationality']['id'])); ?>
-		</td>
-	</tr>
-<?php endforeach; ?>
-	</table>
-	<p>
-	<?php
-	echo $this->Paginator->counter(array(
-	'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')
-	));
-	?>	</p>
-	<div class="paging">
-	<?php
-		echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
-		echo $this->Paginator->numbers(array('separator' => ''));
-		echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
-	?>
-	</div>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('New Nationality'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Consumers'), array('controller' => 'consumers', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Consumer'), array('controller' => 'consumers', 'action' => 'add')); ?> </li>
-	</ul>
-</div>
+<section id="content" class="container_12 clearfix" data-sort=true>
+    <div class="grid_12">
+        <div class="box">
+
+            <div class="header">
+                <h2><?php echo __('Nationalities'); ?></h2>
+            </div>
+
+            <div class="content">
+
+                <div class="tabletools">
+                    <div class="left">
+                        <a class="open-add-nationality-dialog" href="javascript:void(0);"><i class="icon-plus"></i><?php echo __('New Nationality'); ?></a>
+                    </div>
+                    <div class="right"></div>
+                </div>
+                <table class="dynamic styled with-prev-next" data-table-tools='{"display":true}'>
+                    <thead>
+                        <tr>
+                            <th><?php echo __('id'); ?></th>
+                            <th><?php echo __('name'); ?></th>
+                            <th><?php echo __('created'); ?></th>
+                            <th><?php echo __('modified'); ?></th>
+                            <th><?php echo __('Actions'); ?></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($nationalities as $nationality): ?>
+                            <tr>
+                                <td><?php echo h($nationality['Nationality']['id']); ?>&nbsp;</td>
+                                <td><?php echo h($nationality['Nationality']['name']); ?>&nbsp;</td>
+                                <td><?php echo h($nationality['Nationality']['created']); ?>&nbsp;</td>
+                                <td><?php echo h($nationality['Nationality']['modified']); ?>&nbsp;</td>
+                                <td class="center">
+                                    <a href="<?php echo $this->Html->url(array('action' => 'edit', $nationality['Nationality']['id']));?>" class="button small grey tooltip" data-gravity=s title="Edit"><i class="icon-pencil"></i></a>
+                                    <?php echo $this->Form->postLink('<i class="icon-remove"></i>', array('action' => 'delete', $nationality['Nationality']['id']), array('class'=>'button small grey tooltip','data-gravity'=>'s','title'=>'Remove','escape'=>false), __('Are you sure you want to delete # %s?', $nationality['Nationality']['id'])); ?>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+
+            </div><!-- End of .content -->
+
+        </div><!-- End of .box -->
+    </div><!-- End of .grid_12 -->
+</section>
+<?php echo $this->Element('dialog_add_nationality'); ?>

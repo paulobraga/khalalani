@@ -8,7 +8,7 @@
 			<th><?php echo $this->Paginator->sort('last_name'); ?></th>
 			<th><?php echo $this->Paginator->sort('gender'); ?></th>
 			<th><?php echo $this->Paginator->sort('birthday'); ?></th>
-			<th><?php echo $this->Paginator->sort('marital_status'); ?></th>
+			<th><?php echo $this->Paginator->sort('marital_status_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('nationality_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('country_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('province_id'); ?></th>
@@ -24,7 +24,9 @@
 		<td><?php echo h($personalDetail['PersonalDetail']['last_name']); ?>&nbsp;</td>
 		<td><?php echo h($personalDetail['PersonalDetail']['gender']); ?>&nbsp;</td>
 		<td><?php echo h($personalDetail['PersonalDetail']['birthday']); ?>&nbsp;</td>
-		<td><?php echo h($personalDetail['PersonalDetail']['marital_status']); ?>&nbsp;</td>
+		<td>
+			<?php echo $this->Html->link($personalDetail['MaritalStatus']['name'], array('controller' => 'marital_statuses', 'action' => 'view', $personalDetail['MaritalStatus']['id'])); ?>
+		</td>
 		<td>
 			<?php echo $this->Html->link($personalDetail['Nationality']['name'], array('controller' => 'nationalities', 'action' => 'view', $personalDetail['Nationality']['id'])); ?>
 		</td>
@@ -66,6 +68,8 @@
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('New Personal Detail'), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('List Marital Statuses'), array('controller' => 'marital_statuses', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Marital Status'), array('controller' => 'marital_statuses', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Nationalities'), array('controller' => 'nationalities', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Nationality'), array('controller' => 'nationalities', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Countries'), array('controller' => 'countries', 'action' => 'index')); ?> </li>
