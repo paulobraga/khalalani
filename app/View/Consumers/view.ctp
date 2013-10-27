@@ -6,19 +6,9 @@
 			<?php echo h($consumer['Consumer']['id']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Birthday'); ?></dt>
+		<dt><?php echo __('User Id'); ?></dt>
 		<dd>
-			<?php echo h($consumer['Consumer']['birthday']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Hometown'); ?></dt>
-		<dd>
-			<?php echo h($consumer['Consumer']['hometown']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Location'); ?></dt>
-		<dd>
-			<?php echo h($consumer['Consumer']['location']); ?>
+			<?php echo h($consumer['Consumer']['user_id']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Created'); ?></dt>
@@ -31,21 +21,6 @@
 			<?php echo h($consumer['Consumer']['modified']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Nationality'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($consumer['Nationality']['name'], array('controller' => 'nationalities', 'action' => 'view', $consumer['Nationality']['id'])); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Gender'); ?></dt>
-		<dd>
-			<?php echo h($consumer['Consumer']['gender']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Picture'); ?></dt>
-		<dd>
-			<?php echo h($consumer['Consumer']['picture']); ?>
-			&nbsp;
-		</dd>
 	</dl>
 </div>
 <div class="actions">
@@ -55,19 +30,17 @@
 		<li><?php echo $this->Form->postLink(__('Delete Consumer'), array('action' => 'delete', $consumer['Consumer']['id']), null, __('Are you sure you want to delete # %s?', $consumer['Consumer']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Consumers'), array('action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Consumer'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Nationalities'), array('controller' => 'nationalities', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Nationality'), array('controller' => 'nationalities', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Companies Likes'), array('controller' => 'companies_likes', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Companies Like'), array('controller' => 'companies_likes', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Company Likes'), array('controller' => 'company_likes', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Company Like'), array('controller' => 'company_likes', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Complaint Likes'), array('controller' => 'complaint_likes', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Complaint Like'), array('controller' => 'complaint_likes', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Complaints'), array('controller' => 'complaints', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Complaint'), array('controller' => 'complaints', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Complaints Likes'), array('controller' => 'complaints_likes', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Complaints Like'), array('controller' => 'complaints_likes', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
 <div class="related">
-	<h3><?php echo __('Related Companies Likes'); ?></h3>
-	<?php if (!empty($consumer['CompaniesLike'])): ?>
+	<h3><?php echo __('Related Company Likes'); ?></h3>
+	<?php if (!empty($consumer['CompanyLike'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>
 		<th><?php echo __('Id'); ?></th>
@@ -78,16 +51,16 @@
 	</tr>
 	<?php
 		$i = 0;
-		foreach ($consumer['CompaniesLike'] as $companiesLike): ?>
+		foreach ($consumer['CompanyLike'] as $companyLike): ?>
 		<tr>
-			<td><?php echo $companiesLike['id']; ?></td>
-			<td><?php echo $companiesLike['company_id']; ?></td>
-			<td><?php echo $companiesLike['consumer_id']; ?></td>
-			<td><?php echo $companiesLike['created']; ?></td>
+			<td><?php echo $companyLike['id']; ?></td>
+			<td><?php echo $companyLike['company_id']; ?></td>
+			<td><?php echo $companyLike['consumer_id']; ?></td>
+			<td><?php echo $companyLike['created']; ?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'companies_likes', 'action' => 'view', $companiesLike['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'companies_likes', 'action' => 'edit', $companiesLike['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'companies_likes', 'action' => 'delete', $companiesLike['id']), null, __('Are you sure you want to delete # %s?', $companiesLike['id'])); ?>
+				<?php echo $this->Html->link(__('View'), array('controller' => 'company_likes', 'action' => 'view', $companyLike['id'])); ?>
+				<?php echo $this->Html->link(__('Edit'), array('controller' => 'company_likes', 'action' => 'edit', $companyLike['id'])); ?>
+				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'company_likes', 'action' => 'delete', $companyLike['id']), null, __('Are you sure you want to delete # %s?', $companyLike['id'])); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>
@@ -96,7 +69,42 @@
 
 	<div class="actions">
 		<ul>
-			<li><?php echo $this->Html->link(__('New Companies Like'), array('controller' => 'companies_likes', 'action' => 'add')); ?> </li>
+			<li><?php echo $this->Html->link(__('New Company Like'), array('controller' => 'company_likes', 'action' => 'add')); ?> </li>
+		</ul>
+	</div>
+</div>
+<div class="related">
+	<h3><?php echo __('Related Complaint Likes'); ?></h3>
+	<?php if (!empty($consumer['ComplaintLike'])): ?>
+	<table cellpadding = "0" cellspacing = "0">
+	<tr>
+		<th><?php echo __('Id'); ?></th>
+		<th><?php echo __('Complaint Id'); ?></th>
+		<th><?php echo __('Consumer Id'); ?></th>
+		<th><?php echo __('Created'); ?></th>
+		<th class="actions"><?php echo __('Actions'); ?></th>
+	</tr>
+	<?php
+		$i = 0;
+		foreach ($consumer['ComplaintLike'] as $complaintLike): ?>
+		<tr>
+			<td><?php echo $complaintLike['id']; ?></td>
+			<td><?php echo $complaintLike['complaint_id']; ?></td>
+			<td><?php echo $complaintLike['consumer_id']; ?></td>
+			<td><?php echo $complaintLike['created']; ?></td>
+			<td class="actions">
+				<?php echo $this->Html->link(__('View'), array('controller' => 'complaint_likes', 'action' => 'view', $complaintLike['id'])); ?>
+				<?php echo $this->Html->link(__('Edit'), array('controller' => 'complaint_likes', 'action' => 'edit', $complaintLike['id'])); ?>
+				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'complaint_likes', 'action' => 'delete', $complaintLike['id']), null, __('Are you sure you want to delete # %s?', $complaintLike['id'])); ?>
+			</td>
+		</tr>
+	<?php endforeach; ?>
+	</table>
+<?php endif; ?>
+
+	<div class="actions">
+		<ul>
+			<li><?php echo $this->Html->link(__('New Complaint Like'), array('controller' => 'complaint_likes', 'action' => 'add')); ?> </li>
 		</ul>
 	</div>
 </div>
@@ -144,41 +152,6 @@
 	<div class="actions">
 		<ul>
 			<li><?php echo $this->Html->link(__('New Complaint'), array('controller' => 'complaints', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
-</div>
-<div class="related">
-	<h3><?php echo __('Related Complaints Likes'); ?></h3>
-	<?php if (!empty($consumer['ComplaintsLike'])): ?>
-	<table cellpadding = "0" cellspacing = "0">
-	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Complaint Id'); ?></th>
-		<th><?php echo __('Consumer Id'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
-	</tr>
-	<?php
-		$i = 0;
-		foreach ($consumer['ComplaintsLike'] as $complaintsLike): ?>
-		<tr>
-			<td><?php echo $complaintsLike['id']; ?></td>
-			<td><?php echo $complaintsLike['complaint_id']; ?></td>
-			<td><?php echo $complaintsLike['consumer_id']; ?></td>
-			<td><?php echo $complaintsLike['created']; ?></td>
-			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'complaints_likes', 'action' => 'view', $complaintsLike['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'complaints_likes', 'action' => 'edit', $complaintsLike['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'complaints_likes', 'action' => 'delete', $complaintsLike['id']), null, __('Are you sure you want to delete # %s?', $complaintsLike['id'])); ?>
-			</td>
-		</tr>
-	<?php endforeach; ?>
-	</table>
-<?php endif; ?>
-
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Complaints Like'), array('controller' => 'complaints_likes', 'action' => 'add')); ?> </li>
 		</ul>
 	</div>
 </div>

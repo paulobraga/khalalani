@@ -47,8 +47,6 @@ class ConsumersController extends AppController {
 				$this->Session->setFlash(__('The consumer could not be saved. Please, try again.'));
 			}
 		}
-		$nationalities = $this->Consumer->Nationality->find('list');
-		$this->set(compact('nationalities'));
 	}
 
 /**
@@ -73,8 +71,6 @@ class ConsumersController extends AppController {
 			$options = array('conditions' => array('Consumer.' . $this->Consumer->primaryKey => $id));
 			$this->request->data = $this->Consumer->find('first', $options);
 		}
-		$nationalities = $this->Consumer->Nationality->find('list');
-		$this->set(compact('nationalities'));
 	}
 
 /**

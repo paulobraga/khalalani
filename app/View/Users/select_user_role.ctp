@@ -1,6 +1,12 @@
 <section id="content" class="container_12 clearfix" data-sort=true>
     <h1 class="grid_12"><?php echo __('Select User Role'); ?></h1>
-    <form action="" class="grid_12">
+        <?php echo $this->Form->create('User',array(
+            'inputDefaults'=>array(
+                'label'=>false,
+                'div'=>false
+            ),
+            'class'=>'grid_12 validate'
+        ));?>
 
         <fieldset class="not-on-phone">
             <legend><?php echo __('Select User Role'); ?></legend>
@@ -11,7 +17,7 @@
                     <small>With search</small>
                 </label>
                 <div>
-                    <?php echo $this->Form->input('group_id',array('class'=>'search','data-placeholder'=>'Choose a Role','label'=>false,'div'=>false,'empty'=>''));?>
+                    <?php echo $this->Form->input('group_id',array('class'=>'search required','data-placeholder'=>'Choose a Role','label'=>false,'div'=>false,'empty'=>''));?>
 <!--                    <select name=f2_select1 id=f2_select1 class="search" data-placeholder="Choose a Name">
                         <option value=""></option>
                         <option value="Oliver">Oliver</option> 
@@ -44,8 +50,8 @@
             <a href="#" class="button grey"><span><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/arrow-180.png" width=16 height=16></span>Back</a>
         </div>
         <div class="right">
-            <a href="#" class="button grey"><span><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/arrow.png" width=16 height=16></span>Next</a>
+            <input type="submit" value="Next" />
         </div>
     </div><!-- End of .actions -->
-    </form><!-- End of form -->
+    <?php echo $this->Form->end();?><!-- End of form -->
 </section>

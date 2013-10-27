@@ -14,21 +14,24 @@ class UserTest extends CakeTestCase {
  */
 	public $fixtures = array(
 		'app.user',
-		'app.complaints_comment',
-		'app.complaint',
+		'app.group',
+		'app.consumer',
+		'app.nationality',
+		'app.companies_like',
 		'app.company',
 		'app.branch',
 		'app.province',
 		'app.city',
 		'app.complaint_category',
+		'app.complaint',
 		'app.manager',
 		'app.operator',
 		'app.category',
 		'app.companies_category',
-		'app.consumer',
-		'app.nationality',
-		'app.companies_like',
-		'app.complaints_like'
+		'app.complaints_like',
+		'app.contact_detail',
+		'app.personal_detail',
+		'app.complaints_comment'
 	);
 
 /**

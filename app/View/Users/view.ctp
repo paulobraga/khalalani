@@ -1,184 +1,234 @@
-<div class="users view">
-<h2><?php  echo __('User'); ?></h2>
-	<dl>
-		<dt><?php echo __('Id'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['id']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Email'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['email']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Password'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['password']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Created'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['created']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Modified'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['modified']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('First Name'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['first_name']); ?>
-			&nbsp;
-		</dd>
-                <dt><?php echo __('Middle Name'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['middle_name']); ?>
-			&nbsp;
-		</dd>
-                <dt><?php echo __('Last Name'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['last_name']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Status'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['status']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Username'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['username']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Group'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($user['Group']['name'], array('controller' => 'groups', 'action' => 'view', $user['Group']['id'])); ?>
-			&nbsp;
-		</dd>
-	</dl>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Edit User'), array('action' => 'edit', $user['User']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete User'), array('action' => 'delete', $user['User']['id']), null, __('Are you sure you want to delete # %s?', $user['User']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Users'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Groups'), array('controller' => 'groups', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Group'), array('controller' => 'groups', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Complaints Comments'), array('controller' => 'complaints_comments', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Complaints Comment'), array('controller' => 'complaints_comments', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Managers'), array('controller' => 'managers', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Manager'), array('controller' => 'managers', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Operators'), array('controller' => 'operators', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Operator'), array('controller' => 'operators', 'action' => 'add')); ?> </li>
-	</ul>
-</div>
-<div class="related">
-	<h3><?php echo __('Related Complaints Comments'); ?></h3>
-	<?php if (!empty($user['ComplaintsComment'])): ?>
-	<table cellpadding = "0" cellspacing = "0">
-	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('User Id'); ?></th>
-		<th><?php echo __('Comment'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th><?php echo __('Is Deleted'); ?></th>
-		<th><?php echo __('Status'); ?></th>
-		<th><?php echo __('Complaint Id'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
-	</tr>
-	<?php
-		$i = 0;
-		foreach ($user['ComplaintsComment'] as $complaintsComment): ?>
-		<tr>
-			<td><?php echo $complaintsComment['id']; ?></td>
-			<td><?php echo $complaintsComment['user_id']; ?></td>
-			<td><?php echo $complaintsComment['comment']; ?></td>
-			<td><?php echo $complaintsComment['created']; ?></td>
-			<td><?php echo $complaintsComment['is_deleted']; ?></td>
-			<td><?php echo $complaintsComment['status']; ?></td>
-			<td><?php echo $complaintsComment['complaint_id']; ?></td>
-			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'complaints_comments', 'action' => 'view', $complaintsComment['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'complaints_comments', 'action' => 'edit', $complaintsComment['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'complaints_comments', 'action' => 'delete', $complaintsComment['id']), null, __('Are you sure you want to delete # %s?', $complaintsComment['id'])); ?>
-			</td>
-		</tr>
-	<?php endforeach; ?>
-	</table>
-<?php endif; ?>
+<!-- Here goes the content. -->
+<section id="content" class="container_12 clearfix" data-sort=true>
+    <div class="grid_12 profile">
 
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Complaints Comment'), array('controller' => 'complaints_comments', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
-</div>
-<div class="related">
-	<h3><?php echo __('Related Managers'); ?></h3>
-	<?php if (!empty($user['Manager'])): ?>
-	<table cellpadding = "0" cellspacing = "0">
-	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('User Id'); ?></th>
-		<th><?php echo __('Company Id'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
-	</tr>
-	<?php
-		$i = 0;
-		foreach ($user['Manager'] as $manager): ?>
-		<tr>
-			<td><?php echo $manager['id']; ?></td>
-			<td><?php echo $manager['user_id']; ?></td>
-			<td><?php echo $manager['company_id']; ?></td>
-			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'managers', 'action' => 'view', $manager['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'managers', 'action' => 'edit', $manager['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'managers', 'action' => 'delete', $manager['id']), null, __('Are you sure you want to delete # %s?', $manager['id'])); ?>
-			</td>
-		</tr>
-	<?php endforeach; ?>
-	</table>
-<?php endif; ?>
+        <div class="header">
 
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Manager'), array('controller' => 'managers', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
-</div>
-<div class="related">
-	<h3><?php echo __('Related Operators'); ?></h3>
-	<?php if (!empty($user['Operator'])): ?>
-	<table cellpadding = "0" cellspacing = "0">
-	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('User Id'); ?></th>
-		<th><?php echo __('Company Id'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
-	</tr>
-	<?php
-		$i = 0;
-		foreach ($user['Operator'] as $operator): ?>
-		<tr>
-			<td><?php echo $operator['id']; ?></td>
-			<td><?php echo $operator['user_id']; ?></td>
-			<td><?php echo $operator['company_id']; ?></td>
-			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'operators', 'action' => 'view', $operator['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'operators', 'action' => 'edit', $operator['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'operators', 'action' => 'delete', $operator['id']), null, __('Are you sure you want to delete # %s?', $operator['id'])); ?>
-			</td>
-		</tr>
-	<?php endforeach; ?>
-	</table>
-<?php endif; ?>
+            <div class="title">
+                <h2><?php echo h($user['PersonalDetail']['name']); ?></h2>
+                <h3><?php echo h($user['Group']['name']); ?></h3>
+            </div>
+            <div class="avatar">
+                <img src="/khalalani/img/mangoadmin/img/elements/profile/avatar.png" />
+                <a href="javascript:void(0);">Change</a>
+            </div>
 
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Operator'), array('controller' => 'operators', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
-</div>
+            <ul class="info">
+
+                <li>
+                    <a href="javascript:void(0);">
+                        <strong>42</strong>
+                        <small>Categories</small>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:void(0);">
+                        <strong>5,216</strong>
+                        <small>Views</small>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:void(0);">
+                        <strong>106</strong>
+                        <small>Orders</small>
+                    </a>
+                </li>
+
+            </ul><!-- End of ul.info -->
+        </div><!-- End of .header -->
+
+        <div class="details grid_12">
+            <h2><?php echo __('Personal Details'); ?></h2>
+            <a href="javascript:$$.settings();"><span class="icon icon-pencil"></span>Update Details</a>
+            <section>
+                <table>
+                    <tr>
+                        <th><?php echo __('Name') . ':'; ?></th><td><?php echo $this->Field->f(h($user['PersonalDetail']['full_name'])); ?></td>
+                    </tr>
+                    <tr>
+                        <th><?php echo __('Birthday') . ':'; ?></th><td><?php echo $this->Field->f(h($user['PersonalDetail']['birthday'])); ?></td>
+                    </tr>
+                    <tr>
+                        <th><?php echo __('Gender') . ':'; ?></th><td><?php echo $this->Field->f(h($user['PersonalDetail']['gender'])); ?></td>
+                    </tr>
+                    <tr>
+                        <th><?php echo __('Marital Status') . ':'; ?></th><td><?php echo $this->Field->f(h($user['PersonalDetail']['marital_status'])); ?></td>
+                    </tr>
+                    <tr>
+                        <th><?php echo __('Nationality') . ':'; ?></th><td><?php echo $this->Field->f(h($user['PersonalDetail']['Nationality']['name'])); ?></td>
+                    </tr>
+                    <tr>
+                        <th><?php echo __('Born Country') . ':'; ?></th><td><?php echo $this->Field->f(h($user['PersonalDetail']['Country']['name'])); ?></td>
+                    </tr>
+                    <tr>
+                        <th><?php echo __('Born Province/State') . ':'; ?></th><td><?php echo $this->Field->f(h($user['PersonalDetail']['Province']['name'])); ?></td>
+                    </tr>
+                    <tr>
+                        <th><?php echo __('Born City') . ':'; ?></th><td><?php echo $this->Field->f(h($user['PersonalDetail']['City']['name'])); ?></td>
+                    </tr>
+                </table>
+            </section>
+        </div><!-- End of .details -->
+
+        <div class="details grid_12">
+            <h2><?php echo ('Contact Details'); ?></h2>
+            <a href="javascript:$$.settings();"><span class="icon icon-pencil"></span>Update Details</a>
+            <section>
+                <table>
+                    <tr>
+                        <th><?php echo __('Country') . ':'; ?></th><td><?php echo $this->Field->f(h($user['ContactDetail']['Country']['name'])); ?></td>
+                    </tr>
+                    <tr>
+                        <th><?php echo __('Province/State') . ':'; ?></th><td><?php echo $this->Field->f(h($user['ContactDetail']['Province']['name'])); ?></td>
+                    </tr>
+                    <tr>
+                        <th><?php echo __('City') . ':'; ?></th><td><?php echo $this->Field->f(h($user['ContactDetail']['City']['name'])); ?></td>
+                    </tr>
+                    <tr>
+                        <th><?php echo __('Address Street').':';?></th><td><?php echo $this->Field->f(h($user['ContactDetail']['address_street']));?></td>
+                    </tr>
+                    <tr>
+                        <th><?php echo __('Zip/Postal Code').':';?></th><td><?php echo $this->Field->f(h($user['ContactDetail']['zipcode']));?></td>
+                    </tr>
+                    <tr>
+                        <th><?php echo __('Home Telephone') . ':'; ?></th><td><?php echo $this->Field->f(h($user['ContactDetail']['home_telephone'])); ?></td>
+                    </tr>
+                    <tr>
+                        <th><?php echo __('Mobile').':';?></th><td><?php echo $this->Field->f(h($user['ContactDetail']['mobile']));?></td>
+                    </tr>
+                    <tr>
+                        <th><?php echo __('Personal Email').':';?></th><td><?php echo $this->Field->f(h($user['ContactDetail']['personal_email']));?></td>
+                    </tr>
+                    <tr>
+                        <th><?php echo __('Work Email').':';?></th><td><?php echo $this->Field->f(h($user['ContactDetail']['work_email']));?></td>
+                    </tr>
+                    <tr>
+                        <th><?php echo __('Other Email').':';?></th><td><?php echo $this->Field->f(h($user['ContactDetail']['other_email']));?></td>
+                    </tr>
+                    
+                </table>
+            </section>
+        </div><!-- End of .details -->
+        <div class="details grid_12">
+            <h2><?php echo ('Education Details'); ?></h2>
+            <a href="javascript:$$.settings();"><span class="icon icon-pencil"></span>Update Details</a>
+            <section>
+                <table>
+                    <tr>
+                        <th><?php echo __('Level') . ':'; ?></th><td><?php echo $this->Field->f(h($user['EducationDetail']['Level']['name'])); ?></td>
+                    </tr>
+                    <tr>
+                        <th><?php echo __('Course') . ':'; ?></th><td><?php echo $this->Field->f(h($user['EducationDetail']['Course']['name'])); ?></td>
+                    </tr>
+                    <tr>
+                        <th><?php echo __('Country') . ':'; ?></th><td><?php echo $this->Field->f(h($user['EducationDetail']['Country']['name'])); ?></td>
+                    </tr>
+                </table>
+            </section>
+        </div><!-- End of .details -->
+        
+          <div class="details grid_12">
+            <h2><?php echo ('Auth Details'); ?></h2>
+            <a href="javascript:$$.settings();"><span class="icon icon-pencil"></span>Update Details</a>
+            <section>
+                <table>
+                    <tr>
+                        <th><?php echo __('Group') . ':'; ?></th><td><?php echo $this->Field->f(h($user['Group']['name'])); ?></td>
+                    </tr>
+                    <tr>
+                        <th><?php echo __('Username') . ':'; ?></th><td><?php echo $this->Field->f(h($user['User']['username'])); ?></td>
+                    </tr>
+                    <tr>
+                        <th><?php echo __('Status') . ':'; ?></th><td><?php echo $this->Field->f(h($user['User']['status'])); ?></td>
+                    </tr>
+                </table>
+            </section>
+        </div><!-- End of .details -->
+
+        <div class="clearfix"></div>
+        <div class="divider"></div>
+
+        <div class="grid_12">
+            <a href="javascript:void(0);" class="button red right">Delete Account</a>
+        </div>
+
+        <!-- Example Profile Dialog -->							
+        <div style="display: none;" id="profile-dialog" title="Example Profile Dialog">
+
+            <form action="" class="full validate">
+                <div class="row">
+                    <label for="d1_textfield">
+                        <strong>Coupon Name</strong>
+                    </label>
+                    <div>
+                        <input class="required" type=text name=d1_textfield id=d1_textfield />
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="d1_spinner">
+                        <strong>Percent off</strong>
+                    </label>
+                    <div>
+                        <input data-type="spinner" min=1 max=100 value=5 id=d1_spinner name=d1_spinner />
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="d1_select">
+                        <strong>Duration</strong>
+                    </label>
+                    <div style="padding-bottom: 10px">
+                        <select name=d1_select id=d1_select class="required">
+                            <option value="once">Once</option>
+                            <option value="multi_month">Multi-month</option>
+                            <option value="forever">Forever</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+
+            <div class="actions">
+                <div class="left">
+                    <button class="grey cancel">Cancel</button>
+                </div>
+                <div class="right">
+                    <button class="submit">Submit</button>
+                </div>
+            </div>
+
+        </div><!-- End of #profile-dialog -->
+
+    </div>
+
+    <script>
+        $$.ready(function() {
+            // Profile Dialog
+
+            $("#profile-dialog").dialog({
+                autoOpen: false,
+                modal: true,
+                width: 400,
+                open: function() {
+                    $(this).parent().css('overflow', 'visible');
+                    $$.utils.forms.resize()
+                }
+            }).find('button.submit').click(function() {
+                var $el = $(this).parents('.ui-dialog-content');
+                if ($el.validate().form()) {
+                    $el.dialog('close');
+                }
+            }).end().find('button.cancel').click(function() {
+                var $el = $(this).parents('.ui-dialog-content');
+                $el.find('form')[0].reset();
+                $el.dialog('close');
+                ;
+            });
+
+            $(".open-profile-dialog").click(function() {
+                $("#profile-dialog").dialog("open");
+                return false;
+            });
+        });
+    </script>
+</section><!-- End of #content -->

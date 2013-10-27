@@ -5,11 +5,17 @@ App::uses('AppModel', 'Model');
 /**
  * User Model
  *
- * @property ComplaintsComment $ComplaintsComment
+ * @property Consumer $Consumer
+ * @property ContactDetail $ContactDetail
  * @property Manager $Manager
  * @property Operator $Operator
+ * @property PersonalDetail $PersonalDetail
+ * @property Group $Group
+ * @property ComplaintsComment $ComplaintsComment
  */
 class User extends AppModel {
+
+    public $actsAs = array('Containable');
 
     public function bindNode($user) {
         return array('model' => 'Group', 'foreign_key' => $user['User']['group_id']);
@@ -18,68 +24,60 @@ class User extends AppModel {
     //The Associations below have been created with all possible keys, those that are not needed can be removed
 
     /**
-     * hasMany associations
+     * hasOne associations
      *
      * @var array
      */
-    public $hasMany = array(
-        'ComplaintsComment' => array(
-            'className' => 'ComplaintsComment',
+    public $hasOne = array(
+        'Consumer' => array(
+            'className' => 'Consumer',
             'foreignKey' => 'user_id',
-            'dependent' => false,
             'conditions' => '',
             'fields' => '',
-            'order' => '',
-            'limit' => '',
-            'offset' => '',
-            'exclusive' => '',
-            'finderQuery' => '',
-            'counterQuery' => ''
-        )
-    );
-    
-    public $hasOne = array(
+            'order' => ''
+        ),
+        'ContactDetail' => array(
+            'className' => 'ContactDetail',
+            'foreignKey' => 'user_id',
+            'conditions' => '',
+            'fields' => '',
+            'order' => ''
+        ),
         'Manager' => array(
             'className' => 'Manager',
             'foreignKey' => 'user_id',
-            'dependent' => false,
             'conditions' => '',
             'fields' => '',
-            'order' => '',
-            'limit' => '',
-            'offset' => '',
-            'exclusive' => '',
-            'finderQuery' => '',
-            'counterQuery' => ''
+            'order' => ''
         ),
         'Operator' => array(
             'className' => 'Operator',
             'foreignKey' => 'user_id',
-            'dependent' => false,
             'conditions' => '',
             'fields' => '',
-            'order' => '',
-            'limit' => '',
-            'offset' => '',
-            'exclusive' => '',
-            'finderQuery' => '',
-            'counterQuery' => ''
+            'order' => ''
         ),
-        'Consumer' => array(
-            'className' => 'Consumer',
+        'PersonalDetail' => array(
+            'className' => 'PersonalDetail',
             'foreignKey' => 'user_id',
-            'dependent' => false,
             'conditions' => '',
             'fields' => '',
-            'order' => '',
-            'limit' => '',
-            'offset' => '',
-            'exclusive' => '',
-            'finderQuery' => '',
-            'counterQuery' => ''
+            'order' => ''
+        ),
+        'EducationDetail' => array(
+            'className' => 'EducationDetail',
+            'foreignKey' => 'user_id',
+            'conditions' => '',
+            'fields' => '',
+            'order' => ''
         )
-        
     );
+
+    /**
+     * belongsTo associations
+     *
+     * @var array
+     */
     public $belongsTo = array(
         'Group' => array(
             'className' => 'Group',
@@ -87,6 +85,27 @@ class User extends AppModel {
             'conditions' => '',
             'fields' => '',
             'order' => ''
+        )
+    );
+
+    /**
+     * hasMany associations
+     *
+     * @var array
+     */
+    public $hasMany = array(
+        'ComplaintComment' => array(
+            'className' => 'ComplaintComment',
+            'foreignKey' => 'user_id',
+            'dependent' => false,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => ''
         )
     );
     public $validate = array(
@@ -116,11 +135,11 @@ class User extends AppModel {
     );
 
     public function matchPasswords($data) {
-        if(isset($this->data['User']['password_confirmation'])){
-        if ($data['password'] == $this->data['User']['password_confirmation'])
-            return true;
-        $this->invalidate('password_confirmation', 'as palavras-passe são diferentes');
-        return false;
+        if (isset($this->data['User']['password_confirmation'])) {
+            if ($data['password'] == $this->data['User']['password_confirmation'])
+                return true;
+            $this->invalidate('password_confirmation', 'as palavras-passe são diferentes');
+            return false;
         }
     }
 

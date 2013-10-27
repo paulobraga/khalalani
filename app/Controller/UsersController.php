@@ -30,6 +30,14 @@ class UsersController extends AppController {
         if (!$this->User->exists($id)) {
             throw new NotFoundException(__('Invalid user'));
         }
+        $this->User->contain(
+                array(
+                    'Group',
+                    'PersonalDetail' => array('Nationality','Country','Province','City'),
+                    'ContactDetail' => array('Country','Province','City'),
+                    'EducationDetail' => array('Course','Level', 'Country')
+                )
+        );
         $options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
         $this->set('user', $this->User->find('first', $options));
     }
@@ -157,9 +165,30 @@ class UsersController extends AppController {
         $options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
         $this->set('user', $this->User->find('first', $options));
     }
-    
-    public function selectUserRole(){
-        $this->set('groups',$this->User->Group->find('list'));
+
+    public function selectUserRole() {
+
+        if ($this->request->is('post')) {
+            if (!isset($this->request->data['User']['group_id'])) {
+                $this->User->invalidate('group_id');
+            } else {
+                $group_id = $this->request->data['User']['group_id'];
+                switch ($group_id) {
+                    case 1:
+                        return $this->redirect(array('controller' => 'users', 'action' => 'add'));
+                    case 2:
+                        return $this->redirect(array('controller' => 'consumers', 'action' => 'add'));
+                    case 3:
+                        return $this->redirect(array('controller' => 'managers', 'action' => 'add'));
+                    case 4:
+                        return $this->redirect(array('controller' => 'operators', 'action' => 'add'));
+                    default:
+                        break;
+                }
+            }
+        } else {
+            $this->set('groups', $this->User->Group->find('list'));
+        }
     }
 
 }

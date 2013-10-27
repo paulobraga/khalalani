@@ -1,82 +1,19 @@
-<section id="content" class="container_12 clearfix" data-sort=true>
-    <div class="grid_12">
-        <div class="box">
-
-            <div class="header">
-                <h2><?php echo __('Consumers'); ?></h2>
-            </div>
-
-            <div class="content">
-
-                <div class="tabletools">
-                    <div class="left">
-                        <a class="open-add-consumer-dialog" href="javascript:void(0);"><i class="icon-plus"></i><?php echo __('New Consumer'); ?></a>
-                    </div>
-                    <div class="right"></div>
-                </div>
-                <table class="dynamic styled with-prev-next" data-table-tools='{"display":true}'>
-                    <thead>
-                        <tr>
-                            <th><?php echo __('Id'); ?></th>
-                            <th><?php echo __('Name'); ?></th>
-                            <th><?php echo __('Email'); ?></th>
-                            <th><?php echo __('Actions'); ?></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach ($consumers as $consumer): ?>
-
-                            <tr class="gradeX tooltip" data-gravity=nw title="<?php echo h($consumer['Consumer']['name']); ?>" >
-                                <td><?php echo h($consumer['Consumer']['id']); ?>&nbsp;</td>
-                                <td><a href="<?php echo $this->Html->url(array('action'=>'view',$consumer['Consumer']['id']));?>"><?php echo h($consumer['Consumer']['name']); ?></a>&nbsp;</td>
-                                <td><?php echo h($consumer['Consumer']['email']); ?>&nbsp;</td>
-                                <td class="center">
-                                    <?php echo $this->Html->link(__('View'), array('action' => 'view', $company['Company']['id'])); ?>
-                                    <?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $company['Company']['id'])); ?>
-                                    <?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $company['Company']['id']), null, __('Are you sure you want to delete # %s?', $company['Company']['id'])); ?>
-                                </td>
-                            </tr>
-
-                        <?php endforeach; ?>
-                    </tbody>
-                </table>
-
-            </div><!-- End of .content -->
-
-        </div><!-- End of .box -->
-    </div><!-- End of .grid_12 -->
-</section>
-<?php echo $this->Element('dialog_add_consumer'); ?>
-
-
 <div class="consumers index">
 	<h2><?php echo __('Consumers'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('birthday'); ?></th>
-			<th><?php echo $this->Paginator->sort('hometown'); ?></th>
-			<th><?php echo $this->Paginator->sort('location'); ?></th>
+			<th><?php echo $this->Paginator->sort('user_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
 			<th><?php echo $this->Paginator->sort('modified'); ?></th>
-			<th><?php echo $this->Paginator->sort('nationality_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('gender'); ?></th>
-			<th><?php echo $this->Paginator->sort('picture'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($consumers as $consumer): ?>
 	<tr>
 		<td><?php echo h($consumer['Consumer']['id']); ?>&nbsp;</td>
-		<td><?php echo h($consumer['Consumer']['birthday']); ?>&nbsp;</td>
-		<td><?php echo h($consumer['Consumer']['hometown']); ?>&nbsp;</td>
-		<td><?php echo h($consumer['Consumer']['location']); ?>&nbsp;</td>
+		<td><?php echo h($consumer['Consumer']['user_id']); ?>&nbsp;</td>
 		<td><?php echo h($consumer['Consumer']['created']); ?>&nbsp;</td>
 		<td><?php echo h($consumer['Consumer']['modified']); ?>&nbsp;</td>
-		<td>
-			<?php echo $this->Html->link($consumer['Nationality']['name'], array('controller' => 'nationalities', 'action' => 'view', $consumer['Nationality']['id'])); ?>
-		</td>
-		<td><?php echo h($consumer['Consumer']['gender']); ?>&nbsp;</td>
-		<td><?php echo h($consumer['Consumer']['picture']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $consumer['Consumer']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $consumer['Consumer']['id'])); ?>
@@ -103,13 +40,11 @@
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('New Consumer'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Nationalities'), array('controller' => 'nationalities', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Nationality'), array('controller' => 'nationalities', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Companies Likes'), array('controller' => 'companies_likes', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Companies Like'), array('controller' => 'companies_likes', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Company Likes'), array('controller' => 'company_likes', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Company Like'), array('controller' => 'company_likes', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Complaint Likes'), array('controller' => 'complaint_likes', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Complaint Like'), array('controller' => 'complaint_likes', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Complaints'), array('controller' => 'complaints', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Complaint'), array('controller' => 'complaints', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Complaints Likes'), array('controller' => 'complaints_likes', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Complaints Like'), array('controller' => 'complaints_likes', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

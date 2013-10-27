@@ -14,20 +14,28 @@ class ProvincesControllerTest extends ControllerTestCase {
  */
 	public $fixtures = array(
 		'app.province',
-		'app.branch',
+		'app.country',
+		'app.consumer',
+		'app.user',
+		'app.group',
+		'app.contact_detail',
 		'app.city',
+		'app.branch',
 		'app.company',
 		'app.complaint_category',
 		'app.complaint',
-		'app.consumer',
-		'app.nationality',
-		'app.companies_like',
-		'app.complaints_like',
 		'app.manager',
-		'app.user',
 		'app.operator',
 		'app.category',
-		'app.companies_category'
+		'app.companies_category',
+		'app.personal_detail',
+		'app.nationality',
+		'app.education_detail',
+		'app.level',
+		'app.course',
+		'app.complaint_comment',
+		'app.company_like',
+		'app.complaint_like'
 	);
 
 /**

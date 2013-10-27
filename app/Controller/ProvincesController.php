@@ -47,6 +47,8 @@ class ProvincesController extends AppController {
 				$this->Session->setFlash(__('The province could not be saved. Please, try again.'));
 			}
 		}
+		$countries = $this->Province->Country->find('list');
+		$this->set(compact('countries'));
 	}
 
 /**
@@ -71,6 +73,8 @@ class ProvincesController extends AppController {
 			$options = array('conditions' => array('Province.' . $this->Province->primaryKey => $id));
 			$this->request->data = $this->Province->find('first', $options);
 		}
+		$countries = $this->Province->Country->find('list');
+		$this->set(compact('countries'));
 	}
 
 /**
