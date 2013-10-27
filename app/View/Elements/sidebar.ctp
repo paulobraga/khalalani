@@ -7,30 +7,27 @@
 				
 					<li><a href="<?php echo $this->Html->url(array('controller'=>'pages','action'=>'dashboard'));?>"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/dashboard.png" alt="" height=16 width=16>Dashboard</a></li>
 					<li>
-						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/ui-layered-pane.png" alt="" height=16 width=16>Empresas<span class="badge">4</span></a>
+						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/ui-layered-pane.png" alt="" height=16 width=16><?php echo __('Companies');?></a>
 						<ul>
-							<li><a href="<?php echo $this->Html->url(array('controller'=>'companies','action'=>'add'));?>"><span class="icon icon-list"></span>Adicionar</a></li>
-							<li><a href="<?php echo $this->Html->url(array('controller'=>'companies','action'=>'index'));?>"><span class="icon icon-cog"></span>Listar</a></li>
-							<li><a href="ui_icons.html"><span class="icon icon-picture"></span>Icons</a></li>
-							<li><a href="ui_grid.html"><span class="icon icon-th"></span>Grid</a></li>
+							<li><a href="<?php echo $this->Html->url(array('controller'=>'companies','action'=>'add'));?>"><span class="icon icon-plus"></span><?php echo __('Add');?></a></li>
+							<li><a href="<?php echo $this->Html->url(array('controller'=>'companies','action'=>'index'));?>"><span class="icon icon-list"></span><?php echo __('List');?></a></li>
+							
 						</ul>
 					</li>
-					<li>
-						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/ui-layered-pane.png" alt="" height=16 width=16>UI Widgets<span class="badge">4</span></a>
+                                        <li>
+						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/ui-layered-pane.png" alt="" height=16 width=16><?php echo __('Consumers');?></a>
 						<ul>
-							<li><a href="ui_general.html"><span class="icon icon-list"></span>General</a></li>
-							<li><a href="ui_extras.html"><span class="icon icon-cog"></span>Extras</a></li>
-							<li><a href="ui_icons.html"><span class="icon icon-picture"></span>Icons</a></li>
-							<li><a href="ui_grid.html"><span class="icon icon-th"></span>Grid</a></li>
+							<li><a href="<?php echo $this->Html->url(array('controller'=>'consumers','action'=>'add'));?>"><span class="icon icon-plus"></span><?php echo __('Add');?></a></li>
+							<li><a href="<?php echo $this->Html->url(array('controller'=>'consumers','action'=>'index'));?>"><span class="icon icon-list"></span><?php echo __('List');?></a></li>
+							
 						</ul>
 					</li>
-					
-					<li>
-						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/application-form.png" alt="" height=16 width=16>Form Elements</a>
+                                        <li>
+						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/ui-layered-pane.png" alt="" height=16 width=16><?php echo __('Complaints');?></a>
 						<ul>
-							<li><a href="forms.html"><span class="icon icon-list-alt"></span>General</a></li>
-							<li><a href="forms_validation.html"><span class="icon icon-warning-sign"></span>Validation</a></li>
-							<li><a href="forms_extras.html"><span class="icon icon-magic"></span>Fileuploader &amp; Wizard</a></li>
+							<li><a href="<?php echo $this->Html->url(array('controller'=>'complaints','action'=>'add'));?>"><span class="icon icon-plus"></span><?php echo __('Add');?></a></li>
+							<li><a href="<?php echo $this->Html->url(array('controller'=>'complaints','action'=>'index'));?>"><span class="icon icon-list"></span><?php echo __('List');?></a></li>
+							
 						</ul>
 					</li>
 					
@@ -41,31 +38,11 @@
 							<li><a href="charts.html"><span class="icon icon-bar-chart"></span>Charts</a></li>
 						</ul>
 					</li>
-					
-					<li>
-						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/table.png" alt="" height=16 width=16>Tables</a>
-						<ul>
-							<li><a href="tables_static.html"><span class="icon icon-check-empty"></span>Static</a></li>
-							<li><a href="tables_dynamic.html"><span class="icon icon-table"></span>Dynamic</a></li>
-							<li><a href="tables_full.html"><span class="icon icon-fullscreen"></span>Full</a></li>
-						</ul>
-					</li>
-					
-					<li>
-						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/document-horizontal.png" alt="" height=16 width=16>Other Pages</a>
-						<ul>
-							<li><a href="login.html">Login</a></li>
-							<li><a href="pages_profile.html">Profile</a></li>
-							<li><a href="pages_invoice.html">Invoice<span class="badge grey">1 open</span></a></li>
-							<li><a href="pages_faq.html">FAQ</a></li>
-							<li><a href="pages_search.html">Search</a></li>
-							<li><a href="pages_error_404.html">Error Page (404)</a></li>
-						</ul>
-					</li>
                                         <li>
 						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/document-horizontal.png" alt="" height=16 width=16>Admin</a>
 						<ul>
 							<li><a href="<?php echo $this->Html->url(array('controller'=>'categories','action'=>'index'));?>"><?php echo __('Categories of Comapnies');?></a></li>
+                                                        <li><a href="<?php echo $this->Html->url(array('controller'=>'users','action'=>'index'));?>"><?php echo __('Users');?></a></li>
 							<li><a href="pages_profile.html">Profile</a></li>
 							<li><a href="pages_invoice.html">Invoice<span class="badge grey">1 open</span></a></li>
 							<li><a href="pages_faq.html">FAQ</a></li>

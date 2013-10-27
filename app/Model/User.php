@@ -35,7 +35,10 @@ class User extends AppModel {
             'exclusive' => '',
             'finderQuery' => '',
             'counterQuery' => ''
-        ),
+        )
+    );
+    
+    public $hasOne = array(
         'Manager' => array(
             'className' => 'Manager',
             'foreignKey' => 'user_id',
@@ -61,7 +64,21 @@ class User extends AppModel {
             'exclusive' => '',
             'finderQuery' => '',
             'counterQuery' => ''
+        ),
+        'Consumer' => array(
+            'className' => 'Consumer',
+            'foreignKey' => 'user_id',
+            'dependent' => false,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => ''
         )
+        
     );
     public $belongsTo = array(
         'Group' => array(

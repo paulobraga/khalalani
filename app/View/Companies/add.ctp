@@ -52,7 +52,7 @@
 							<strong><?php echo __('Website');?></strong>
 						</label>
 						<div>
-                                                    <?php echo $this->Form->input('website');?>
+                                                    <?php echo $this->Form->input('website',array('value'=>'http://'));?>
 							<!--<input type="text" name=f1_normal_input id=f1_normal_input />-->
 						</div>
 					</div>
@@ -71,6 +71,7 @@
 						</label>
 						<div>
                                                     <?php echo $this->Form->input('logo',array('type'=>'file'));?>
+                                                    <?php echo $this->Form->input('logo_dir',array('type'=>'hidden'));?>
 							<!--<input type="text" name=f1_normal_input id=f1_normal_input />-->
 						</div>
 					</div>

@@ -66,6 +66,16 @@
 							<!--<input type="text" name=f1_normal_input id=f1_normal_input />-->
 						</div>
 					</div>
+                                        <div class="row">
+						<label for="f1_normal_input">
+							<strong><?php echo __('logo');?></strong>
+						</label>
+						<div>
+                                                    <?php echo $this->Form->input('logo',array('type'=>'file'));?>
+                                                    <?php echo $this->Form->input('logo_dir',array('type'=>'hidden'));?>
+							<!--<input type="text" name=f1_normal_input id=f1_normal_input />-->
+						</div>
+					</div>
 					
 				</fieldset><!-- End of fieldset -->
                                 <div class="actions">
@@ -79,19 +89,3 @@
 <!--</form>-->
                                 <?php echo $this->Form->end();?>
 </section>
-<div class="companies form">
-<?php echo $this->Form->create('Company'); ?>
-	<fieldset>
-		<legend><?php echo __('Add Company'); ?></legend>
-	<?php
-                echo $this->Form->input('id');
-		echo $this->Form->input('name');
-		echo $this->Form->input('email');
-		echo $this->Form->input('logo');
-		echo $this->Form->input('address');
-		echo $this->Form->input('website');
-		echo $this->Form->input('Category');
-	?>
-	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
-</div>

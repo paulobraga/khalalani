@@ -157,5 +157,9 @@ class UsersController extends AppController {
         $options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
         $this->set('user', $this->User->find('first', $options));
     }
+    
+    public function selectUserRole(){
+        $this->set('groups',$this->User->Group->find('list'));
+    }
 
 }

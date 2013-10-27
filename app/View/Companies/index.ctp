@@ -3,7 +3,7 @@
         <div class="box">
 
             <div class="header">
-                <h2><?php echo __('Companies');?></h2>
+                <h2><?php echo __('Companies'); ?></h2>
             </div>
 
             <div class="content">
@@ -26,10 +26,11 @@
                     </thead>
                     <tbody>
                         <?php foreach ($companies as $company): ?>
-                            <tr class="gradeX">
+
+                            <tr class="gradeX tooltip" data-gravity=nw title="<?php echo h($company['Company']['name']); ?>" >
                                 <td><?php echo h($company['Company']['id']); ?>&nbsp;</td>
-                                <td><?php echo h($company['Company']['name']); ?>&nbsp;</td>
-                                <td><?php echo h($company['Company']['website']); ?>&nbsp;</td>
+                                <td><a href="<?php echo $this->Html->url(array('action'=>'view',$company['Company']['id']));?>"><?php echo h($company['Company']['name']); ?></a>&nbsp;</td>
+                                <td><a href="<?php echo h($company['Company']['website']); ?>"><?php echo h($company['Company']['website']); ?></a>&nbsp;</td>
                                 <td><?php echo h($company['Company']['email']); ?>&nbsp;</td>
                                 <td class="center">
                                     <?php echo $this->Html->link(__('View'), array('action' => 'view', $company['Company']['id'])); ?>
@@ -37,6 +38,7 @@
                                     <?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $company['Company']['id']), null, __('Are you sure you want to delete # %s?', $company['Company']['id'])); ?>
                                 </td>
                             </tr>
+
                         <?php endforeach; ?>
                     </tbody>
                 </table>
