@@ -7,7 +7,7 @@
 				
 					<li><a href="<?php echo $this->Html->url(array('controller'=>'pages','action'=>'dashboard'));?>"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/dashboard.png" alt="" height=16 width=16>Dashboard</a></li>
 					<li>
-						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/ui-layered-pane.png" alt="" height=16 width=16><?php echo __('Companies');?></a>
+						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/home.png" alt="" height=16 width=16><?php echo __('Companies');?></a>
 						<ul>
 							<li><a href="<?php echo $this->Html->url(array('controller'=>'companies','action'=>'add'));?>"><span class="icon icon-plus"></span><?php echo __('Add');?></a></li>
 							<li><a href="<?php echo $this->Html->url(array('controller'=>'companies','action'=>'index'));?>"><span class="icon icon-list"></span><?php echo __('List');?></a></li>
@@ -15,7 +15,7 @@
 						</ul>
 					</li>
                                         <li>
-						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/ui-layered-pane.png" alt="" height=16 width=16><?php echo __('Consumers');?></a>
+						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/users.png" alt="" height=16 width=16><?php echo __('Consumers');?></a>
 						<ul>
 							<li><a href="<?php echo $this->Html->url(array('controller'=>'consumers','action'=>'add'));?>"><span class="icon icon-plus"></span><?php echo __('Add');?></a></li>
 							<li><a href="<?php echo $this->Html->url(array('controller'=>'consumers','action'=>'index'));?>"><span class="icon icon-list"></span><?php echo __('List');?></a></li>
@@ -23,25 +23,25 @@
 						</ul>
 					</li>
                                         <li>
-						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/ui-layered-pane.png" alt="" height=16 width=16><?php echo __('Complaints');?></a>
+						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/exclamation.png" alt="" height=16 width=16><?php echo __('Complaints');?></a>
 						<ul>
-							<li><a href="<?php echo $this->Html->url(array('controller'=>'complaints','action'=>'add'));?>"><span class="icon icon-plus"></span><?php echo __('Add');?></a></li>
+							<li><a href="<?php echo $this->Html->url(array('controller'=>'companies','action'=>'selectCompany'));?>"><span class="icon icon-plus"></span><?php echo __('Add');?></a></li>
 							<li><a href="<?php echo $this->Html->url(array('controller'=>'complaints','action'=>'index'));?>"><span class="icon icon-list"></span><?php echo __('List');?></a></li>
 							
 						</ul>
 					</li>
 					
 					<li>
-						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/chart.png" alt="" height=16 width=16>Statistics / Charts<span class="badge">2</span></a>
+						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/chart.png" alt="" height=16 width=16>Statistics / Charts<!--<span class="badge">2</span>--></a>
 						<ul>
 							<li><a href="statistics.html"><span class="icon icon-sitemap"></span>Statistics Elements</a></li>
 							<li><a href="charts.html"><span class="icon icon-bar-chart"></span>Charts</a></li>
 						</ul>
 					</li>
                                         <li>
-						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/document-horizontal.png" alt="" height=16 width=16>Admin</a>
+						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/hammer.png" alt="" height=16 width=16>Admin</a>
 						<ul>
-							<li><a href="<?php echo $this->Html->url(array('controller'=>'categories','action'=>'index'));?>"><?php echo __('Categories of Comapanies');?></a></li>
+							<li><a href="<?php echo $this->Html->url(array('controller'=>'categories','action'=>'index'));?>"><?php echo __('Categories of Companies');?></a></li>
                                                         <li><a href="<?php echo $this->Html->url(array('controller'=>'users','action'=>'index'));?>"><?php echo __('Users');?></a></li>
                                                         <li><a href="<?php echo $this->Html->url(array('controller'=>'courses','action'=>'index'));?>"><?php echo __('Courses');?></a></li>
                                                         <li><a href="<?php echo $this->Html->url(array('controller'=>'levels','action'=>'index'));?>"><?php echo __('Levels');?></a></li>

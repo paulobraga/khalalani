@@ -1,0 +1,2759 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-11-01 02:42+0300\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/BranchesController.php:29;65;94
+msgid "Invalid branch"
+msgstr ""
+
+#: Controller/BranchesController.php:44;69
+msgid "The branch has been saved"
+msgstr "A Sucursal foi salva"
+
+#: Controller/BranchesController.php:47;72
+msgid "The branch could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/BranchesController.php:98
+msgid "Branch deleted"
+msgstr ""
+
+#: Controller/BranchesController.php:101
+msgid "Branch was not deleted"
+msgstr ""
+
+#: Controller/CategoriesController.php:29;63;90
+msgid "Invalid category"
+msgstr ""
+
+#: Controller/CategoriesController.php:44;67
+msgid "The category has been saved"
+msgstr ""
+
+#: Controller/CategoriesController.php:47;70
+msgid "The category could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/CategoriesController.php:94
+msgid "Category deleted"
+msgstr ""
+
+#: Controller/CategoriesController.php:97
+msgid "Category was not deleted"
+msgstr ""
+
+#: Controller/CitiesController.php:29;63;90
+msgid "Invalid city"
+msgstr ""
+
+#: Controller/CitiesController.php:44;67
+msgid "The city has been saved"
+msgstr "A cidade foi salva"
+
+#: Controller/CitiesController.php:47;70
+msgid "The city could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/CitiesController.php:94
+msgid "City deleted"
+msgstr ""
+
+#: Controller/CitiesController.php:97
+msgid "City was not deleted"
+msgstr ""
+
+#: Controller/CompaniesCategoriesController.php:29;64;92
+msgid "Invalid companies category"
+msgstr ""
+
+#: Controller/CompaniesCategoriesController.php:44;68
+msgid "The companies category has been saved"
+msgstr ""
+
+#: Controller/CompaniesCategoriesController.php:47;71
+msgid "The companies category could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/CompaniesCategoriesController.php:96
+msgid "Companies category deleted"
+msgstr ""
+
+#: Controller/CompaniesCategoriesController.php:99
+msgid "Companies category was not deleted"
+msgstr ""
+
+#: Controller/CompaniesController.php:29;66;96
+msgid "Invalid company"
+msgstr ""
+
+#: Controller/CompaniesController.php:44;70
+msgid "The company has been saved"
+msgstr ""
+
+#: Controller/CompaniesController.php:47;73
+msgid "The company could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/CompaniesController.php:100
+msgid "Company deleted"
+msgstr ""
+
+#: Controller/CompaniesController.php:103
+msgid "Company was not deleted"
+msgstr ""
+
+#: Controller/CompaniesLikesController.php:29;64;92
+msgid "Invalid companies like"
+msgstr ""
+
+#: Controller/CompaniesLikesController.php:44;68
+msgid "The companies like has been saved"
+msgstr ""
+
+#: Controller/CompaniesLikesController.php:47;71
+msgid "The companies like could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/CompaniesLikesController.php:96
+msgid "Companies like deleted"
+msgstr ""
+
+#: Controller/CompaniesLikesController.php:99
+msgid "Companies like was not deleted"
+msgstr ""
+
+#: Controller/ComplaintCategoriesController.php:29;63;90
+msgid "Invalid complaint category"
+msgstr ""
+
+#: Controller/ComplaintCategoriesController.php:44;67
+msgid "The complaint category has been saved"
+msgstr ""
+
+#: Controller/ComplaintCategoriesController.php:47;70
+msgid "The complaint category could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ComplaintCategoriesController.php:94
+msgid "Complaint category deleted"
+msgstr ""
+
+#: Controller/ComplaintCategoriesController.php:97
+msgid "Complaint category was not deleted"
+msgstr ""
+
+#: Controller/ComplaintCommentsController.php:29;64;92
+msgid "Invalid complaint comment"
+msgstr ""
+
+#: Controller/ComplaintCommentsController.php:44;68
+msgid "The complaint comment has been saved"
+msgstr ""
+
+#: Controller/ComplaintCommentsController.php:47;71
+msgid "The complaint comment could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ComplaintCommentsController.php:96
+msgid "Complaint comment deleted"
+msgstr ""
+
+#: Controller/ComplaintCommentsController.php:99
+msgid "Complaint comment was not deleted"
+msgstr ""
+
+#: Controller/ComplaintLikesController.php:29;64;92
+msgid "Invalid complaint like"
+msgstr ""
+
+#: Controller/ComplaintLikesController.php:44;68
+msgid "The complaint like has been saved"
+msgstr ""
+
+#: Controller/ComplaintLikesController.php:47;71
+msgid "The complaint like could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ComplaintLikesController.php:96
+msgid "Complaint like deleted"
+msgstr ""
+
+#: Controller/ComplaintLikesController.php:99
+msgid "Complaint like was not deleted"
+msgstr ""
+
+#: Controller/ComplaintsController.php:29;64;92
+msgid "Invalid complaint"
+msgstr ""
+
+#: Controller/ComplaintsController.php:44;68
+msgid "The complaint has been saved"
+msgstr ""
+
+#: Controller/ComplaintsController.php:47;71
+msgid "The complaint could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ComplaintsController.php:96
+msgid "Complaint deleted"
+msgstr ""
+
+#: Controller/ComplaintsController.php:99
+msgid "Complaint was not deleted"
+msgstr ""
+
+#: Controller/ConsumersController.php:35;73;98
+msgid "Invalid consumer"
+msgstr ""
+
+#: Controller/ConsumersController.php:50;77
+msgid "The consumer has been saved"
+msgstr ""
+
+#: Controller/ConsumersController.php:53;80
+msgid "The consumer could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ConsumersController.php:102
+msgid "Consumer deleted"
+msgstr ""
+
+#: Controller/ConsumersController.php:105
+msgid "Consumer was not deleted"
+msgstr ""
+
+#: Controller/ContactDetailsController.php:29;66;96
+msgid "Invalid contact detail"
+msgstr ""
+
+#: Controller/ContactDetailsController.php:44;70
+msgid "The contact detail has been saved"
+msgstr ""
+
+#: Controller/ContactDetailsController.php:47;73
+msgid "The contact detail could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ContactDetailsController.php:100
+msgid "Contact detail deleted"
+msgstr ""
+
+#: Controller/ContactDetailsController.php:103
+msgid "Contact detail was not deleted"
+msgstr ""
+
+#: Controller/CountriesController.php:29;61;86
+msgid "Invalid country"
+msgstr ""
+
+#: Controller/CountriesController.php:44;65
+msgid "The country has been saved"
+msgstr ""
+
+#: Controller/CountriesController.php:47;68
+msgid "The country could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/CountriesController.php:90
+msgid "Country deleted"
+msgstr ""
+
+#: Controller/CountriesController.php:93
+msgid "Country was not deleted"
+msgstr ""
+
+#: Controller/CoursesController.php:29;61;86
+msgid "Invalid course"
+msgstr ""
+
+#: Controller/CoursesController.php:44;65
+msgid "The course has been saved"
+msgstr ""
+
+#: Controller/CoursesController.php:47;68
+msgid "The course could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/CoursesController.php:90
+msgid "Course deleted"
+msgstr ""
+
+#: Controller/CoursesController.php:93
+msgid "Course was not deleted"
+msgstr ""
+
+#: Controller/EducationDetailsController.php:29;66;96
+msgid "Invalid education detail"
+msgstr ""
+
+#: Controller/EducationDetailsController.php:44;70
+msgid "The education detail has been saved"
+msgstr ""
+
+#: Controller/EducationDetailsController.php:47;73
+msgid "The education detail could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/EducationDetailsController.php:100
+msgid "Education detail deleted"
+msgstr ""
+
+#: Controller/EducationDetailsController.php:103
+msgid "Education detail was not deleted"
+msgstr ""
+
+#: Controller/GroupsController.php:31;63;88
+msgid "Invalid group"
+msgstr ""
+
+#: Controller/GroupsController.php:46;67
+msgid "The group has been saved"
+msgstr ""
+
+#: Controller/GroupsController.php:49;70
+msgid "The group could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/GroupsController.php:92
+msgid "Group deleted"
+msgstr ""
+
+#: Controller/GroupsController.php:95
+msgid "Group was not deleted"
+msgstr ""
+
+#: Controller/LevelsController.php:29;61;86
+msgid "Invalid level"
+msgstr ""
+
+#: Controller/LevelsController.php:44;65
+msgid "The level has been saved"
+msgstr ""
+
+#: Controller/LevelsController.php:47;68
+msgid "The level could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/LevelsController.php:90
+msgid "Level deleted"
+msgstr ""
+
+#: Controller/LevelsController.php:93
+msgid "Level was not deleted"
+msgstr ""
+
+#: Controller/ManagersController.php:29;64;92
+msgid "Invalid manager"
+msgstr ""
+
+#: Controller/ManagersController.php:44;68
+msgid "The manager has been saved"
+msgstr ""
+
+#: Controller/ManagersController.php:47;71
+msgid "The manager could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ManagersController.php:96
+msgid "Manager deleted"
+msgstr ""
+
+#: Controller/ManagersController.php:99
+msgid "Manager was not deleted"
+msgstr ""
+
+#: Controller/MaritalStatusesController.php:29;61;86
+msgid "Invalid marital status"
+msgstr ""
+
+#: Controller/MaritalStatusesController.php:44;65
+msgid "The marital status has been saved"
+msgstr ""
+
+#: Controller/MaritalStatusesController.php:47;68
+msgid "The marital status could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/MaritalStatusesController.php:90
+msgid "Marital status deleted"
+msgstr ""
+
+#: Controller/MaritalStatusesController.php:93
+msgid "Marital status was not deleted"
+msgstr ""
+
+#: Controller/NationalitiesController.php:29;61;86
+msgid "Invalid nationality"
+msgstr ""
+
+#: Controller/NationalitiesController.php:44;65
+msgid "The nationality has been saved"
+msgstr ""
+
+#: Controller/NationalitiesController.php:47;68
+msgid "The nationality could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/NationalitiesController.php:90
+msgid "Nationality deleted"
+msgstr ""
+
+#: Controller/NationalitiesController.php:93
+msgid "Nationality was not deleted"
+msgstr ""
+
+#: Controller/OperatorsController.php:29;64;92
+msgid "Invalid operator"
+msgstr ""
+
+#: Controller/OperatorsController.php:44;68
+msgid "The operator has been saved"
+msgstr ""
+
+#: Controller/OperatorsController.php:47;71
+msgid "The operator could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/OperatorsController.php:96
+msgid "Operator deleted"
+msgstr ""
+
+#: Controller/OperatorsController.php:99
+msgid "Operator was not deleted"
+msgstr ""
+
+#: Controller/PersonalDetailsController.php:29;68;100
+msgid "Invalid personal detail"
+msgstr ""
+
+#: Controller/PersonalDetailsController.php:44;72
+msgid "The personal detail has been saved"
+msgstr ""
+
+#: Controller/PersonalDetailsController.php:47;75
+msgid "The personal detail could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/PersonalDetailsController.php:104
+msgid "Personal detail deleted"
+msgstr ""
+
+#: Controller/PersonalDetailsController.php:107
+msgid "Personal detail was not deleted"
+msgstr ""
+
+#: Controller/ProvincesController.php:29;63;90
+msgid "Invalid province"
+msgstr ""
+
+#: Controller/ProvincesController.php:44;67
+msgid "The province has been saved"
+msgstr ""
+
+#: Controller/ProvincesController.php:47;70
+msgid "The province could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ProvincesController.php:94
+msgid "Province deleted"
+msgstr ""
+
+#: Controller/ProvincesController.php:97
+msgid "Province was not deleted"
+msgstr ""
+
+#: Controller/UsersController.php:31;74;99;142
+msgid "Invalid user"
+msgstr ""
+
+#: Controller/UsersController.php:54;78
+msgid "The user has been saved"
+msgstr ""
+
+#: Controller/UsersController.php:57;81
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:103
+msgid "User deleted"
+msgstr ""
+
+#: Controller/UsersController.php:106
+msgid "User was not deleted"
+msgstr ""
+
+#: Controller/UsersController.php:120
+msgid "Your username or password was incorrect."
+msgstr ""
+
+#: Controller/UsersController.php:147
+msgid "Tentativa de Fraude"
+msgstr ""
+
+#: Controller/UsersController.php:159
+msgid "A palavra-passe foi alterada."
+msgstr ""
+
+#: Controller/UsersController.php:162
+msgid "Erro ao alterar a palavra-passe."
+msgstr ""
+
+#: Plugin/AclExtras/Console/Command/AclExtrasShell.php:80
+msgid "Plugin to process"
+msgstr ""
+
+#: Plugin/AclExtras/Console/Command/AclExtrasShell.php:83
+msgid "Better manage, and easily synchronize you application's ACO tree"
+msgstr ""
+
+#: Plugin/AclExtras/Console/Command/AclExtrasShell.php:88
+msgid "Add new ACOs for new controllers and actions. Does not remove nodes from the ACO table."
+msgstr ""
+
+#: Plugin/AclExtras/Console/Command/AclExtrasShell.php:93
+msgid "Perform a full sync on the ACO table.Will create new ACOs or missing controllers and actions.Will also remove orphaned entries that no longer have a matching controller/action"
+msgstr ""
+
+#: Plugin/AclExtras/Console/Command/AclExtrasShell.php:97
+msgid "Verify the tree structure of either your Aco or Aro Trees"
+msgstr ""
+
+#: Plugin/AclExtras/Console/Command/AclExtrasShell.php:102
+msgid "The type of tree to verify"
+msgstr ""
+
+#: Plugin/AclExtras/Console/Command/AclExtrasShell.php:108
+msgid "Recover a corrupted Tree"
+msgstr ""
+
+#: Plugin/AclExtras/Console/Command/AclExtrasShell.php:113
+msgid "The type of tree to recover"
+msgstr ""
+
+#: Plugin/AclExtras/Lib/AclExtras.php:123
+msgid "<error>Plugin %s not found or not activated</error>"
+msgstr ""
+
+#: Plugin/AclExtras/Lib/AclExtras.php:136
+msgid "<success>Aco Update Complete</success>"
+msgstr ""
+
+#: Plugin/AclExtras/Lib/AclExtras.php:181
+msgid "Deleted %s and all children"
+msgstr ""
+
+#: Plugin/AclExtras/Lib/AclExtras.php:222
+msgid "Created Aco node: <success>%s</success>"
+msgstr ""
+
+#: Plugin/AclExtras/Lib/AclExtras.php:272
+msgid "Unable to get methods for \"%s\""
+msgstr ""
+
+#: Plugin/AclExtras/Lib/AclExtras.php:293
+msgid "Deleted Aco node: <warning>%s</warning>"
+msgstr ""
+
+#: Plugin/AclExtras/Lib/AclExtras.php:312
+msgid "<success>Tree is valid and strong</success>"
+msgstr ""
+
+#: Plugin/AclExtras/Lib/AclExtras.php:330
+msgid "Tree has been recovered, or tree did not need recovery."
+msgstr ""
+
+#: Plugin/AclExtras/Lib/AclExtras.php:332
+msgid "<error>Tree recovery failed.</error>"
+msgstr ""
+
+#: View/Branches/add.ctp:4
+msgid "Add Branch"
+msgstr ""
+
+#: View/Branches/add.ctp:12
+#: View/Branches/edit.ctp:13
+#: View/Categories/add.ctp:11
+#: View/Categories/edit.ctp:12
+#: View/Cities/add.ctp:10
+#: View/Cities/edit.ctp:11
+#: View/CompaniesCategories/add.ctp:10
+#: View/CompaniesCategories/edit.ctp:11
+#: View/CompaniesLikes/add.ctp:10
+#: View/CompaniesLikes/edit.ctp:11
+#: View/ComplaintCategories/add.ctp:10
+#: View/ComplaintCategories/edit.ctp:11
+#: View/ComplaintComments/add.ctp:13
+#: View/ComplaintComments/edit.ctp:14
+#: View/ComplaintLikes/add.ctp:10
+#: View/ComplaintLikes/edit.ctp:11
+#: View/Complaints/add.ctp:112
+#: View/Complaints/edit.ctp:17
+#: View/Consumers/edit.ctp:10
+#: View/ContactDetails/add.ctp:19
+#: View/ContactDetails/edit.ctp:20
+#: View/Countries/add.ctp:9
+#: View/Countries/edit.ctp:10
+#: View/Courses/add.ctp:9
+#: View/Courses/edit.ctp:10
+#: View/EducationDetails/add.ctp:12
+#: View/EducationDetails/edit.ctp:13
+#: View/Groups/add.ctp:9
+#: View/Groups/edit.ctp:10
+#: View/Levels/add.ctp:9
+#: View/Levels/edit.ctp:10
+#: View/Managers/add.ctp:10
+#: View/Managers/edit.ctp:11
+#: View/MaritalStatuses/add.ctp:9
+#: View/MaritalStatuses/edit.ctp:10
+#: View/Nationalities/add.ctp:9
+#: View/Nationalities/edit.ctp:10
+#: View/Operators/add.ctp:10
+#: View/Operators/edit.ctp:11
+#: View/PersonalDetails/add.ctp:19
+#: View/PersonalDetails/edit.ctp:20
+#: View/Provinces/add.ctp:10
+#: View/Provinces/edit.ctp:11
+#: View/Users/add.ctp:14
+#: View/Users/change_password.ctp:31
+#: View/Users/edit.ctp:15
+msgid "Submit"
+msgstr ""
+
+#: View/Branches/add.ctp:15
+#: View/Branches/edit.ctp:16
+#: View/Branches/index.ctp:10;48
+#: View/Branches/view.ctp:32
+#: View/Categories/add.ctp:14
+#: View/Categories/edit.ctp:15
+#: View/Categories/index.ctp:25
+#: View/Categories/view.ctp:32;53
+#: View/Cities/add.ctp:13
+#: View/Cities/edit.ctp:14
+#: View/Cities/index.ctp:24
+#: View/Cities/view.ctp:22;44
+#: View/Companies/index.ctp:24
+#: View/CompaniesCategories/add.ctp:13
+#: View/CompaniesCategories/edit.ctp:14
+#: View/CompaniesCategories/index.ctp:10;46
+#: View/CompaniesCategories/view.ctp:32
+#: View/CompaniesLikes/add.ctp:13
+#: View/CompaniesLikes/edit.ctp:14
+#: View/CompaniesLikes/index.ctp:9;44
+#: View/CompaniesLikes/view.ctp:27
+#: View/ComplaintCategories/add.ctp:13
+#: View/ComplaintCategories/edit.ctp:14
+#: View/ComplaintCategories/index.ctp:10;44
+#: View/ComplaintCategories/view.ctp:32
+#: View/ComplaintComments/add.ctp:16
+#: View/ComplaintComments/edit.ctp:17
+#: View/ComplaintComments/index.ctp:12;50
+#: View/ComplaintComments/view.ctp:42
+#: View/ComplaintLikes/add.ctp:13
+#: View/ComplaintLikes/edit.ctp:14
+#: View/ComplaintLikes/index.ctp:9;44
+#: View/ComplaintLikes/view.ctp:27
+#: View/Complaints/add.ctp:115
+#: View/Complaints/edit.ctp:20
+#: View/Complaints/index.ctp:15;56
+#: View/Complaints/view.ctp:57
+#: View/Consumers/edit.ctp:13
+#: View/Consumers/index.ctp:25
+#: View/Consumers/view.ctp:27;50;85;126
+#: View/ContactDetails/add.ctp:22
+#: View/ContactDetails/edit.ctp:23
+#: View/ContactDetails/index.ctp:17;64
+#: View/ContactDetails/view.ctp:67
+#: View/Countries/add.ctp:12
+#: View/Countries/edit.ctp:13
+#: View/Countries/index.ctp:24
+#: View/Countries/view.ctp:17;52;103;146;189;231
+#: View/Courses/add.ctp:12
+#: View/Courses/edit.ctp:13
+#: View/Courses/index.ctp:24
+#: View/Courses/view.ctp:17;36
+#: View/EducationDetails/add.ctp:15
+#: View/EducationDetails/edit.ctp:16
+#: View/EducationDetails/index.ctp:10;50
+#: View/EducationDetails/view.ctp:32
+#: View/Groups/add.ctp:12
+#: View/Groups/edit.ctp:13
+#: View/Groups/index.ctp:9;40
+#: View/Groups/view.ctp:27
+#: View/Levels/add.ctp:12
+#: View/Levels/edit.ctp:13
+#: View/Levels/index.ctp:24
+#: View/Levels/view.ctp:17;36
+#: View/Managers/add.ctp:13
+#: View/Managers/edit.ctp:14
+#: View/Managers/index.ctp:8;42
+#: View/Managers/view.ctp:22
+#: View/MaritalStatuses/add.ctp:12
+#: View/MaritalStatuses/edit.ctp:13
+#: View/MaritalStatuses/index.ctp:24
+#: View/MaritalStatuses/view.ctp:17
+#: View/Nationalities/add.ctp:12
+#: View/Nationalities/edit.ctp:13
+#: View/Nationalities/index.ctp:24
+#: View/Nationalities/view.ctp:17;41
+#: View/Operators/add.ctp:13
+#: View/Operators/edit.ctp:14
+#: View/Operators/index.ctp:8;42
+#: View/Operators/view.ctp:22
+#: View/PersonalDetails/add.ctp:22
+#: View/PersonalDetails/edit.ctp:23
+#: View/PersonalDetails/index.ctp:17;68
+#: View/PersonalDetails/view.ctp:67
+#: View/Provinces/add.ctp:13
+#: View/Provinces/edit.ctp:14
+#: View/Provinces/index.ctp:24
+#: View/Provinces/view.ctp:22;52;87;121;164;215
+#: View/Users/edit.ctp:18
+#: View/Users/index.ctp:24
+msgid "Actions"
+msgstr "Acções"
+
+#: View/Branches/add.ctp:18
+#: View/Branches/edit.ctp:20
+#: View/Branches/view.ctp:36
+#: View/Cities/add.ctp:19
+#: View/Cities/edit.ctp:21
+#: View/Cities/view.ctp:30
+#: View/Provinces/add.ctp:19
+#: View/Provinces/edit.ctp:21
+#: View/Provinces/view.ctp:30
+msgid "List Branches"
+msgstr ""
+
+#: View/Branches/add.ctp:19
+#: View/Branches/edit.ctp:21
+#: View/Branches/index.ctp:51
+#: View/Branches/view.ctp:38
+#: View/Cities/add.ctp:17
+#: View/Cities/edit.ctp:19
+#: View/Cities/view.ctp:28
+#: View/ContactDetails/add.ctp:28
+#: View/ContactDetails/edit.ctp:30
+#: View/ContactDetails/index.ctp:69
+#: View/ContactDetails/view.ctp:75
+#: View/Countries/add.ctp:24
+#: View/Countries/edit.ctp:26
+#: View/Countries/view.ctp:31
+#: View/PersonalDetails/add.ctp:32
+#: View/PersonalDetails/edit.ctp:34
+#: View/PersonalDetails/index.ctp:77
+#: View/PersonalDetails/view.ctp:79
+#: View/Provinces/add.ctp:16
+#: View/Provinces/edit.ctp:18
+#: View/Provinces/view.ctp:26
+msgid "List Provinces"
+msgstr ""
+
+#: View/Branches/add.ctp:20
+#: View/Branches/edit.ctp:22
+#: View/Branches/index.ctp:52
+#: View/Branches/view.ctp:39
+#: View/Cities/add.ctp:18
+#: View/Cities/edit.ctp:20
+#: View/Cities/view.ctp:29
+#: View/ContactDetails/add.ctp:29
+#: View/ContactDetails/edit.ctp:31
+#: View/ContactDetails/index.ctp:70
+#: View/ContactDetails/view.ctp:76
+#: View/Countries/add.ctp:25
+#: View/Countries/edit.ctp:27
+#: View/Countries/view.ctp:32;252
+#: View/PersonalDetails/add.ctp:33
+#: View/PersonalDetails/edit.ctp:35
+#: View/PersonalDetails/index.ctp:78
+#: View/PersonalDetails/view.ctp:80
+#: View/Provinces/index.ctp:13
+#: View/Provinces/view.ctp:27
+msgid "New Province"
+msgstr ""
+
+#: View/Branches/add.ctp:21
+#: View/Branches/edit.ctp:23
+#: View/Branches/index.ctp:53
+#: View/Branches/view.ctp:40
+#: View/Cities/add.ctp:16
+#: View/Cities/edit.ctp:18
+#: View/Cities/view.ctp:26
+#: View/ContactDetails/add.ctp:30
+#: View/ContactDetails/edit.ctp:32
+#: View/ContactDetails/index.ctp:71
+#: View/ContactDetails/view.ctp:77
+#: View/PersonalDetails/add.ctp:34
+#: View/PersonalDetails/edit.ctp:36
+#: View/PersonalDetails/index.ctp:79
+#: View/PersonalDetails/view.ctp:81
+#: View/Provinces/add.ctp:21
+#: View/Provinces/edit.ctp:23
+#: View/Provinces/view.ctp:32
+msgid "List Cities"
+msgstr ""
+
+#: View/Branches/add.ctp:22
+#: View/Branches/edit.ctp:24
+#: View/Branches/index.ctp:54
+#: View/Branches/view.ctp:41
+#: View/Cities/index.ctp:13
+#: View/Cities/view.ctp:27
+#: View/ContactDetails/add.ctp:31
+#: View/ContactDetails/edit.ctp:33
+#: View/ContactDetails/index.ctp:72
+#: View/ContactDetails/view.ctp:78
+#: View/PersonalDetails/add.ctp:35
+#: View/PersonalDetails/edit.ctp:37
+#: View/PersonalDetails/index.ctp:80
+#: View/PersonalDetails/view.ctp:82
+#: View/Provinces/add.ctp:22
+#: View/Provinces/edit.ctp:24
+#: View/Provinces/view.ctp:33;108
+msgid "New City"
+msgstr ""
+
+#: View/Branches/add.ctp:23
+#: View/Branches/edit.ctp:25
+#: View/Branches/index.ctp:55
+#: View/Branches/view.ctp:42
+#: View/Categories/add.ctp:18
+#: View/Categories/edit.ctp:20
+#: View/Categories/view.ctp:38
+#: View/CompaniesCategories/add.ctp:17
+#: View/CompaniesCategories/edit.ctp:19
+#: View/CompaniesCategories/index.ctp:49
+#: View/CompaniesCategories/view.ctp:38
+#: View/CompaniesLikes/add.ctp:17
+#: View/CompaniesLikes/edit.ctp:19
+#: View/CompaniesLikes/index.ctp:47
+#: View/CompaniesLikes/view.ctp:33
+#: View/ComplaintCategories/add.ctp:17
+#: View/ComplaintCategories/edit.ctp:19
+#: View/ComplaintCategories/index.ctp:47
+#: View/ComplaintCategories/view.ctp:38
+#: View/Complaints/add.ctp:119
+#: View/Complaints/edit.ctp:25
+#: View/Complaints/index.ctp:59
+#: View/Complaints/view.ctp:63
+#: View/Managers/add.ctp:19
+#: View/Managers/edit.ctp:21
+#: View/Managers/index.ctp:47
+#: View/Managers/view.ctp:30
+#: View/Operators/add.ctp:19
+#: View/Operators/edit.ctp:21
+#: View/Operators/index.ctp:47
+#: View/Operators/view.ctp:30
+msgid "List Companies"
+msgstr ""
+
+#: View/Branches/add.ctp:24
+#: View/Branches/edit.ctp:26
+#: View/Branches/index.ctp:56
+#: View/Branches/view.ctp:43
+#: View/Categories/add.ctp:19
+#: View/Categories/edit.ctp:21
+#: View/Categories/view.ctp:39;77
+#: View/Companies/index.ctp:13
+#: View/CompaniesCategories/add.ctp:18
+#: View/CompaniesCategories/edit.ctp:20
+#: View/CompaniesCategories/index.ctp:50
+#: View/CompaniesCategories/view.ctp:39
+#: View/CompaniesLikes/add.ctp:18
+#: View/CompaniesLikes/edit.ctp:20
+#: View/CompaniesLikes/index.ctp:48
+#: View/CompaniesLikes/view.ctp:34
+#: View/ComplaintCategories/add.ctp:18
+#: View/ComplaintCategories/edit.ctp:20
+#: View/ComplaintCategories/index.ctp:48
+#: View/ComplaintCategories/view.ctp:39
+#: View/Complaints/add.ctp:120
+#: View/Complaints/edit.ctp:26
+#: View/Complaints/index.ctp:60
+#: View/Complaints/view.ctp:64
+#: View/Managers/add.ctp:20
+#: View/Managers/edit.ctp:22
+#: View/Managers/index.ctp:48
+#: View/Managers/view.ctp:31
+#: View/Operators/add.ctp:20
+#: View/Operators/edit.ctp:22
+#: View/Operators/index.ctp:48
+#: View/Operators/view.ctp:31
+msgid "New Company"
+msgstr ""
+
+#: View/Branches/edit.ctp:4
+#: View/Branches/view.ctp:34
+msgid "Edit Branch"
+msgstr ""
+
+#: View/Branches/edit.ctp:19
+#: View/Branches/index.ctp:28
+#: View/Categories/edit.ctp:18
+#: View/Categories/view.ctp:68
+#: View/Cities/edit.ctp:17
+#: View/Cities/view.ctp:58
+#: View/Companies/index.ctp:38
+#: View/CompaniesCategories/edit.ctp:17
+#: View/CompaniesCategories/index.ctp:26
+#: View/CompaniesLikes/edit.ctp:17
+#: View/CompaniesLikes/index.ctp:24
+#: View/ComplaintCategories/edit.ctp:17
+#: View/ComplaintCategories/index.ctp:24
+#: View/ComplaintComments/edit.ctp:20
+#: View/ComplaintComments/index.ctp:30
+#: View/ComplaintLikes/edit.ctp:17
+#: View/ComplaintLikes/index.ctp:24
+#: View/Complaints/edit.ctp:23
+#: View/Complaints/index.ctp:36
+#: View/Consumers/edit.ctp:16
+#: View/Consumers/index.ctp:39
+#: View/Consumers/view.ctp:63;98;145
+#: View/ContactDetails/edit.ctp:26
+#: View/ContactDetails/index.ctp:44
+#: View/Countries/edit.ctp:16
+#: View/Countries/view.ctp:73;124;159;210;243
+#: View/Courses/edit.ctp:16
+#: View/Courses/view.ctp:49
+#: View/EducationDetails/edit.ctp:19
+#: View/EducationDetails/index.ctp:30
+#: View/Groups/edit.ctp:16
+#: View/Groups/index.ctp:20
+#: View/Levels/edit.ctp:16
+#: View/Levels/view.ctp:49
+#: View/Managers/edit.ctp:17
+#: View/Managers/index.ctp:22
+#: View/MaritalStatuses/edit.ctp:16
+#: View/Nationalities/edit.ctp:16
+#: View/Nationalities/view.ctp:59
+#: View/Operators/edit.ctp:17
+#: View/Operators/index.ctp:22
+#: View/PersonalDetails/edit.ctp:26
+#: View/PersonalDetails/index.ctp:48
+#: View/Provinces/edit.ctp:17
+#: View/Provinces/view.ctp:66;99;134;185;236
+#: View/Users/edit.ctp:21
+#: View/Users/index.ctp:40
+msgid "Delete"
+msgstr ""
+
+#: View/Branches/edit.ctp:19
+#: View/Branches/index.ctp:28
+#: View/Branches/view.ctp:35
+#: View/Categories/edit.ctp:18
+#: View/Categories/index.ctp:38
+#: View/Categories/view.ctp:35;68
+#: View/Cities/edit.ctp:17
+#: View/Cities/index.ctp:36
+#: View/Cities/view.ctp:25;58
+#: View/Companies/index.ctp:38
+#: View/CompaniesCategories/edit.ctp:17
+#: View/CompaniesCategories/index.ctp:26
+#: View/CompaniesCategories/view.ctp:35
+#: View/CompaniesLikes/edit.ctp:17
+#: View/CompaniesLikes/index.ctp:24
+#: View/CompaniesLikes/view.ctp:30
+#: View/ComplaintCategories/edit.ctp:17
+#: View/ComplaintCategories/index.ctp:24
+#: View/ComplaintCategories/view.ctp:35
+#: View/ComplaintComments/edit.ctp:20
+#: View/ComplaintComments/index.ctp:30
+#: View/ComplaintComments/view.ctp:45
+#: View/ComplaintLikes/edit.ctp:17
+#: View/ComplaintLikes/index.ctp:24
+#: View/ComplaintLikes/view.ctp:30
+#: View/Complaints/edit.ctp:23
+#: View/Complaints/index.ctp:36
+#: View/Complaints/view.ctp:60
+#: View/Consumers/edit.ctp:16
+#: View/Consumers/index.ctp:39
+#: View/Consumers/view.ctp:30;63;98;145
+#: View/ContactDetails/edit.ctp:26
+#: View/ContactDetails/index.ctp:44
+#: View/ContactDetails/view.ctp:70
+#: View/Countries/edit.ctp:16
+#: View/Countries/index.ctp:36
+#: View/Countries/view.ctp:20;73;124;159;210;243
+#: View/Courses/edit.ctp:16
+#: View/Courses/index.ctp:36
+#: View/Courses/view.ctp:20;49
+#: View/EducationDetails/edit.ctp:19
+#: View/EducationDetails/index.ctp:30
+#: View/EducationDetails/view.ctp:35
+#: View/Groups/edit.ctp:16
+#: View/Groups/index.ctp:20
+#: View/Groups/view.ctp:30
+#: View/Levels/edit.ctp:16
+#: View/Levels/index.ctp:36
+#: View/Levels/view.ctp:20;49
+#: View/Managers/edit.ctp:17
+#: View/Managers/index.ctp:22
+#: View/Managers/view.ctp:25
+#: View/MaritalStatuses/edit.ctp:16
+#: View/MaritalStatuses/index.ctp:36
+#: View/MaritalStatuses/view.ctp:20
+#: View/Nationalities/edit.ctp:16
+#: View/Nationalities/index.ctp:36
+#: View/Nationalities/view.ctp:20;59
+#: View/Operators/edit.ctp:17
+#: View/Operators/index.ctp:22
+#: View/Operators/view.ctp:25
+#: View/PersonalDetails/edit.ctp:26
+#: View/PersonalDetails/index.ctp:48
+#: View/PersonalDetails/view.ctp:70
+#: View/Provinces/edit.ctp:17
+#: View/Provinces/index.ctp:36
+#: View/Provinces/view.ctp:25;66;99;134;185;236
+#: View/Users/edit.ctp:21
+#: View/Users/index.ctp:40
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: View/Branches/index.ctp:2
+msgid "Branches"
+msgstr ""
+
+#: View/Branches/index.ctp:26
+#: View/Categories/view.ctp:66
+#: View/Cities/view.ctp:56
+#: View/Companies/index.ctp:36
+#: View/CompaniesCategories/index.ctp:24
+#: View/CompaniesLikes/index.ctp:22
+#: View/ComplaintCategories/index.ctp:22
+#: View/ComplaintComments/index.ctp:28
+#: View/ComplaintLikes/index.ctp:22
+#: View/Complaints/index.ctp:34
+#: View/Consumers/index.ctp:37
+#: View/Consumers/view.ctp:61;96;143
+#: View/ContactDetails/index.ctp:42
+#: View/Countries/view.ctp:71;122;157;208;241
+#: View/Courses/view.ctp:47
+#: View/EducationDetails/index.ctp:28
+#: View/Groups/index.ctp:18
+#: View/Levels/view.ctp:47
+#: View/Managers/index.ctp:20
+#: View/Nationalities/view.ctp:57
+#: View/Operators/index.ctp:20
+#: View/PersonalDetails/index.ctp:46
+#: View/Provinces/view.ctp:64;97;132;183;234
+#: View/Users/index.ctp:38
+msgid "View"
+msgstr ""
+
+#: View/Branches/index.ctp:27
+#: View/Categories/view.ctp:67
+#: View/Cities/view.ctp:57
+#: View/Companies/index.ctp:37
+#: View/CompaniesCategories/index.ctp:25
+#: View/CompaniesLikes/index.ctp:23
+#: View/ComplaintCategories/index.ctp:23
+#: View/ComplaintComments/index.ctp:29
+#: View/ComplaintLikes/index.ctp:23
+#: View/Complaints/index.ctp:35
+#: View/Consumers/index.ctp:38
+#: View/Consumers/view.ctp:62;97;144
+#: View/ContactDetails/index.ctp:43
+#: View/Countries/view.ctp:72;123;158;209;242
+#: View/Courses/view.ctp:48
+#: View/EducationDetails/index.ctp:29
+#: View/Groups/index.ctp:19
+#: View/Levels/view.ctp:48
+#: View/Managers/index.ctp:21
+#: View/Nationalities/view.ctp:58
+#: View/Operators/index.ctp:21
+#: View/PersonalDetails/index.ctp:47
+#: View/Provinces/view.ctp:65;98;133;184;235
+#: View/Users/index.ctp:39
+msgid "Edit"
+msgstr ""
+
+#: View/Branches/index.ctp:36
+#: View/CompaniesCategories/index.ctp:34
+#: View/CompaniesLikes/index.ctp:32
+#: View/ComplaintCategories/index.ctp:32
+#: View/ComplaintComments/index.ctp:38
+#: View/ComplaintLikes/index.ctp:32
+#: View/Complaints/index.ctp:44
+#: View/ContactDetails/index.ctp:52
+#: View/EducationDetails/index.ctp:38
+#: View/Groups/index.ctp:28
+#: View/Managers/index.ctp:30
+#: View/Operators/index.ctp:30
+#: View/PersonalDetails/index.ctp:56
+msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
+msgstr ""
+
+#: View/Branches/index.ctp:41
+#: View/CompaniesCategories/index.ctp:39
+#: View/CompaniesLikes/index.ctp:37
+#: View/ComplaintCategories/index.ctp:37
+#: View/ComplaintComments/index.ctp:43
+#: View/ComplaintLikes/index.ctp:37
+#: View/Complaints/index.ctp:49
+#: View/ContactDetails/index.ctp:57
+#: View/EducationDetails/index.ctp:43
+#: View/Groups/index.ctp:33
+#: View/Managers/index.ctp:35
+#: View/Operators/index.ctp:35
+#: View/PersonalDetails/index.ctp:61
+msgid "previous"
+msgstr ""
+
+#: View/Branches/index.ctp:43
+#: View/CompaniesCategories/index.ctp:41
+#: View/CompaniesLikes/index.ctp:39
+#: View/ComplaintCategories/index.ctp:39
+#: View/ComplaintComments/index.ctp:45
+#: View/ComplaintLikes/index.ctp:39
+#: View/Complaints/index.ctp:51
+#: View/ContactDetails/index.ctp:59
+#: View/EducationDetails/index.ctp:45
+#: View/Groups/index.ctp:35
+#: View/Managers/index.ctp:37
+#: View/Operators/index.ctp:37
+#: View/PersonalDetails/index.ctp:63
+msgid "next"
+msgstr ""
+
+#: View/Branches/index.ctp:50
+#: View/Branches/view.ctp:37
+#: View/Cities/add.ctp:20
+#: View/Cities/edit.ctp:22
+#: View/Cities/view.ctp:31;67
+#: View/Provinces/add.ctp:20
+#: View/Provinces/edit.ctp:22
+#: View/Provinces/view.ctp:31;75
+msgid "New Branch"
+msgstr ""
+
+#: View/Branches/view.ctp:2
+msgid "Branch"
+msgstr ""
+
+#: View/Branches/view.ctp:4
+#: View/Categories/view.ctp:4;47
+#: View/Cities/view.ctp:4;39
+#: View/Companies/index.ctp:20
+#: View/CompaniesCategories/view.ctp:4
+#: View/CompaniesLikes/view.ctp:4
+#: View/ComplaintCategories/view.ctp:4
+#: View/ComplaintComments/view.ctp:4
+#: View/ComplaintLikes/view.ctp:4
+#: View/Complaints/view.ctp:4
+#: View/Consumers/index.ctp:21
+#: View/Consumers/view.ctp:4;46;81;116
+#: View/ContactDetails/view.ctp:4
+#: View/Countries/view.ctp:4;40;91;142;177;228
+#: View/Courses/view.ctp:4;32
+#: View/EducationDetails/view.ctp:4
+#: View/Groups/view.ctp:4
+#: View/Levels/view.ctp:4;32
+#: View/Managers/view.ctp:4
+#: View/MaritalStatuses/view.ctp:4
+#: View/Nationalities/view.ctp:4;32
+#: View/Operators/view.ctp:4
+#: View/PersonalDetails/view.ctp:4
+#: View/Provinces/view.ctp:4;47;84;117;152;203
+#: View/Users/index.ctp:20
+msgid "Id"
+msgstr ""
+
+#: View/Branches/view.ctp:9
+#: View/Cities/view.ctp:9
+#: View/Companies/add.ctp:35
+#: View/Companies/edit.ctp:36
+#: View/Complaints/add.ctp:35
+#: View/ContactDetails/view.ctp:14
+#: View/Elements/companies/dialog_edit_company.ctp:95
+#: View/PersonalDetails/view.ctp:49
+#: View/Provinces/view.ctp:2
+msgid "Province"
+msgstr "Província"
+
+#: View/Branches/view.ctp:14
+#: View/Cities/view.ctp:2
+#: View/Companies/add.ctp:38
+#: View/Companies/edit.ctp:39
+#: View/Complaints/add.ctp:38
+#: View/ContactDetails/view.ctp:19
+#: View/Elements/companies/dialog_edit_company.ctp:98
+#: View/Elements/contactdetails/contact_details_form.ctp:27
+#: View/PersonalDetails/view.ctp:54
+#: View/Users/view.ctp:87
+msgid "City"
+msgstr "Cidade"
+
+#: View/Branches/view.ctp:19
+#: View/Categories/view.ctp:51
+#: View/Cities/view.ctp:42
+#: View/Elements/dialog_add_company.ctp:40
+#: View/Elements/dialog_add_consumer.ctp:31
+#: View/Provinces/view.ctp:50
+msgid "Address"
+msgstr "Endereço"
+
+#: View/Branches/view.ctp:24
+#: View/CompaniesCategories/view.ctp:9
+#: View/CompaniesLikes/view.ctp:9
+#: View/ComplaintCategories/view.ctp:9
+#: View/Complaints/view.ctp:9
+#: View/Managers/view.ctp:14
+#: View/Operators/view.ctp:14
+msgid "Company"
+msgstr "Empresa"
+
+#: View/Branches/view.ctp:35
+msgid "Delete Branch"
+msgstr ""
+
+#: View/Categories/add.ctp:4
+#: View/Elements/dialog_add_category.ctp:1
+msgid "Add Category"
+msgstr "Adicionar Categoria"
+
+#: View/Categories/add.ctp:17
+#: View/Categories/edit.ctp:19
+#: View/Categories/view.ctp:36
+#: View/CompaniesCategories/add.ctp:19
+#: View/CompaniesCategories/edit.ctp:21
+#: View/CompaniesCategories/index.ctp:51
+#: View/CompaniesCategories/view.ctp:40
+msgid "List Categories"
+msgstr ""
+
+#: View/Categories/edit.ctp:4
+#: View/Categories/view.ctp:34
+msgid "Edit Category"
+msgstr ""
+
+#: View/Categories/index.ctp:6
+#: View/Companies/view.ctp:128
+msgid "Categories"
+msgstr "Categorias"
+
+#: View/Categories/index.ctp:13
+#: View/Categories/view.ctp:37
+#: View/CompaniesCategories/add.ctp:20
+#: View/CompaniesCategories/edit.ctp:22
+#: View/CompaniesCategories/index.ctp:52
+#: View/CompaniesCategories/view.ctp:41
+msgid "New Category"
+msgstr "Nova Categoria"
+
+#: View/Categories/index.ctp:20
+#: View/Cities/index.ctp:20
+#: View/Countries/index.ctp:20
+#: View/Courses/index.ctp:20
+#: View/Levels/index.ctp:20
+#: View/MaritalStatuses/index.ctp:20
+#: View/Nationalities/index.ctp:20
+#: View/Provinces/index.ctp:20
+msgid "id"
+msgstr ""
+
+#: View/Categories/index.ctp:21
+#: View/Cities/index.ctp:21
+#: View/Countries/index.ctp:21
+#: View/Courses/index.ctp:21
+#: View/Levels/index.ctp:21
+#: View/MaritalStatuses/index.ctp:21
+#: View/Nationalities/index.ctp:21
+#: View/Provinces/index.ctp:21
+msgid "name"
+msgstr "nome"
+
+#: View/Categories/index.ctp:22
+msgid "description"
+msgstr "descrição"
+
+#: View/Categories/index.ctp:23
+#: View/Cities/index.ctp:22
+#: View/Countries/index.ctp:22
+#: View/Courses/index.ctp:22
+#: View/Levels/index.ctp:22
+#: View/MaritalStatuses/index.ctp:22
+#: View/Nationalities/index.ctp:22
+#: View/Provinces/index.ctp:22
+msgid "created"
+msgstr "criado"
+
+#: View/Categories/index.ctp:24
+#: View/Cities/index.ctp:23
+#: View/Countries/index.ctp:23
+#: View/Courses/index.ctp:23
+#: View/Levels/index.ctp:23
+#: View/MaritalStatuses/index.ctp:23
+#: View/Nationalities/index.ctp:23
+#: View/Provinces/index.ctp:23
+msgid "modified"
+msgstr "modificado"
+
+#: View/Categories/view.ctp:2
+#: View/CompaniesCategories/view.ctp:14
+msgid "Category"
+msgstr ""
+
+#: View/Categories/view.ctp:9;48
+#: View/Cities/view.ctp:14
+#: View/Companies/index.ctp:21
+#: View/ComplaintCategories/view.ctp:14
+#: View/Consumers/index.ctp:22
+#: View/Countries/view.ctp:9;229
+#: View/Courses/view.ctp:9
+#: View/Elements/dialog_add_category.ctp:13
+#: View/Elements/dialog_add_company.ctp:22
+#: View/Elements/dialog_add_consumer.ctp:13
+#: View/Groups/view.ctp:9
+#: View/Levels/view.ctp:9
+#: View/MaritalStatuses/view.ctp:9
+#: View/Nationalities/view.ctp:9
+#: View/Provinces/view.ctp:9;86
+#: View/Users/view.ctp:48
+msgid "Name"
+msgstr "Nome"
+
+#: View/Categories/view.ctp:14
+#: View/Complaints/view.ctp:34
+#: View/Consumers/view.ctp:122
+#: View/Elements/dialog_add_category.ctp:22
+msgid "Description"
+msgstr ""
+
+#: View/Categories/view.ctp:19
+#: View/Companies/view.ctp:87
+#: View/CompaniesCategories/view.ctp:19
+#: View/CompaniesLikes/view.ctp:19
+#: View/ComplaintCategories/view.ctp:19
+#: View/ComplaintComments/view.ctp:19
+#: View/ComplaintLikes/view.ctp:19
+#: View/Complaints/view.ctp:39
+#: View/Consumers/index.ctp:23
+#: View/Consumers/view.ctp:14;49;84;123
+#: View/Countries/view.ctp:50
+#: View/Groups/view.ctp:14
+#: View/Nationalities/view.ctp:36
+#: View/Provinces/view.ctp:119
+msgid "Created"
+msgstr "Criado"
+
+#: View/Categories/view.ctp:24
+#: View/CompaniesCategories/view.ctp:24
+#: View/ComplaintCategories/view.ctp:24
+#: View/Consumers/index.ctp:24
+#: View/Consumers/view.ctp:19
+#: View/Countries/view.ctp:51
+#: View/Groups/view.ctp:19
+#: View/Nationalities/view.ctp:37
+#: View/Provinces/view.ctp:120
+msgid "Modified"
+msgstr "Modificado"
+
+#: View/Categories/view.ctp:35
+msgid "Delete Category"
+msgstr ""
+
+#: View/Categories/view.ctp:43
+msgid "Related Companies"
+msgstr ""
+
+#: View/Categories/view.ctp:49
+#: View/Companies/index.ctp:23
+#: View/Elements/dialog_add_company.ctp:31
+#: View/Elements/dialog_add_consumer.ctp:22
+msgid "Email"
+msgstr ""
+
+#: View/Categories/view.ctp:50
+msgid "Logo"
+msgstr ""
+
+#: View/Categories/view.ctp:52
+#: View/Companies/index.ctp:22
+#: View/Elements/dialog_add_company.ctp:49
+msgid "Website"
+msgstr ""
+
+#: View/Cities/add.ctp:4
+msgid "Add City"
+msgstr ""
+
+#: View/Cities/edit.ctp:4
+#: View/Cities/view.ctp:24
+msgid "Edit City"
+msgstr ""
+
+#: View/Cities/index.ctp:6
+#: View/Elements/sidebar.ctp:51
+msgid "Cities"
+msgstr "Cidades"
+
+#: View/Cities/view.ctp:25
+msgid "Delete City"
+msgstr ""
+
+#: View/Cities/view.ctp:35
+#: View/Provinces/view.ctp:43
+msgid "Related Branches"
+msgstr ""
+
+#: View/Cities/view.ctp:40
+#: View/Countries/view.ctp:47;93;186
+#: View/Provinces/view.ctp:48;85;154;212
+msgid "Province Id"
+msgstr ""
+
+#: View/Cities/view.ctp:41
+#: View/Countries/view.ctp:48;94;187
+#: View/Provinces/view.ctp:49;155;213
+msgid "City Id"
+msgstr ""
+
+#: View/Cities/view.ctp:43
+#: View/Consumers/view.ctp:47;117
+#: View/Provinces/view.ctp:51
+msgid "Company Id"
+msgstr ""
+
+#: View/Companies/add.ctp:18
+#: View/Companies/edit.ctp:19
+#: View/Elements/companies/dialog_edit_company.ctp:78
+msgid "Company Details"
+msgstr ""
+
+#: View/Companies/add.ctp:32
+#: View/Companies/edit.ctp:33
+#: View/Complaints/add.ctp:32
+#: View/ContactDetails/view.ctp:9
+#: View/Countries/view.ctp:2
+#: View/EducationDetails/view.ctp:19
+#: View/Elements/companies/dialog_edit_company.ctp:92
+#: View/Elements/contactdetails/contact_details_form.ctp:21
+#: View/Elements/educationdetails/education_details_form.ctp:27
+#: View/PersonalDetails/view.ctp:44
+#: View/Provinces/view.ctp:14
+#: View/Users/view.ctp:81;126
+msgid "Country"
+msgstr "País"
+
+#: View/Companies/index.ctp:6
+#: View/Elements/sidebar.ctp:10
+msgid "Companies"
+msgstr "Empresas"
+
+#: View/Companies/view.ctp:46
+msgid "Send Complaint"
+msgstr "Enviar Reclamação"
+
+#: View/Companies/view.ctp:78
+msgid "Phone"
+msgstr ""
+
+#: View/Companies/view.ctp:81
+msgid "Fax"
+msgstr ""
+
+#: View/Companies/view.ctp:84
+#: View/ContactDetails/view.ctp:39
+#: View/Countries/view.ctp:98
+#: View/Provinces/view.ctp:159
+#: View/Users/view.ctp:99
+msgid "Mobile"
+msgstr ""
+
+#: View/Companies/view.ctp:181
+msgid "Deactivate Company"
+msgstr "Desactivar Empresa"
+
+#: View/CompaniesCategories/add.ctp:4
+msgid "Add Companies Category"
+msgstr ""
+
+#: View/CompaniesCategories/add.ctp:16
+#: View/CompaniesCategories/edit.ctp:18
+#: View/CompaniesCategories/view.ctp:36
+msgid "List Companies Categories"
+msgstr ""
+
+#: View/CompaniesCategories/edit.ctp:4
+#: View/CompaniesCategories/view.ctp:34
+msgid "Edit Companies Category"
+msgstr ""
+
+#: View/CompaniesCategories/index.ctp:2
+msgid "Companies Categories"
+msgstr ""
+
+#: View/CompaniesCategories/index.ctp:48
+#: View/CompaniesCategories/view.ctp:37
+msgid "New Companies Category"
+msgstr ""
+
+#: View/CompaniesCategories/view.ctp:2
+msgid "Companies Category"
+msgstr ""
+
+#: View/CompaniesCategories/view.ctp:35
+msgid "Delete Companies Category"
+msgstr ""
+
+#: View/CompaniesLikes/add.ctp:4
+msgid "Add Companies Like"
+msgstr ""
+
+#: View/CompaniesLikes/add.ctp:16
+#: View/CompaniesLikes/edit.ctp:18
+#: View/CompaniesLikes/view.ctp:31
+msgid "List Companies Likes"
+msgstr ""
+
+#: View/CompaniesLikes/add.ctp:19
+#: View/CompaniesLikes/edit.ctp:21
+#: View/CompaniesLikes/index.ctp:49
+#: View/CompaniesLikes/view.ctp:35
+#: View/ComplaintLikes/add.ctp:19
+#: View/ComplaintLikes/edit.ctp:21
+#: View/ComplaintLikes/index.ctp:49
+#: View/ComplaintLikes/view.ctp:35
+#: View/Complaints/add.ctp:121
+#: View/Complaints/edit.ctp:27
+#: View/Complaints/index.ctp:61
+#: View/Complaints/view.ctp:65
+#: View/Consumers/edit.ctp:17
+#: View/Consumers/view.ctp:31
+#: View/Countries/add.ctp:16
+#: View/Countries/edit.ctp:18
+#: View/Countries/view.ctp:23
+#: View/Nationalities/add.ctp:16
+#: View/Nationalities/edit.ctp:18
+#: View/Nationalities/view.ctp:23
+#: View/Provinces/add.ctp:23
+#: View/Provinces/edit.ctp:25
+#: View/Provinces/view.ctp:34
+#: View/Users/edit.ctp:25
+msgid "List Consumers"
+msgstr ""
+
+#: View/CompaniesLikes/add.ctp:20
+#: View/CompaniesLikes/edit.ctp:22
+#: View/CompaniesLikes/index.ctp:50
+#: View/CompaniesLikes/view.ctp:36
+#: View/ComplaintLikes/add.ctp:20
+#: View/ComplaintLikes/edit.ctp:22
+#: View/ComplaintLikes/index.ctp:50
+#: View/ComplaintLikes/view.ctp:36
+#: View/Complaints/add.ctp:122
+#: View/Complaints/edit.ctp:28
+#: View/Complaints/index.ctp:62
+#: View/Complaints/view.ctp:66
+#: View/Consumers/index.ctp:14
+#: View/Consumers/view.ctp:32
+#: View/Countries/add.ctp:17
+#: View/Countries/edit.ctp:19
+#: View/Countries/view.ctp:24;82
+#: View/Nationalities/add.ctp:17
+#: View/Nationalities/edit.ctp:19
+#: View/Nationalities/view.ctp:24;68
+#: View/Provinces/add.ctp:24
+#: View/Provinces/edit.ctp:26
+#: View/Provinces/view.ctp:35;143
+#: View/Users/edit.ctp:26
+msgid "New Consumer"
+msgstr ""
+
+#: View/CompaniesLikes/edit.ctp:4
+#: View/CompaniesLikes/view.ctp:29
+msgid "Edit Companies Like"
+msgstr ""
+
+#: View/CompaniesLikes/index.ctp:2
+msgid "Companies Likes"
+msgstr ""
+
+#: View/CompaniesLikes/index.ctp:46
+#: View/CompaniesLikes/view.ctp:32
+msgid "New Companies Like"
+msgstr ""
+
+#: View/CompaniesLikes/view.ctp:2
+msgid "Companies Like"
+msgstr ""
+
+#: View/CompaniesLikes/view.ctp:14
+#: View/ComplaintLikes/view.ctp:14
+#: View/Complaints/view.ctp:14
+#: View/Consumers/view.ctp:2
+msgid "Consumer"
+msgstr "Consumidor"
+
+#: View/CompaniesLikes/view.ctp:30
+msgid "Delete Companies Like"
+msgstr ""
+
+#: View/ComplaintCategories/add.ctp:4
+msgid "Add Complaint Category"
+msgstr "Adicionar Categoria de Reclamação"
+
+#: View/ComplaintCategories/add.ctp:16
+#: View/ComplaintCategories/edit.ctp:18
+#: View/ComplaintCategories/view.ctp:36
+msgid "List Complaint Categories"
+msgstr ""
+
+#: View/ComplaintCategories/edit.ctp:4
+#: View/ComplaintCategories/view.ctp:34
+msgid "Edit Complaint Category"
+msgstr ""
+
+#: View/ComplaintCategories/index.ctp:2
+msgid "Complaint Categories"
+msgstr "Categorias de Reclamação"
+
+#: View/ComplaintCategories/index.ctp:46
+#: View/ComplaintCategories/view.ctp:37
+msgid "New Complaint Category"
+msgstr ""
+
+#: View/ComplaintCategories/view.ctp:2
+msgid "Complaint Category"
+msgstr ""
+
+#: View/ComplaintCategories/view.ctp:35
+msgid "Delete Complaint Category"
+msgstr ""
+
+#: View/ComplaintComments/add.ctp:4
+msgid "Add Complaint Comment"
+msgstr ""
+
+#: View/ComplaintComments/add.ctp:19
+#: View/ComplaintComments/edit.ctp:21
+#: View/ComplaintComments/view.ctp:46
+msgid "List Complaint Comments"
+msgstr ""
+
+#: View/ComplaintComments/add.ctp:20
+#: View/ComplaintComments/edit.ctp:22
+#: View/ComplaintComments/index.ctp:53
+#: View/ComplaintComments/view.ctp:48
+#: View/ContactDetails/add.ctp:32
+#: View/ContactDetails/edit.ctp:34
+#: View/ContactDetails/index.ctp:73
+#: View/ContactDetails/view.ctp:79
+#: View/EducationDetails/add.ctp:25
+#: View/EducationDetails/edit.ctp:27
+#: View/EducationDetails/index.ctp:59
+#: View/EducationDetails/view.ctp:44
+#: View/Managers/add.ctp:17
+#: View/Managers/edit.ctp:19
+#: View/Managers/index.ctp:45
+#: View/Managers/view.ctp:28
+#: View/Operators/add.ctp:17
+#: View/Operators/edit.ctp:19
+#: View/Operators/index.ctp:45
+#: View/Operators/view.ctp:28
+#: View/PersonalDetails/add.ctp:36
+#: View/PersonalDetails/edit.ctp:38
+#: View/PersonalDetails/index.ctp:81
+#: View/PersonalDetails/view.ctp:83
+#: View/Users/edit.ctp:22
+msgid "List Users"
+msgstr ""
+
+#: View/ComplaintComments/add.ctp:21
+#: View/ComplaintComments/edit.ctp:23
+#: View/ComplaintComments/index.ctp:54
+#: View/ComplaintComments/view.ctp:49
+#: View/ContactDetails/add.ctp:33
+#: View/ContactDetails/edit.ctp:35
+#: View/ContactDetails/index.ctp:74
+#: View/ContactDetails/view.ctp:80
+#: View/EducationDetails/add.ctp:26
+#: View/EducationDetails/edit.ctp:28
+#: View/EducationDetails/index.ctp:60
+#: View/EducationDetails/view.ctp:45
+#: View/Managers/add.ctp:18
+#: View/Managers/edit.ctp:20
+#: View/Managers/index.ctp:46
+#: View/Managers/view.ctp:29
+#: View/Operators/add.ctp:18
+#: View/Operators/edit.ctp:20
+#: View/Operators/index.ctp:46
+#: View/Operators/view.ctp:29
+#: View/PersonalDetails/add.ctp:37
+#: View/PersonalDetails/edit.ctp:39
+#: View/PersonalDetails/index.ctp:82
+#: View/PersonalDetails/view.ctp:84
+msgid "New User"
+msgstr ""
+
+#: View/ComplaintComments/add.ctp:22
+#: View/ComplaintComments/edit.ctp:24
+#: View/ComplaintComments/index.ctp:55
+#: View/ComplaintComments/view.ctp:50
+#: View/ComplaintLikes/add.ctp:17
+#: View/ComplaintLikes/edit.ctp:19
+#: View/ComplaintLikes/index.ctp:47
+#: View/ComplaintLikes/view.ctp:33
+#: View/Complaints/add.ctp:118
+#: View/Complaints/edit.ctp:24
+#: View/Complaints/view.ctp:61
+#: View/Consumers/edit.ctp:22
+#: View/Consumers/view.ctp:37
+msgid "List Complaints"
+msgstr ""
+
+#: View/ComplaintComments/add.ctp:23
+#: View/ComplaintComments/edit.ctp:25
+#: View/ComplaintComments/index.ctp:56
+#: View/ComplaintComments/view.ctp:51
+#: View/ComplaintLikes/add.ctp:18
+#: View/ComplaintLikes/edit.ctp:20
+#: View/ComplaintLikes/index.ctp:48
+#: View/ComplaintLikes/view.ctp:34
+#: View/Complaints/index.ctp:58
+#: View/Complaints/view.ctp:62
+#: View/Consumers/edit.ctp:23
+#: View/Consumers/view.ctp:38;154
+msgid "New Complaint"
+msgstr ""
+
+#: View/ComplaintComments/edit.ctp:4
+#: View/ComplaintComments/view.ctp:44
+msgid "Edit Complaint Comment"
+msgstr ""
+
+#: View/ComplaintComments/index.ctp:2
+msgid "Complaint Comments"
+msgstr ""
+
+#: View/ComplaintComments/index.ctp:52
+#: View/ComplaintComments/view.ctp:47
+msgid "New Complaint Comment"
+msgstr ""
+
+#: View/ComplaintComments/view.ctp:2
+msgid "Complaint Comment"
+msgstr ""
+
+#: View/ComplaintComments/view.ctp:9
+#: View/ContactDetails/view.ctp:59
+#: View/EducationDetails/view.ctp:24
+#: View/Managers/view.ctp:9
+#: View/Operators/view.ctp:9
+#: View/PersonalDetails/view.ctp:59
+msgid "User"
+msgstr ""
+
+#: View/ComplaintComments/view.ctp:14
+msgid "Comment"
+msgstr ""
+
+#: View/ComplaintComments/view.ctp:24
+msgid "Is Deleted"
+msgstr ""
+
+#: View/ComplaintComments/view.ctp:29
+#: View/Complaints/view.ctp:19
+#: View/Consumers/view.ctp:119
+#: View/Users/view.ctp:144
+msgid "Status"
+msgstr ""
+
+#: View/ComplaintComments/view.ctp:34
+#: View/ComplaintLikes/view.ctp:9
+#: View/Complaints/view.ctp:2
+msgid "Complaint"
+msgstr ""
+
+#: View/ComplaintComments/view.ctp:45
+msgid "Delete Complaint Comment"
+msgstr ""
+
+#: View/ComplaintLikes/add.ctp:4
+msgid "Add Complaint Like"
+msgstr ""
+
+#: View/ComplaintLikes/add.ctp:16
+#: View/ComplaintLikes/edit.ctp:18
+#: View/ComplaintLikes/view.ctp:31
+#: View/Consumers/edit.ctp:20
+#: View/Consumers/view.ctp:35
+msgid "List Complaint Likes"
+msgstr ""
+
+#: View/ComplaintLikes/edit.ctp:4
+#: View/ComplaintLikes/view.ctp:29
+msgid "Edit Complaint Like"
+msgstr ""
+
+#: View/ComplaintLikes/index.ctp:2
+msgid "Complaint Likes"
+msgstr ""
+
+#: View/ComplaintLikes/index.ctp:46
+#: View/ComplaintLikes/view.ctp:32
+#: View/Consumers/edit.ctp:21
+#: View/Consumers/view.ctp:36;107
+msgid "New Complaint Like"
+msgstr ""
+
+#: View/ComplaintLikes/view.ctp:2
+msgid "Complaint Like"
+msgstr ""
+
+#: View/ComplaintLikes/view.ctp:30
+msgid "Delete Complaint Like"
+msgstr ""
+
+#: View/Complaints/add.ctp:18
+msgid "Complaint Details"
+msgstr ""
+
+#: View/Complaints/add.ctp:100
+msgid "Add Complaint"
+msgstr ""
+
+#: View/Complaints/edit.ctp:4
+#: View/Complaints/view.ctp:59
+msgid "Edit Complaint"
+msgstr ""
+
+#: View/Complaints/index.ctp:2
+#: View/Elements/sidebar.ctp:26
+msgid "Complaints"
+msgstr "Reclamaçãoes"
+
+#: View/Complaints/view.ctp:24
+#: View/Consumers/view.ctp:120
+msgid "Rate"
+msgstr ""
+
+#: View/Complaints/view.ctp:29
+#: View/Consumers/view.ctp:121
+msgid "Review"
+msgstr ""
+
+#: View/Complaints/view.ctp:44
+#: View/Consumers/view.ctp:124
+msgid "Privacy"
+msgstr ""
+
+#: View/Complaints/view.ctp:49
+#: View/Consumers/view.ctp:125
+msgid "Allow Comments"
+msgstr ""
+
+#: View/Complaints/view.ctp:60
+msgid "Delete Complaint"
+msgstr ""
+
+#: View/Consumers/add.ctp:2
+#: View/Elements/dialog_add_consumer.ctp:45
+msgid "Add Consumer"
+msgstr "Adicionar Consumidor"
+
+#: View/Consumers/edit.ctp:4
+#: View/Consumers/view.ctp:29
+msgid "Edit Consumer"
+msgstr ""
+
+#: View/Consumers/edit.ctp:18
+#: View/Consumers/view.ctp:33
+msgid "List Company Likes"
+msgstr ""
+
+#: View/Consumers/edit.ctp:19
+#: View/Consumers/view.ctp:34;72
+msgid "New Company Like"
+msgstr ""
+
+#: View/Consumers/index.ctp:7
+#: View/Elements/sidebar.ctp:18
+msgid "Consumers"
+msgstr "Consumidores"
+
+#: View/Consumers/view.ctp:9
+#: View/Countries/view.ctp:45;102;188
+#: View/Provinces/view.ctp:118;163;214
+msgid "User Id"
+msgstr ""
+
+#: View/Consumers/view.ctp:30
+msgid "Delete Consumer"
+msgstr ""
+
+#: View/Consumers/view.ctp:42
+msgid "Related Company Likes"
+msgstr ""
+
+#: View/Consumers/view.ctp:48;83;118
+msgid "Consumer Id"
+msgstr ""
+
+#: View/Consumers/view.ctp:77
+msgid "Related Complaint Likes"
+msgstr ""
+
+#: View/Consumers/view.ctp:82
+msgid "Complaint Id"
+msgstr ""
+
+#: View/Consumers/view.ctp:112
+msgid "Related Complaints"
+msgstr ""
+
+#: View/ContactDetails/add.ctp:4
+msgid "Add Contact Detail"
+msgstr ""
+
+#: View/ContactDetails/add.ctp:25
+#: View/ContactDetails/edit.ctp:27
+#: View/ContactDetails/view.ctp:71
+#: View/Countries/add.ctp:18
+#: View/Countries/edit.ctp:20
+#: View/Countries/view.ctp:25
+#: View/Provinces/add.ctp:25
+#: View/Provinces/edit.ctp:27
+#: View/Provinces/view.ctp:36
+#: View/Users/edit.ctp:27
+msgid "List Contact Details"
+msgstr ""
+
+#: View/ContactDetails/add.ctp:26
+#: View/ContactDetails/edit.ctp:28
+#: View/ContactDetails/index.ctp:67
+#: View/ContactDetails/view.ctp:73
+#: View/Countries/add.ctp:15
+#: View/Countries/edit.ctp:17
+#: View/Countries/view.ctp:21
+#: View/EducationDetails/add.ctp:23
+#: View/EducationDetails/edit.ctp:25
+#: View/EducationDetails/index.ctp:57
+#: View/EducationDetails/view.ctp:42
+#: View/PersonalDetails/add.ctp:30
+#: View/PersonalDetails/edit.ctp:32
+#: View/PersonalDetails/index.ctp:75
+#: View/PersonalDetails/view.ctp:77
+#: View/Provinces/add.ctp:17
+#: View/Provinces/edit.ctp:19
+#: View/Provinces/view.ctp:28
+msgid "List Countries"
+msgstr ""
+
+#: View/ContactDetails/add.ctp:27
+#: View/ContactDetails/edit.ctp:29
+#: View/ContactDetails/index.ctp:68
+#: View/ContactDetails/view.ctp:74
+#: View/Countries/index.ctp:13
+#: View/Countries/view.ctp:22
+#: View/EducationDetails/add.ctp:24
+#: View/EducationDetails/edit.ctp:26
+#: View/EducationDetails/index.ctp:58
+#: View/EducationDetails/view.ctp:43
+#: View/PersonalDetails/add.ctp:31
+#: View/PersonalDetails/edit.ctp:33
+#: View/PersonalDetails/index.ctp:76
+#: View/PersonalDetails/view.ctp:78
+#: View/Provinces/add.ctp:18
+#: View/Provinces/edit.ctp:20
+#: View/Provinces/view.ctp:29
+msgid "New Country"
+msgstr ""
+
+#: View/ContactDetails/edit.ctp:4
+#: View/ContactDetails/view.ctp:69
+msgid "Edit Contact Detail"
+msgstr ""
+
+#: View/ContactDetails/index.ctp:2
+#: View/Elements/contactdetails/contact_details_form.ctp:15
+msgid "Contact Details"
+msgstr "Contacto"
+
+#: View/ContactDetails/index.ctp:66
+#: View/ContactDetails/view.ctp:72
+#: View/Countries/add.ctp:19
+#: View/Countries/edit.ctp:21
+#: View/Countries/view.ctp:26;133
+#: View/Provinces/add.ctp:26
+#: View/Provinces/edit.ctp:28
+#: View/Provinces/view.ctp:37;194
+#: View/Users/edit.ctp:28
+msgid "New Contact Detail"
+msgstr ""
+
+#: View/ContactDetails/view.ctp:2
+msgid "Contact Detail"
+msgstr ""
+
+#: View/ContactDetails/view.ctp:24
+#: View/Countries/view.ctp:95
+#: View/Provinces/view.ctp:156
+#: View/Users/view.ctp:90
+msgid "Address Street"
+msgstr ""
+
+#: View/ContactDetails/view.ctp:29
+#: View/Countries/view.ctp:96
+#: View/Provinces/view.ctp:157
+msgid "Zipcode"
+msgstr ""
+
+#: View/ContactDetails/view.ctp:34
+#: View/Countries/view.ctp:97
+#: View/Provinces/view.ctp:158
+#: View/Users/view.ctp:96
+msgid "Home Telephone"
+msgstr ""
+
+#: View/ContactDetails/view.ctp:44
+#: View/Countries/view.ctp:99
+#: View/Provinces/view.ctp:160
+#: View/Users/view.ctp:102
+msgid "Personal Email"
+msgstr "Email Pessoal"
+
+#: View/ContactDetails/view.ctp:49
+#: View/Countries/view.ctp:100
+#: View/Provinces/view.ctp:161
+#: View/Users/view.ctp:105
+msgid "Work Email"
+msgstr "Email de Trabalho"
+
+#: View/ContactDetails/view.ctp:54
+#: View/Countries/view.ctp:101
+#: View/Provinces/view.ctp:162
+#: View/Users/view.ctp:108
+msgid "Other Email"
+msgstr "Outro Email"
+
+#: View/ContactDetails/view.ctp:70
+msgid "Delete Contact Detail"
+msgstr ""
+
+#: View/Countries/add.ctp:4
+msgid "Add Country"
+msgstr ""
+
+#: View/Countries/add.ctp:20
+#: View/Countries/edit.ctp:22
+#: View/Countries/view.ctp:27
+#: View/Courses/add.ctp:16
+#: View/Courses/edit.ctp:18
+#: View/Courses/view.ctp:23
+#: View/EducationDetails/add.ctp:18
+#: View/EducationDetails/edit.ctp:20
+#: View/EducationDetails/view.ctp:36
+#: View/Levels/add.ctp:16
+#: View/Levels/edit.ctp:18
+#: View/Levels/view.ctp:23
+msgid "List Education Details"
+msgstr ""
+
+#: View/Countries/add.ctp:21
+#: View/Countries/edit.ctp:23
+#: View/Countries/view.ctp:28;168
+#: View/Courses/add.ctp:17
+#: View/Courses/edit.ctp:19
+#: View/Courses/view.ctp:24;58
+#: View/EducationDetails/index.ctp:52
+#: View/EducationDetails/view.ctp:37
+#: View/Levels/add.ctp:17
+#: View/Levels/edit.ctp:19
+#: View/Levels/view.ctp:24;58
+msgid "New Education Detail"
+msgstr ""
+
+#: View/Countries/add.ctp:22
+#: View/Countries/edit.ctp:24
+#: View/Countries/view.ctp:29
+#: View/PersonalDetails/add.ctp:25
+#: View/PersonalDetails/edit.ctp:27
+#: View/PersonalDetails/view.ctp:71
+#: View/Provinces/add.ctp:27
+#: View/Provinces/edit.ctp:29
+#: View/Provinces/view.ctp:38
+#: View/Users/edit.ctp:33
+msgid "List Personal Details"
+msgstr ""
+
+#: View/Countries/add.ctp:23
+#: View/Countries/edit.ctp:25
+#: View/Countries/view.ctp:30;219
+#: View/PersonalDetails/index.ctp:70
+#: View/PersonalDetails/view.ctp:72
+#: View/Provinces/add.ctp:28
+#: View/Provinces/edit.ctp:30
+#: View/Provinces/view.ctp:39;245
+#: View/Users/edit.ctp:34
+msgid "New Personal Detail"
+msgstr ""
+
+#: View/Countries/edit.ctp:4
+#: View/Countries/view.ctp:19
+msgid "Edit Country"
+msgstr ""
+
+#: View/Countries/index.ctp:6
+#: View/Elements/sidebar.ctp:49
+msgid "Countries"
+msgstr "Países"
+
+#: View/Countries/view.ctp:20
+msgid "Delete Country"
+msgstr ""
+
+#: View/Countries/view.ctp:36
+#: View/Nationalities/view.ctp:28
+#: View/Provinces/view.ctp:113
+msgid "Related Consumers"
+msgstr ""
+
+#: View/Countries/view.ctp:41;182
+#: View/Nationalities/view.ctp:33
+#: View/PersonalDetails/view.ctp:29
+#: View/Provinces/view.ctp:208
+#: View/Users/view.ctp:51
+msgid "Birthday"
+msgstr "Data de Nascimento"
+
+#: View/Countries/view.ctp:42
+#: View/Nationalities/view.ctp:34
+msgid "Hometown"
+msgstr ""
+
+#: View/Countries/view.ctp:43;184
+#: View/Nationalities/view.ctp:38
+#: View/Provinces/view.ctp:210
+msgid "Nationality Id"
+msgstr ""
+
+#: View/Countries/view.ctp:44;181
+#: View/Nationalities/view.ctp:39
+#: View/PersonalDetails/view.ctp:24
+#: View/Provinces/view.ctp:207
+#: View/Users/view.ctp:54
+msgid "Gender"
+msgstr "Gênero"
+
+#: View/Countries/view.ctp:46;92;145;185;230
+#: View/Courses/view.ctp:35
+#: View/Levels/view.ctp:35
+#: View/Provinces/view.ctp:153;211
+msgid "Country Id"
+msgstr ""
+
+#: View/Countries/view.ctp:49
+msgid "Cell No"
+msgstr ""
+
+#: View/Countries/view.ctp:87
+#: View/Provinces/view.ctp:148
+msgid "Related Contact Details"
+msgstr ""
+
+#: View/Countries/view.ctp:138
+#: View/Courses/view.ctp:28
+#: View/Levels/view.ctp:28
+msgid "Related Education Details"
+msgstr ""
+
+#: View/Countries/view.ctp:143
+#: View/Courses/view.ctp:33
+#: View/Levels/view.ctp:33
+msgid "Level Id"
+msgstr ""
+
+#: View/Countries/view.ctp:144
+#: View/Courses/view.ctp:34
+#: View/Levels/view.ctp:34
+msgid "Course Id"
+msgstr ""
+
+#: View/Countries/view.ctp:173
+#: View/Provinces/view.ctp:199
+msgid "Related Personal Details"
+msgstr ""
+
+#: View/Countries/view.ctp:178
+#: View/PersonalDetails/view.ctp:9
+#: View/Provinces/view.ctp:204
+msgid "First Name"
+msgstr ""
+
+#: View/Countries/view.ctp:179
+#: View/PersonalDetails/view.ctp:14
+#: View/Provinces/view.ctp:205
+msgid "Middle Name"
+msgstr ""
+
+#: View/Countries/view.ctp:180
+#: View/PersonalDetails/view.ctp:19
+#: View/Provinces/view.ctp:206
+msgid "Last Name"
+msgstr ""
+
+#: View/Countries/view.ctp:183
+#: View/MaritalStatuses/view.ctp:2
+#: View/PersonalDetails/view.ctp:34
+#: View/Provinces/view.ctp:209
+#: View/Users/view.ctp:57
+msgid "Marital Status"
+msgstr "Estado Civil"
+
+#: View/Countries/view.ctp:224
+msgid "Related Provinces"
+msgstr ""
+
+#: View/Courses/add.ctp:4
+msgid "Add Course"
+msgstr ""
+
+#: View/Courses/add.ctp:15
+#: View/Courses/edit.ctp:17
+#: View/Courses/view.ctp:21
+#: View/EducationDetails/add.ctp:21
+#: View/EducationDetails/edit.ctp:23
+#: View/EducationDetails/index.ctp:55
+#: View/EducationDetails/view.ctp:40
+msgid "List Courses"
+msgstr ""
+
+#: View/Courses/edit.ctp:4
+#: View/Courses/view.ctp:19
+msgid "Edit Course"
+msgstr ""
+
+#: View/Courses/index.ctp:6
+#: View/Elements/sidebar.ctp:46
+msgid "Courses"
+msgstr "Cursos"
+
+#: View/Courses/index.ctp:13
+#: View/Courses/view.ctp:22
+#: View/EducationDetails/add.ctp:22
+#: View/EducationDetails/edit.ctp:24
+#: View/EducationDetails/index.ctp:56
+#: View/EducationDetails/view.ctp:41
+msgid "New Course"
+msgstr ""
+
+#: View/Courses/view.ctp:2
+#: View/EducationDetails/view.ctp:14
+#: View/Elements/educationdetails/education_details_form.ctp:24
+#: View/Users/view.ctp:123
+msgid "Course"
+msgstr "Curso"
+
+#: View/Courses/view.ctp:20
+msgid "Delete Course"
+msgstr ""
+
+#: View/EducationDetails/add.ctp:4
+msgid "Add Education Detail"
+msgstr ""
+
+#: View/EducationDetails/add.ctp:19
+#: View/EducationDetails/edit.ctp:21
+#: View/EducationDetails/index.ctp:53
+#: View/EducationDetails/view.ctp:38
+#: View/Levels/add.ctp:15
+#: View/Levels/edit.ctp:17
+#: View/Levels/view.ctp:21
+msgid "List Levels"
+msgstr ""
+
+#: View/EducationDetails/add.ctp:20
+#: View/EducationDetails/edit.ctp:22
+#: View/EducationDetails/index.ctp:54
+#: View/EducationDetails/view.ctp:39
+#: View/Levels/index.ctp:13
+#: View/Levels/view.ctp:22
+msgid "New Level"
+msgstr ""
+
+#: View/EducationDetails/edit.ctp:4
+#: View/EducationDetails/view.ctp:34
+msgid "Edit Education Detail"
+msgstr ""
+
+#: View/EducationDetails/index.ctp:2
+#: View/Elements/educationdetails/education_details_form.ctp:15
+msgid "Education Details"
+msgstr "Educação"
+
+#: View/EducationDetails/view.ctp:2
+msgid "Education Detail"
+msgstr ""
+
+#: View/EducationDetails/view.ctp:9
+#: View/Elements/educationdetails/education_details_form.ctp:21
+#: View/Levels/view.ctp:2
+#: View/Users/view.ctp:120
+msgid "Level"
+msgstr ""
+
+#: View/EducationDetails/view.ctp:35
+msgid "Delete Education Detail"
+msgstr ""
+
+#: View/Elements/blue_toolbar.ctp:13
+#: View/Elements/lock_screen.ctp:4
+#: View/Elements/top_toolbar.ctp:105
+msgid "Logout"
+msgstr "Sair"
+
+#: View/Elements/dialog_add_company.ctp:13
+msgid "Acronym"
+msgstr "Sigla"
+
+#: View/Elements/sidebar.ctp:12;20;28
+msgid "Add"
+msgstr "Adicionar"
+
+#: View/Elements/sidebar.ctp:13;21;29
+msgid "List"
+msgstr "Listar"
+
+#: View/Elements/sidebar.ctp:44
+msgid "Categories of Companies"
+msgstr "Categoria de Empresas"
+
+#: View/Elements/sidebar.ctp:45
+#: View/Users/index.ctp:6
+msgid "Users"
+msgstr "Utilizadores"
+
+#: View/Elements/sidebar.ctp:47
+#: View/Levels/index.ctp:6
+msgid "Levels"
+msgstr ""
+
+#: View/Elements/sidebar.ctp:48
+#: View/Nationalities/index.ctp:6
+msgid "Nationalities"
+msgstr "Nacionalidades"
+
+#: View/Elements/sidebar.ctp:50
+#: View/Provinces/index.ctp:6
+msgid "Provinces"
+msgstr "Províncias"
+
+#: View/Elements/sidebar.ctp:52
+msgid "Marital Statuses"
+msgstr "Estados Civis"
+
+#: View/Elements/contactdetails/contact_details_form.ctp:24
+#: View/Users/view.ctp:84
+msgid "Province/State"
+msgstr "Província/Estado"
+
+#: View/Elements/personaldetails/personal_details_form.ctp:15
+#: View/PersonalDetails/index.ctp:2
+#: View/Users/view.ctp:43
+msgid "Personal Details"
+msgstr "Dados Pessoais"
+
+#: View/Elements/personaldetails/personal_details_form.ctp:32
+msgid "Masculine"
+msgstr ""
+
+#: View/Elements/personaldetails/personal_details_form.ctp:32
+msgid "Select Gender"
+msgstr ""
+
+#: View/Elements/personaldetails/personal_details_form.ctp:39
+msgid "Select a Marital Status"
+msgstr ""
+
+#: View/Elements/personaldetails/personal_details_form.ctp:42
+msgid "Select Your Nationality"
+msgstr ""
+
+#: View/Elements/personaldetails/personal_details_form.ctp:47
+#: View/Users/view.ctp:63
+msgid "Born Country"
+msgstr "País de Nascimento"
+
+#: View/Elements/personaldetails/personal_details_form.ctp:50
+#: View/Users/view.ctp:66
+msgid "Born Province/State"
+msgstr "Província/Estado de Nascimento"
+
+#: View/Elements/personaldetails/personal_details_form.ctp:53
+#: View/Users/view.ctp:69
+msgid "Born City"
+msgstr "Cidade de Nascimento"
+
+#: View/Groups/add.ctp:4
+msgid "Add Group"
+msgstr "Adicionar Grupo"
+
+#: View/Groups/add.ctp:15
+#: View/Groups/edit.ctp:17
+#: View/Groups/view.ctp:31
+#: View/Users/edit.ctp:23
+msgid "List Groups"
+msgstr ""
+
+#: View/Groups/edit.ctp:4
+#: View/Groups/view.ctp:29
+msgid "Edit Group"
+msgstr ""
+
+#: View/Groups/index.ctp:2
+msgid "Groups"
+msgstr ""
+
+#: View/Groups/index.ctp:42
+#: View/Groups/view.ctp:32
+#: View/Users/edit.ctp:24
+msgid "New Group"
+msgstr ""
+
+#: View/Groups/view.ctp:2
+#: View/Users/index.ctp:22
+#: View/Users/view.ctp:138
+msgid "Group"
+msgstr ""
+
+#: View/Groups/view.ctp:30
+msgid "Delete Group"
+msgstr ""
+
+#: View/Levels/add.ctp:4
+msgid "Add Level"
+msgstr ""
+
+#: View/Levels/edit.ctp:4
+#: View/Levels/view.ctp:19
+msgid "Edit Level"
+msgstr ""
+
+#: View/Levels/view.ctp:20
+msgid "Delete Level"
+msgstr ""
+
+#: View/Managers/add.ctp:4
+msgid "Add Manager"
+msgstr ""
+
+#: View/Managers/add.ctp:16
+#: View/Managers/edit.ctp:18
+#: View/Managers/view.ctp:26
+#: View/Users/edit.ctp:29
+msgid "List Managers"
+msgstr ""
+
+#: View/Managers/edit.ctp:4
+#: View/Managers/view.ctp:24
+msgid "Edit Manager"
+msgstr ""
+
+#: View/Managers/index.ctp:2
+msgid "Managers"
+msgstr ""
+
+#: View/Managers/index.ctp:44
+#: View/Managers/view.ctp:27
+#: View/Users/edit.ctp:30
+msgid "New Manager"
+msgstr ""
+
+#: View/Managers/view.ctp:2
+msgid "Manager"
+msgstr ""
+
+#: View/Managers/view.ctp:25
+msgid "Delete Manager"
+msgstr ""
+
+#: View/MaritalStatuses/add.ctp:4
+msgid "Add Marital Status"
+msgstr ""
+
+#: View/MaritalStatuses/add.ctp:15
+#: View/MaritalStatuses/edit.ctp:17
+#: View/MaritalStatuses/view.ctp:21
+#: View/PersonalDetails/add.ctp:26
+#: View/PersonalDetails/edit.ctp:28
+#: View/PersonalDetails/index.ctp:71
+#: View/PersonalDetails/view.ctp:73
+msgid "List Marital Statuses"
+msgstr ""
+
+#: View/MaritalStatuses/edit.ctp:4
+#: View/MaritalStatuses/view.ctp:19
+msgid "Edit Marital Status"
+msgstr ""
+
+#: View/MaritalStatuses/index.ctp:6
+msgid "MaritalStatuses"
+msgstr ""
+
+#: View/MaritalStatuses/index.ctp:13
+msgid "New MaritalStatus"
+msgstr ""
+
+#: View/MaritalStatuses/view.ctp:20
+msgid "Delete Marital Status"
+msgstr ""
+
+#: View/MaritalStatuses/view.ctp:22
+#: View/PersonalDetails/add.ctp:27
+#: View/PersonalDetails/edit.ctp:29
+#: View/PersonalDetails/index.ctp:72
+#: View/PersonalDetails/view.ctp:74
+msgid "New Marital Status"
+msgstr ""
+
+#: View/Nationalities/add.ctp:4
+msgid "Add Nationality"
+msgstr ""
+
+#: View/Nationalities/add.ctp:15
+#: View/Nationalities/edit.ctp:17
+#: View/Nationalities/view.ctp:21
+#: View/PersonalDetails/add.ctp:28
+#: View/PersonalDetails/edit.ctp:30
+#: View/PersonalDetails/index.ctp:73
+#: View/PersonalDetails/view.ctp:75
+msgid "List Nationalities"
+msgstr ""
+
+#: View/Nationalities/edit.ctp:4
+#: View/Nationalities/view.ctp:19
+msgid "Edit Nationality"
+msgstr ""
+
+#: View/Nationalities/index.ctp:13
+#: View/Nationalities/view.ctp:22
+#: View/PersonalDetails/add.ctp:29
+#: View/PersonalDetails/edit.ctp:31
+#: View/PersonalDetails/index.ctp:74
+#: View/PersonalDetails/view.ctp:76
+msgid "New Nationality"
+msgstr ""
+
+#: View/Nationalities/view.ctp:2
+#: View/PersonalDetails/view.ctp:39
+#: View/Users/view.ctp:60
+msgid "Nationality"
+msgstr "Nacionalidade"
+
+#: View/Nationalities/view.ctp:20
+msgid "Delete Nationality"
+msgstr ""
+
+#: View/Nationalities/view.ctp:35
+msgid "Location"
+msgstr ""
+
+#: View/Nationalities/view.ctp:40
+msgid "Picture"
+msgstr ""
+
+#: View/Operators/add.ctp:4
+msgid "Add Operator"
+msgstr ""
+
+#: View/Operators/add.ctp:16
+#: View/Operators/edit.ctp:18
+#: View/Operators/view.ctp:26
+#: View/Users/edit.ctp:31
+msgid "List Operators"
+msgstr ""
+
+#: View/Operators/edit.ctp:4
+#: View/Operators/view.ctp:24
+msgid "Edit Operator"
+msgstr ""
+
+#: View/Operators/index.ctp:2
+msgid "Operators"
+msgstr ""
+
+#: View/Operators/index.ctp:44
+#: View/Operators/view.ctp:27
+#: View/Users/edit.ctp:32
+msgid "New Operator"
+msgstr ""
+
+#: View/Operators/view.ctp:2
+msgid "Operator"
+msgstr ""
+
+#: View/Operators/view.ctp:25
+msgid "Delete Operator"
+msgstr ""
+
+#: View/PersonalDetails/add.ctp:4
+msgid "Add Personal Detail"
+msgstr ""
+
+#: View/PersonalDetails/edit.ctp:4
+#: View/PersonalDetails/view.ctp:69
+msgid "Edit Personal Detail"
+msgstr ""
+
+#: View/PersonalDetails/view.ctp:2
+msgid "Personal Detail"
+msgstr ""
+
+#: View/PersonalDetails/view.ctp:70
+msgid "Delete Personal Detail"
+msgstr ""
+
+#: View/Provinces/add.ctp:4
+msgid "Add Province"
+msgstr ""
+
+#: View/Provinces/edit.ctp:4
+#: View/Provinces/view.ctp:24
+msgid "Edit Province"
+msgstr ""
+
+#: View/Provinces/view.ctp:25
+msgid "Delete Province"
+msgstr ""
+
+#: View/Provinces/view.ctp:80
+msgid "Related Cities"
+msgstr ""
+
+#: View/Users/add.ctp:4
+msgid "Add User"
+msgstr ""
+
+#: View/Users/change_password.ctp:3
+msgid "Alterar Palavra-passe"
+msgstr ""
+
+#: View/Users/change_password.ctp:9
+#: View/Users/index.ctp:21
+#: View/Users/view.ctp:141
+msgid "Username"
+msgstr ""
+
+#: View/Users/change_password.ctp:17
+msgid "Antiga palavra-passe"
+msgstr ""
+
+#: View/Users/change_password.ctp:23
+msgid "Nova palavra-passe"
+msgstr ""
+
+#: View/Users/change_password.ctp:28
+msgid "Confirme a Nova palavra-passe"
+msgstr ""
+
+#: View/Users/edit.ctp:4
+msgid "Edit User"
+msgstr ""
+
+#: View/Users/edit.ctp:35
+msgid "List Complaints Comments"
+msgstr ""
+
+#: View/Users/edit.ctp:36
+msgid "New Complaints Comment"
+msgstr ""
+
+#: View/Users/index.ctp:13
+msgid "New user"
+msgstr ""
+
+#: View/Users/index.ctp:23
+msgid "status"
+msgstr ""
+
+#: View/Users/select_user_role.ctp:2;12
+msgid "Select User Role"
+msgstr ""
+
+#: View/Users/select_user_role.ctp:16
+msgid "Role"
+msgstr ""
+
+#: View/Users/view.ctp:93
+msgid "Zip/Postal Code"
+msgstr ""
+
+#: Model/User.php:validation for field username
+msgid "este username já foi registado"
+msgstr ""
+
+#: Model/User.php:validation for field username
+msgid "please enter a username"
+msgstr ""
+
+#: Model/User.php:validation for field password
+msgid "porfavor, introduza a palavra-passe"
+msgstr ""
+
+#: Model/User.php:validation for field password
+msgid "as palavras-passe são diferentes"
+msgstr ""
+
+#: Model/User.php:validation for field password_confirmation
+msgid "porfavor, confirme a nova palavra-passe"
+msgstr ""
+
+#: Model/User.php:validation for field current_password
+msgid "porfavor, introduza a palavra-passe actual"
+msgstr ""
+
+#: Model/User.php:validation for field current_password
+msgid "your password is not correct"
+msgstr ""
+
+msgid "Auth Details"
+msgstr "Dados de Autenticação"
+
+msgid "Details"
+msgstr "Detalhes"
+
+msgid "Like"
+msgstr "Gostar"
+
+msgid "Likes"
+msgstr "Gostos"
+
+msgid "Liked"
+msgstr "Gostei"
+
+msgid "Unlike"
+msgstr "Não Gosto"
+
+msgid "Update Details"
+msgstr "Actualizar Detalhes"
+
+msgid "Profile"
+msgstr "Perfil"
+
+msgid "Subject"
+msgstr "Assunto"
+
+msgid "No Complaint Categories"
+msgstr "Sem Categorias de Reclamação"
+
+msgid "Add Complaint"
+msgstr "Adicionar Reclamação"
+
+msgid "Select Company"
+msgstr "Seleccione a Empresa"
+
+msgid "Select"
+msgstr "Seleccione"
+

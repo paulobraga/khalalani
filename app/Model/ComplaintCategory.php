@@ -4,6 +4,7 @@ App::uses('AppModel', 'Model');
  * ComplaintCategory Model
  *
  * @property Company $Company
+ * @property Complaint $Complaint
  */
 class ComplaintCategory extends AppModel {
 
@@ -24,4 +25,26 @@ class ComplaintCategory extends AppModel {
 			'order' => ''
 		)
 	);
+
+/**
+ * hasMany associations
+ *
+ * @var array
+ */
+	public $hasMany = array(
+		'Complaint' => array(
+			'className' => 'Complaint',
+			'foreignKey' => 'complaint_category_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		)
+	);
+
 }

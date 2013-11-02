@@ -37,7 +37,10 @@ class ComplaintsController extends AppController {
  *
  * @return void
  */
-	public function add() {
+	public function add($company_id=null) {
+            if(!$this->Complaint->Company->exists($company_id)){
+                throw new NotFoundException(__('Invalid Company'));
+            }
 		if ($this->request->is('post')) {
 			$this->Complaint->create();
 			if ($this->Complaint->save($this->request->data)) {
@@ -47,9 +50,9 @@ class ComplaintsController extends AppController {
 				$this->Session->setFlash(__('The complaint could not be saved. Please, try again.'));
 			}
 		}
-		$companies = $this->Complaint->Company->find('list');
-		$consumers = $this->Complaint->Consumer->find('list');
-		$this->set(compact('companies', 'consumers'));
+		$company = $this->Complaint->Company->find('first',array('conditions'=>array('Company.id'=>$company_id)));
+		$complaintCategories = $this->Complaint->ComplaintCategory->find('list',array('conditions'=>array('ComplaintCategory.company_id'=>$company_id)));
+		$this->set(compact('company', 'consumers', 'complaintCategories'));
 	}
 
 /**
@@ -76,7 +79,8 @@ class ComplaintsController extends AppController {
 		}
 		$companies = $this->Complaint->Company->find('list');
 		$consumers = $this->Complaint->Consumer->find('list');
-		$this->set(compact('companies', 'consumers'));
+		$complaintCategories = $this->Complaint->ComplaintCategory->find('list');
+		$this->set(compact('companies', 'consumers', 'complaintCategories'));
 	}
 
 /**

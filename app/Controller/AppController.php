@@ -46,6 +46,7 @@ class AppController extends Controller {
 
     public function beforeFilter() {
         //Configure AuthComponent
+        //$this->Auth->allow();
         $this->Auth->loginAction = array('controller' => 'users', 'action' => 'login');
         $this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login');
         $this->Auth->loginRedirect = array('controller' => 'pages', 'action' => 'dashboard');
@@ -53,6 +54,7 @@ class AppController extends Controller {
     
     public function beforeRender() {
         parent::beforeRender();
+        //$this->layout = 'backend';
         if ($this->Session->read('Auth.User.id')) {
             $role = 'normal';
             if($this->Session->read('Auth.User.group_id')==1){

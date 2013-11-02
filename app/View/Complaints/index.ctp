@@ -12,6 +12,8 @@
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
 			<th><?php echo $this->Paginator->sort('privacy'); ?></th>
 			<th><?php echo $this->Paginator->sort('allow_comments'); ?></th>
+			<th><?php echo $this->Paginator->sort('subject'); ?></th>
+			<th><?php echo $this->Paginator->sort('complaint_category_id'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($complaints as $complaint): ?>
@@ -30,6 +32,10 @@
 		<td><?php echo h($complaint['Complaint']['created']); ?>&nbsp;</td>
 		<td><?php echo h($complaint['Complaint']['privacy']); ?>&nbsp;</td>
 		<td><?php echo h($complaint['Complaint']['allow_comments']); ?>&nbsp;</td>
+		<td><?php echo h($complaint['Complaint']['subject']); ?>&nbsp;</td>
+		<td>
+			<?php echo $this->Html->link($complaint['ComplaintCategory']['name'], array('controller' => 'complaint_categories', 'action' => 'view', $complaint['ComplaintCategory']['id'])); ?>
+		</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $complaint['Complaint']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $complaint['Complaint']['id'])); ?>
@@ -60,5 +66,11 @@
 		<li><?php echo $this->Html->link(__('New Company'), array('controller' => 'companies', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Consumers'), array('controller' => 'consumers', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Consumer'), array('controller' => 'consumers', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Complaint Categories'), array('controller' => 'complaint_categories', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Complaint Category'), array('controller' => 'complaint_categories', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Complaint Comments'), array('controller' => 'complaint_comments', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Complaint Comment'), array('controller' => 'complaint_comments', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Complaint Likes'), array('controller' => 'complaint_likes', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Complaint Like'), array('controller' => 'complaint_likes', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

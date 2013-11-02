@@ -5,6 +5,9 @@ App::uses('AppModel', 'Model');
  *
  * @property Company $Company
  * @property Consumer $Consumer
+ * @property ComplaintCategory $ComplaintCategory
+ * @property ComplaintComment $ComplaintComment
+ * @property ComplaintLike $ComplaintLike
  */
 class Complaint extends AppModel {
 
@@ -30,6 +33,48 @@ class Complaint extends AppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
+		),
+		'ComplaintCategory' => array(
+			'className' => 'ComplaintCategory',
+			'foreignKey' => 'complaint_category_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
 		)
 	);
+
+/**
+ * hasMany associations
+ *
+ * @var array
+ */
+	public $hasMany = array(
+		'ComplaintComment' => array(
+			'className' => 'ComplaintComment',
+			'foreignKey' => 'complaint_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'ComplaintLike' => array(
+			'className' => 'ComplaintLike',
+			'foreignKey' => 'complaint_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		)
+	);
+
 }

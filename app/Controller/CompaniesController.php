@@ -28,8 +28,21 @@ class CompaniesController extends AppController {
 		if (!$this->Company->exists($id)) {
 			throw new NotFoundException(__('Invalid company'));
 		}
+                $this->Company->contain(array(
+                    'Country',
+                    'Province',
+                    'City',
+                    'Branch',
+                    'ComplaintCategory',
+                    'Complaint',
+                    'Manager',
+                    'Operator',
+                    'Category',
+                    'CompanyLike'
+                ));
 		$options = array('conditions' => array('Company.' . $this->Company->primaryKey => $id));
 		$this->set('company', $this->Company->find('first', $options));
+                $this->set('companyLike', $this->Company->CompanyLike->find('first',array('conditions'=>array('CompanyLike.consumer_id'=>$this->Session->read('Auth.User.Consumer.id'),'CompanyLike.company_id'=>$id))));
 	}
 
 /**
@@ -48,7 +61,10 @@ class CompaniesController extends AppController {
 			}
 		}
 		$categories = $this->Company->Category->find('list');
-		$this->set(compact('categories'));
+                $countries = $this->Company->Country->find('list');
+                $provinces = $this->Company->Province->find('list');
+                $cities = $this->Company->City->find('list');
+		$this->set(compact('categories','countries','provinces','cities'));
 	}
 
 /**
@@ -74,7 +90,10 @@ class CompaniesController extends AppController {
 			$this->request->data = $this->Company->find('first', $options);
 		}
 		$categories = $this->Company->Category->find('list');
-		$this->set(compact('categories'));
+                $countries = $this->Company->Country->find('list');
+                $provinces = $this->Company->Province->find('list');
+                $cities = $this->Company->City->find('list');
+		$this->set(compact('categories','countries','provinces','cities'));
 	}
 
 /**
@@ -97,4 +116,15 @@ class CompaniesController extends AppController {
 		$this->Session->setFlash(__('Company was not deleted'));
 		$this->redirect(array('action' => 'index'));
 	}
+        
+        public function selectCompany(){
+            
+            if($this->request->is('post')){
+                //debug($this->request->data);
+                $this->redirect(array('controller'=>'complaints','action'=>'add',$this->request->data['User']['company_id']));
+            }
+            $companies = $this->Company->find('all',array('contain'=>false,'fields'=>array('Company.id','Company.acronym','Company.name','Company.logo','Company.logo_dir')));
+            $this->set(compact('companies'));
+            
+        }
 }

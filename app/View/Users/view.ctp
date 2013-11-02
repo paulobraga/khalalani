@@ -39,9 +39,9 @@
             </ul><!-- End of ul.info -->
         </div><!-- End of .header -->
 
-        <div class="details grid_12">
+        <div class="details grid_6">
             <h2><?php echo __('Personal Details'); ?></h2>
-            <a href="javascript:$$.settings();"><span class="icon icon-pencil"></span>Update Details</a>
+            <a href="javascript:$$.settings();"><span class="icon icon-pencil"></span><?php echo __('Update Details');?></a>
             <section>
                 <table>
                     <tr>
@@ -72,9 +72,9 @@
             </section>
         </div><!-- End of .details -->
 
-        <div class="details grid_12">
-            <h2><?php echo ('Contact Details'); ?></h2>
-            <a href="javascript:$$.settings();"><span class="icon icon-pencil"></span>Update Details</a>
+        <div class="details grid_6">
+            <h2><?php echo __('Contact Details'); ?></h2>
+            <a href="javascript:$$.settings();"><span class="icon icon-pencil"></span><?php echo __('Update Details');?></a>
             <section>
                 <table>
                     <tr>
@@ -111,9 +111,9 @@
                 </table>
             </section>
         </div><!-- End of .details -->
-        <div class="details grid_12">
+        <div class="details grid_6">
             <h2><?php echo ('Education Details'); ?></h2>
-            <a href="javascript:$$.settings();"><span class="icon icon-pencil"></span>Update Details</a>
+            <a href="javascript:$$.settings();"><span class="icon icon-pencil"></span><?php echo __('Update Details');?></a>
             <section>
                 <table>
                     <tr>
@@ -129,9 +129,9 @@
             </section>
         </div><!-- End of .details -->
         
-          <div class="details grid_12">
-            <h2><?php echo ('Auth Details'); ?></h2>
-            <a href="javascript:$$.settings();"><span class="icon icon-pencil"></span>Update Details</a>
+          <div class="details grid_6">
+            <h2><?php echo __('Auth Details'); ?></h2>
+            <a href="javascript:$$.settings();"><span class="icon icon-pencil"></span><?php echo __('Update Details');?></a>
             <section>
                 <table>
                     <tr>
@@ -151,7 +151,7 @@
         <div class="divider"></div>
 
         <div class="grid_12">
-            <a href="javascript:void(0);" class="button red right">Delete Account</a>
+            <a href="javascript:void(0);" class="button red right"><?php echo __('Delete Account');?></a>
         </div>
 
         <!-- Example Profile Dialog -->							

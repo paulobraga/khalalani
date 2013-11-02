@@ -5,10 +5,10 @@
 					<img src="/khalalani/img/mangoadmin/img/layout/content/toolbar/user/avatar.png">
 					<span>3</span>
 				</div>
-				<span><?php echo $this->Session->read('Auth.User.first_name').' '.$this->Session->read('Auth.User.last_name');?></span>
+				<span><?php echo $this->Session->read('Auth.User.PersonalDetail.first_name').' '.$this->Session->read('Auth.User.PersonalDetail.last_name');?></span>
 				<ul>
 					<li><a href="javascript:$$.settings();">Settings</a></li>
-					<li><a href="pages_profile.html">Profile</a></li>
+					<li><a href="<?php echo $this->Html->url(array('controller'=>'users','action'=>'view',$this->Session->read('Auth.User.id')));?>"><?php echo __('Profile');?></a></li>
 					<li class="line"></li>
 					<li><a href="<?php echo $this->Html->url(array('controller'=>'users','action'=>'logout'));?>"><?php echo __('Logout'); ?></a></li>
 				</ul>

@@ -125,7 +125,7 @@
         ?>
         <!--<link rel="stylesheet" href="css/ie-fixes.css">-->
 
-
+        <?php echo $this->Html->css('msdropdown/dd');?>
 
 
 
@@ -165,12 +165,13 @@
 
         <!-- Grab frameworks from CDNs -->
         <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
+        <?php echo $this->Html->script($jspath . 'jquery.min'); ?>
+        <?php echo $this->Html->script($jspath . 'jqueryui.min'); ?>
         <script>window.jQuery || document.write('<script src="<?php echo '/khalalani/' . JS_URL . $jspath . 'libs/jquery-1.7.2.min'; ?>"><\/script>')</script>
 
         <!-- Do the same with jQuery UI -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>-->
         <script>window.jQuery.ui || document.write('<script src="<?php echo '/khalalani/' . JS_URL . $jspath . 'libs/jquery-ui-1.8.21.min'; ?>"><\/script>')</script>
 
         <!-- Do the same with Lo-Dash.js -->
@@ -333,6 +334,8 @@
 <!--	<script src="js/mango.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/script.js"></script>-->
+
+        <?php echo $this->Html->script('msdropdown/jquery.dd'); ?>
 
         <!-- Your custom JS goes here -->
         <?php

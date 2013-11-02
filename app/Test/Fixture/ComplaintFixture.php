@@ -21,6 +21,8 @@ class ComplaintFixture extends CakeTestFixture {
 		'created' => array('type' => 'datetime', 'null' => true, 'default' => null),
 		'privacy' => array('type' => 'integer', 'null' => true, 'default' => null),
 		'allow_comments' => array('type' => 'integer', 'null' => true, 'default' => null),
+		'subject' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 45, 'collate' => 'utf8_general_ci', 'charset' => 'utf8'),
+		'complaint_category_id' => array('type' => 'integer', 'null' => true, 'default' => null),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1)
 		),
@@ -41,9 +43,11 @@ class ComplaintFixture extends CakeTestFixture {
 			'rate' => 1,
 			'review' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
 			'description' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
-			'created' => '2013-10-17 00:49:06',
+			'created' => '2013-11-02 18:34:09',
 			'privacy' => 1,
-			'allow_comments' => 1
+			'allow_comments' => 1,
+			'subject' => 'Lorem ipsum dolor sit amet',
+			'complaint_category_id' => 1
 		),
 	);
 

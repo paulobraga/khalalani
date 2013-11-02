@@ -893,6 +893,12 @@ form .valid:not(.ignore):not(.ui-spinner-input):focus {
 form label.error.inline {
 	position: relative;
 }
+/* khala */
+form label.add_2_points:after{
+    content: ':';
+    display: inline;
+}
+/* end khala */
 
 form label.error:not(.inline) {
 	position: absolute;

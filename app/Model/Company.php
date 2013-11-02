@@ -11,9 +11,13 @@ App::uses('AppModel', 'Model');
  * @property Manager $Manager
  * @property Operator $Operator
  * @property Category $Category
+ * @property Country $Country 
+ * @property Province $Province 
+ * @property City $City 
+ * @property CompanyLike $CompanyLike
  */
 class Company extends AppModel {
-
+    
     public $actsAs = array(
         'Upload.Upload' => array(
             'logo' => array(
@@ -22,11 +26,41 @@ class Company extends AppModel {
                 ),
                 'thumbnailMethod' => 'php'
             )
-        )
+        ),
+        'Containable'
     );
 
 
     //The Associations below have been created with all possible keys, those that are not needed can be removed
+
+    /**
+     * belongsTo associations
+     *
+     * @var array
+     */
+    public $belongsTo = array(
+        'Country' => array(
+            'className' => 'Country',
+            'foreignKey' => 'country_id',
+            'conditions' => '',
+            'fields' => '',
+            'order' => ''
+        ), 
+        'Province' => array(
+            'className' => 'Province',
+            'foreignKey' => 'province_id',
+            'conditions' => '',
+            'fields' => '',
+            'order' => ''
+        ), 
+        'City' => array(
+            'className' => 'City',
+            'foreignKey' => 'city_id',
+            'conditions' => '',
+            'fields' => '',
+            'order' => ''
+        )
+    );
 
     /**
      * hasMany associations
@@ -49,6 +83,19 @@ class Company extends AppModel {
         ),
         'ComplaintCategory' => array(
             'className' => 'ComplaintCategory',
+            'foreignKey' => 'company_id',
+            'dependent' => false,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => ''
+        ),
+        'CompanyLike' => array(
+            'className' => 'CompanyLike',
             'foreignKey' => 'company_id',
             'dependent' => false,
             'conditions' => '',

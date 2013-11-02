@@ -17,7 +17,7 @@
 			<div class="right">
 				<ul>
 				
-					<li><a href="pages_profile.html"><span class="icon i14_admin-user"></span>Profile</a></li>
+					<li><a href="<?php echo $this->Html->url(array('controller'=>'users','action'=>'view',$this->Session->read('Auth.User.id')));?>"><span class="icon i14_admin-user"></span><?php echo __('Profile');?></a></li>
 					
 					<li>
 						<a href="#"><span>3</span>Messages</a>

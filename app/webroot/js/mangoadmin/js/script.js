@@ -680,11 +680,11 @@
 		// ! Checkbox and radio
 		$('input:checkbox').checkbox({
 			cls : 'checkbox',
-			empty : 'img/mangoadmin/img/elements/checkbox/empty.png'
+			empty : '/khalalani/img/mangoadmin/img/elements/checkbox/empty.png'
 		});
 		$('input:radio').checkbox({
 			cls : 'radiobutton',
-			empty : 'img/mangoadmin/img/elements/checkbox/empty.png'
+			empty : '/khalalani/img/mangoadmin/img/elements/checkbox/empty.png'
 		});
 		
 		// ! Select boxes
@@ -1733,374 +1733,374 @@
 		}
 		
 		mango.utils.preload([
-			'img/mangoadmin/img/layout/navigation/arrow-active.png',
-			'img/mangoadmin/img/layout/navigation/arrow-hover.png',
-			'img/mangoadmin/img/layout/navigation/arrow.png',
-			'img/mangoadmin/img/layout/navigation/bg-current.png',
-			'img/mangoadmin/img/layout/navigation/bg-active.png',
-			'img/mangoadmin/img/layout/navigation/bg-hover.png',
-			'img/mangoadmin/img/layout/navigation/bg-normal.png'
+			'/khalalani/img/mangoadmin/img/layout/navigation/arrow-active.png',
+			'/khalalani/img/mangoadmin/img/layout/navigation/arrow-hover.png',
+			'/khalalani/img/mangoadmin/img/layout/navigation/arrow.png',
+			'/khalalani/img/mangoadmin/img/layout/navigation/bg-current.png',
+			'/khalalani/img/mangoadmin/img/layout/navigation/bg-active.png',
+			'/khalalani/img/mangoadmin/img/layout/navigation/bg-hover.png',
+			'/khalalani/img/mangoadmin/img/layout/navigation/bg-normal.png'
 		]);
 		
 		mango.utils.preload([
-			'img/mangoadmin/img/layout/sidebar/bg-right.png',
-			'img/mangoadmin/img/layout/sidebar/bg.png',
-			'img/mangoadmin/img/layout/sidebar/divider.png',
-			'img/mangoadmin/img/layout/sidebar/shadow-right.png',
-			'img/mangoadmin/img/layout/sidebar/shadow.png',
-			'img/mangoadmin/img/layout/sidebar-right/header-bg.png',
-			'img/mangoadmin/img/layout/sidebar-right/nav-bg-hover.png',
-			'img/mangoadmin/img/layout/sidebar-right/nav-bg.png'
+			'/khalalani/img/mangoadmin/img/layout/sidebar/bg-right.png',
+			'/khalalani/img/mangoadmin/img/layout/sidebar/bg.png',
+			'/khalalani/img/mangoadmin/img/layout/sidebar/divider.png',
+			'/khalalani/img/mangoadmin/img/layout/sidebar/shadow-right.png',
+			'/khalalani/img/mangoadmin/img/layout/sidebar/shadow.png',
+			'/khalalani/img/mangoadmin/img/layout/sidebar-right/header-bg.png',
+			'/khalalani/img/mangoadmin/img/layout/sidebar-right/nav-bg-hover.png',
+			'/khalalani/img/mangoadmin/img/layout/sidebar-right/nav-bg.png'
 		]);
 		
 		mango.utils.preload([
-			'img/mangoadmin/img/layout/toolbar/bg.png',
-			'img/mangoadmin/img/layout/toolbar/buttons/bg-active.png',
-			'img/mangoadmin/img/layout/toolbar/buttons/bg-disabled.png',
-			'img/mangoadmin/img/layout/toolbar/buttons/bg-hover.png',
-			'img/mangoadmin/img/layout/toolbar/buttons/bg-red-active.png',
-			'img/mangoadmin/img/layout/toolbar/buttons/bg-red-disabled.png',
-			'img/mangoadmin/img/layout/toolbar/buttons/bg-red-hover.png',
-			'img/mangoadmin/img/layout/toolbar/buttons/bg-red.png',
-			'img/mangoadmin/img/layout/toolbar/buttons/bg.png',
-			'img/mangoadmin/img/layout/toolbar/buttons/divider.png'
+			'/khalalani/img/mangoadmin/img/layout/toolbar/bg.png',
+			'/khalalani/img/mangoadmin/img/layout/toolbar/buttons/bg-active.png',
+			'/khalalani/img/mangoadmin/img/layout/toolbar/buttons/bg-disabled.png',
+			'/khalalani/img/mangoadmin/img/layout/toolbar/buttons/bg-hover.png',
+			'/khalalani/img/mangoadmin/img/layout/toolbar/buttons/bg-red-active.png',
+			'/khalalani/img/mangoadmin/img/layout/toolbar/buttons/bg-red-disabled.png',
+			'/khalalani/img/mangoadmin/img/layout/toolbar/buttons/bg-red-hover.png',
+			'/khalalani/img/mangoadmin/img/layout/toolbar/buttons/bg-red.png',
+			'/khalalani/img/mangoadmin/img/layout/toolbar/buttons/bg.png',
+			'/khalalani/img/mangoadmin/img/layout/toolbar/buttons/divider.png'
 		]);
 		
-		mango.utils.preload(['img/layout/footer/divider.png']);
+		mango.utils.preload(['/khalalani/img/mangoadmin/img/layout/footer/divider.png']);
 		
 				
 		mango.utils.preload([
-			'img/mangoadmin/img/layout/bg.png',
-			'img/mangoadmin/img/layout/content/box/actions-bg.png',
-			'img/mangoadmin/img/layout/content/box/bg.png',
-			'img/mangoadmin/img/layout/content/box/header-bg.png',
-			'img/mangoadmin/img/layout/content/box/menu-active-bg.png',
-			'img/mangoadmin/img/layout/content/box/menu-arrow.png',
-			'img/mangoadmin/img/layout/content/box/menu-bg.png',
-			'img/mangoadmin/img/layout/content/box/menu-item-bg-hover.png',
-			'img/mangoadmin/img/layout/content/box/menu-item-bg.png',
-			'img/mangoadmin/img/layout/content/box/tab-hover.png',
-			'img/mangoadmin/img/layout/content/toolbar/bg-shortcuts.png',
-			'img/mangoadmin/img/layout/content/toolbar/bg.png',
-			'img/mangoadmin/img/layout/content/toolbar/divider.png',
-			'img/mangoadmin/img/layout/content/toolbar/popup-arrow.png',
-			'img/mangoadmin/img/layout/content/toolbar/popup-header.png',
-			'img/mangoadmin/img/layout/content/toolbar/user/arrow-normal.png',
-			'img/mangoadmin/img/layout/content/toolbar/user/avatar-bg.png',
-			'img/mangoadmin/img/layout/content/toolbar/user/avatar.png',
-			'img/mangoadmin/img/layout/content/toolbar/user/bg-hover.png',
-			'img/mangoadmin/img/layout/content/toolbar/user/bg-menu-hover.png',
-			'img/mangoadmin/img/layout/content/toolbar/user/counter.png'
+			'/khalalani/img/mangoadmin/img/layout/bg.png',
+			'/khalalani/img/mangoadmin/img/layout/content/box/actions-bg.png',
+			'/khalalani/img/mangoadmin/img/layout/content/box/bg.png',
+			'/khalalani/img/mangoadmin/img/layout/content/box/header-bg.png',
+			'/khalalani/img/mangoadmin/img/layout/content/box/menu-active-bg.png',
+			'/khalalani/img/mangoadmin/img/layout/content/box/menu-arrow.png',
+			'/khalalani/img/mangoadmin/img/layout/content/box/menu-bg.png',
+			'/khalalani/img/mangoadmin/img/layout/content/box/menu-item-bg-hover.png',
+			'/khalalani/img/mangoadmin/img/layout/content/box/menu-item-bg.png',
+			'/khalalani/img/mangoadmin/img/layout/content/box/tab-hover.png',
+			'/khalalani/img/mangoadmin/img/layout/content/toolbar/bg-shortcuts.png',
+			'/khalalani/img/mangoadmin/img/layout/content/toolbar/bg.png',
+			'/khalalani/img/mangoadmin/img/layout/content/toolbar/divider.png',
+			'/khalalani/img/mangoadmin/img/layout/content/toolbar/popup-arrow.png',
+			'/khalalani/img/mangoadmin/img/layout/content/toolbar/popup-header.png',
+			'/khalalani/img/mangoadmin/img/layout/content/toolbar/user/arrow-normal.png',
+			'/khalalani/img/mangoadmin/img/layout/content/toolbar/user/avatar-bg.png',
+			'/khalalani/img/mangoadmin/img/layout/content/toolbar/user/avatar.png',
+			'/khalalani/img/mangoadmin/img/layout/content/toolbar/user/bg-hover.png',
+			'/khalalani/img/mangoadmin/img/layout/content/toolbar/user/bg-menu-hover.png',
+			'/khalalani/img/mangoadmin/img/layout/content/toolbar/user/counter.png'
 		]);
 		
 		
 		mango.utils.preload([
-			'img/mangoadmin/img/elements/alert-boxes/bg-error.png',
-			'img/mangoadmin/img/elements/alert-boxes/bg-information.png',
-			'img/mangoadmin/img/elements/alert-boxes/bg-note.png',
-			'img/mangoadmin/img/elements/alert-boxes/bg-success.png',
-			'img/mangoadmin/img/elements/alert-boxes/bg-warning.png',
-			'img/mangoadmin/img/elements/alert-boxes/error.png',
-			'img/mangoadmin/img/elements/alert-boxes/information.png',
-			'img/mangoadmin/img/elements/alert-boxes/note.png',
-			'img/mangoadmin/img/elements/alert-boxes/success.png',
-			'img/mangoadmin/img/elements/alert-boxes/warning.png'
+			'/khalalani/img/mangoadmin/img/elements/alert-boxes/bg-error.png',
+			'/khalalani/img/mangoadmin/img/elements/alert-boxes/bg-information.png',
+			'/khalalani/img/mangoadmin/img/elements/alert-boxes/bg-note.png',
+			'/khalalani/img/mangoadmin/img/elements/alert-boxes/bg-success.png',
+			'/khalalani/img/mangoadmin/img/elements/alert-boxes/bg-warning.png',
+			'/khalalani/img/mangoadmin/img/elements/alert-boxes/error.png',
+			'/khalalani/img/mangoadmin/img/elements/alert-boxes/information.png',
+			'/khalalani/img/mangoadmin/img/elements/alert-boxes/note.png',
+			'/khalalani/img/mangoadmin/img/elements/alert-boxes/success.png',
+			'/khalalani/img/mangoadmin/img/elements/alert-boxes/warning.png'
 		]);
 		
 		mango.utils.preload([
-			'img/mangoadmin/img/elements/breadcrumb/bg-active.png',
-			'img/mangoadmin/img/elements/breadcrumb/bg-hover.png',
-			'img/mangoadmin/img/elements/breadcrumb/divider-active.png',
-			'img/mangoadmin/img/elements/breadcrumb/divider-hover.png'
+			'/khalalani/img/mangoadmin/img/elements/breadcrumb/bg-active.png',
+			'/khalalani/img/mangoadmin/img/elements/breadcrumb/bg-hover.png',
+			'/khalalani/img/mangoadmin/img/elements/breadcrumb/divider-active.png',
+			'/khalalani/img/mangoadmin/img/elements/breadcrumb/divider-hover.png'
 		]);
 		
 		mango.utils.preload([
-			'img/mangoadmin/img/elements/headerbuttons/bg-active.png',
-			'img/mangoadmin/img/elements/headerbuttons/bg-hover.png'
+			'/khalalani/img/mangoadmin/img/elements/headerbuttons/bg-active.png',
+			'/khalalani/img/mangoadmin/img/elements/headerbuttons/bg-hover.png'
 		]);
 	
 		mango.utils.preload([
-			'img/mangoadmin/img/elements/autocomplete/el-bg-hover.png'
+			'/khalalani/img/mangoadmin/img/elements/autocomplete/el-bg-hover.png'
 		]);
 		
 		mango.utils.preload([
-			'img/mangoadmin/img/elements/calendar/arrow-hover-bg.png'
+			'/khalalani/img/mangoadmin/img/elements/calendar/arrow-hover-bg.png'
 		]);
 		
-		mango.utils.preload(['img/mangoadmin/img/elements/charts/hover-bg.png']);
+		mango.utils.preload(['/khalalani/img/mangoadmin/img/elements/charts/hover-bg.png']);
 		
 		mango.utils.preload([
-			'img/mangoadmin/img/elements/messages/button-active-bg.png',
-			'img/mangoadmin/img/elements/messages/button-hover-bg.png'
-		]);
-		
-		mango.utils.preload([
-			'img/mangoadmin/img/elements/messages/button-active-bg.png',
-			'img/mangoadmin/img/elements/messages/button-hover-bg.png'
+			'/khalalani/img/mangoadmin/img/elements/messages/button-active-bg.png',
+			'/khalalani/img/mangoadmin/img/elements/messages/button-hover-bg.png'
 		]);
 		
 		mango.utils.preload([
-			'img/mangoadmin/img/elements/mail/actions-bg.png',
-			'img/mangoadmin/img/elements/mail/button-bg-disabled.png',
-			'img/mangoadmin/img/elements/mail/button-bg-hover.png',
-			'img/mangoadmin/img/elements/mail/button-bg.png',
-			'img/mangoadmin/img/elements/mail/button-red-bg-hover.png',
-			'img/mangoadmin/img/elements/mail/button-red-bg.png',
-			'img/mangoadmin/img/elements/mail/button-red-disabled.png',
-			'img/mangoadmin/img/elements/mail/hover-bg.png',
-			'img/mangoadmin/img/elements/mail/mail.png',
-			'img/mangoadmin/img/elements/mail/text-arrow.png',
-			'img/mangoadmin/img/elements/mail/text-bg.png'
+			'/khalalani/img/mangoadmin/img/elements/messages/button-active-bg.png',
+			'/khalalani/img/mangoadmin/img/elements/messages/button-hover-bg.png'
 		]);
 		
 		mango.utils.preload([
-			'img/mangoadmin/img/elements/fullstats/list/hover-bg.png',
-			'img/mangoadmin/img/elements/fullstats/simple/a-active.png',
-			'img/mangoadmin/img/elements/fullstats/simple/a-hover.png'
+			'/khalalani/img/mangoadmin/img/elements/mail/actions-bg.png',
+			'/khalalani/img/mangoadmin/img/elements/mail/button-bg-disabled.png',
+			'/khalalani/img/mangoadmin/img/elements/mail/button-bg-hover.png',
+			'/khalalani/img/mangoadmin/img/elements/mail/button-bg.png',
+			'/khalalani/img/mangoadmin/img/elements/mail/button-red-bg-hover.png',
+			'/khalalani/img/mangoadmin/img/elements/mail/button-red-bg.png',
+			'/khalalani/img/mangoadmin/img/elements/mail/button-red-disabled.png',
+			'/khalalani/img/mangoadmin/img/elements/mail/hover-bg.png',
+			'/khalalani/img/mangoadmin/img/elements/mail/mail.png',
+			'/khalalani/img/mangoadmin/img/elements/mail/text-arrow.png',
+			'/khalalani/img/mangoadmin/img/elements/mail/text-bg.png'
 		]);
 		
 		mango.utils.preload([
-			'img/mangoadmin/img/elements/checkbox/checked-active.png',
-			'img/mangoadmin/img/elements/checkbox/checked-disabled.png',
-			'img/mangoadmin/img/elements/checkbox/checked-hover.png',
-			'img/mangoadmin/img/elements/checkbox/checked-normal.png',
-			'img/mangoadmin/img/elements/checkbox/unchecked-active.png',
-			'img/mangoadmin/img/elements/checkbox/unchecked-disabled.png',
-			'img/mangoadmin/img/elements/checkbox/unchecked-hover.png',
-			'img/mangoadmin/img/elements/checkbox/unchecked-normal.png'
+			'/khalalani/img/mangoadmin/img/elements/fullstats/list/hover-bg.png',
+			'/khalalani/img/mangoadmin/img/elements/fullstats/simple/a-active.png',
+			'/khalalani/img/mangoadmin/img/elements/fullstats/simple/a-hover.png'
 		]);
 		
 		mango.utils.preload([
-			'img/mangoadmin/img/elements/radiobutton/checked-active.png',
-			'img/mangoadmin/img/elements/radiobutton/checked-disabled.png',
-			'img/mangoadmin/img/elements/radiobutton/checked-hover.png',
-			'img/mangoadmin/img/elements/radiobutton/checked-normal.png',
-			'img/mangoadmin/img/elements/radiobutton/unchecked-active.png',
-			'img/mangoadmin/img/elements/radiobutton/unchecked-disabled.png',
-			'img/mangoadmin/img/elements/radiobutton/unchecked-hover.png',
-			'img/mangoadmin/img/elements/radiobutton/unchecked-normal.png'
+			'/khalalani/img/mangoadmin/img/elements/checkbox/checked-active.png',
+			'/khalalani/img/mangoadmin/img/elements/checkbox/checked-disabled.png',
+			'/khalalani/img/mangoadmin/img/elements/checkbox/checked-hover.png',
+			'/khalalani/img/mangoadmin/img/elements/checkbox/checked-normal.png',
+			'/khalalani/img/mangoadmin/img/elements/checkbox/unchecked-active.png',
+			'/khalalani/img/mangoadmin/img/elements/checkbox/unchecked-disabled.png',
+			'/khalalani/img/mangoadmin/img/elements/checkbox/unchecked-hover.png',
+			'/khalalani/img/mangoadmin/img/elements/checkbox/unchecked-normal.png'
 		]);
 		
 		mango.utils.preload([
-			'img/mangoadmin/img/elements/colorpicker/arrow.png',
-			'img/mangoadmin/img/elements/colorpicker/bg.png'
+			'/khalalani/img/mangoadmin/img/elements/radiobutton/checked-active.png',
+			'/khalalani/img/mangoadmin/img/elements/radiobutton/checked-disabled.png',
+			'/khalalani/img/mangoadmin/img/elements/radiobutton/checked-hover.png',
+			'/khalalani/img/mangoadmin/img/elements/radiobutton/checked-normal.png',
+			'/khalalani/img/mangoadmin/img/elements/radiobutton/unchecked-active.png',
+			'/khalalani/img/mangoadmin/img/elements/radiobutton/unchecked-disabled.png',
+			'/khalalani/img/mangoadmin/img/elements/radiobutton/unchecked-hover.png',
+			'/khalalani/img/mangoadmin/img/elements/radiobutton/unchecked-normal.png'
 		]);
 		
 		mango.utils.preload([
-			'img/mangoadmin/img/elements/forms/icon-error.png',
-			'img/mangoadmin/img/elements/forms/icon-success.png',
-			'img/mangoadmin/img/elements/forms/tooltip-error-arrow.png',
-			'img/mangoadmin/img/elements/forms/tooltip-error.png'
+			'/khalalani/img/mangoadmin/img/elements/colorpicker/arrow.png',
+			'/khalalani/img/mangoadmin/img/elements/colorpicker/bg.png'
 		]);
 		
 		mango.utils.preload([
-			'img/mangoadmin/img/elements/profile/change-active-bg.png',
-			'img/mangoadmin/img/elements/profile/change-hover-bg.png'
+			'/khalalani/img/mangoadmin/img/elements/forms/icon-error.png',
+			'/khalalani/img/mangoadmin/img/elements/forms/icon-success.png',
+			'/khalalani/img/mangoadmin/img/elements/forms/tooltip-error-arrow.png',
+			'/khalalani/img/mangoadmin/img/elements/forms/tooltip-error.png'
 		]);
 		
 		mango.utils.preload([
-			'img/mangoadmin/img/elements/search/arrow.png',
-			'img/mangoadmin/img/elements/search/glass.png',
-			'img/mangoadmin/img/elements/search/list-hover.png',
-			'img/mangoadmin/img/elements/search/loading.gif'
-		]);
-
-		mango.utils.preload([
-			'img/mangoadmin/img/elements/select/bg-active.png',
-			'img/mangoadmin/img/elements/select/bg-hover.png',
-			'img/mangoadmin/img/elements/select/bg-right-hover.png',
-			'img/mangoadmin/img/elements/select/list-hover-bg.png'
+			'/khalalani/img/mangoadmin/img/elements/profile/change-active-bg.png',
+			'/khalalani/img/mangoadmin/img/elements/profile/change-hover-bg.png'
 		]);
 		
 		mango.utils.preload([
-			'img/mangoadmin/img/elements/settings/header-bg.png',
-			'img/mangoadmin/img/elements/settings/header-current-bg.png',
-			'img/mangoadmin/img/elements/settings/header-hover-bg.png',
-			'img/mangoadmin/img/elements/settings/seperator-current-left.png',
-			'img/mangoadmin/img/elements/settings/seperator-current-right.png',
-			'img/mangoadmin/img/elements/settings/seperator.png'
+			'/khalalani/img/mangoadmin/img/elements/search/arrow.png',
+			'/khalalani/img/mangoadmin/img/elements/search/glass.png',
+			'/khalalani/img/mangoadmin/img/elements/search/list-hover.png',
+			'/khalalani/img/mangoadmin/img/elements/search/loading.gif'
 		]);
 
 		mango.utils.preload([
-			'img/elements/slide-unlock/lock-slider.png'
+			'/khalalani/img/mangoadmin/img/elements/select/bg-active.png',
+			'/khalalani/img/mangoadmin/img/elements/select/bg-hover.png',
+			'/khalalani/img/mangoadmin/img/elements/select/bg-right-hover.png',
+			'/khalalani/img/mangoadmin/img/elements/select/list-hover-bg.png'
 		]);
 		
 		mango.utils.preload([
-			'img/elements/spinner/arrow-down-active.png',
-			'img/elements/spinner/arrow-down-hover.png',
-			'img/elements/spinner/arrow-up-active.png',
-			'img/elements/spinner/arrow-up-hover.png',
-			'img/elements/table/pagination/active.png',
-			'img/elements/table/pagination/disabled.png',
-			'img/elements/table/pagination/hover.png',
-			'img/elements/table/toolbar/hover.png',
-			'img/elements/table/sorting-asc.png',
-			'img/elements/table/sorting-desc.png',
-			'img/elements/table/sorting.png'
+			'/khalalani/img/mangoadmin/img/elements/settings/header-bg.png',
+			'/khalalani/img/mangoadmin/img/elements/settings/header-current-bg.png',
+			'/khalalani/img/mangoadmin/img/elements/settings/header-hover-bg.png',
+			'/khalalani/img/mangoadmin/img/elements/settings/seperator-current-left.png',
+			'/khalalani/img/mangoadmin/img/elements/settings/seperator-current-right.png',
+			'/khalalani/img/mangoadmin/img/elements/settings/seperator.png'
+		]);
+
+		mango.utils.preload([
+			'/khalalani/img/mangoadmin/img/elements/slide-unlock/lock-slider.png'
 		]);
 		
 		mango.utils.preload([
-			'img/elements/tags/bg.png',
-			'img/elements/tags/left.png'
+			'/khalalani/img/mangoadmin/img/elements/spinner/arrow-down-active.png',
+			'/khalalani/img/mangoadmin/img/elements/spinner/arrow-down-hover.png',
+			'/khalalani/img/mangoadmin/img/elements/spinner/arrow-up-active.png',
+			'/khalalani/img/mangoadmin/img/elements/spinner/arrow-up-hover.png',
+			'/khalalani/img/mangoadmin/img/elements/table/pagination/active.png',
+			'/khalalani/img/mangoadmin/img/elements/table/pagination/disabled.png',
+			'/khalalani/img/mangoadmin/img/elements/table/pagination/hover.png',
+			'/khalalani/img/mangoadmin/img/elements/table/toolbar/hover.png',
+			'/khalalani/img/mangoadmin/img/elements/table/sorting-asc.png',
+			'/khalalani/img/mangoadmin/img/elements/table/sorting-desc.png',
+			'/khalalani/img/mangoadmin/img/elements/table/sorting.png'
 		]);
 		
 		mango.utils.preload([
-			'img/elements/to-top/active.png',
-			'img/elements/to-top/hover.png',
-			'img/elements/to-top/normal.png'
-		]);
-		
-		mango.utils.preload(['img/elements/tooltips/bg.png']);
-		
-		mango.utils.preload([
-			'img/elements/upload/bg-hover.png',
-			'img/elements/upload/bg-normal.png'
+			'/khalalani/img/mangoadmin/img/elements/tags/bg.png',
+			'/khalalani/img/mangoadmin/img/elements/tags/left.png'
 		]);
 		
 		mango.utils.preload([
-			'img/elements/wizard/arrow-current.png',
-			'img/elements/wizard/arrow-error.png',
-			'img/elements/wizard/arrow-normal.png',
-			'img/elements/wizard/arrow-success.png',
-			'img/elements/wizard/bg-current.png',
-			'img/elements/wizard/bg-error.png',
-			'img/elements/wizard/bg-normal.png',
-			'img/elements/wizard/bg-success.png',
-			'img/elements/wizard/bg.png'
+			'/khalalani/img/mangoadmin/img/elements/to-top/active.png',
+			'/khalalani/img/mangoadmin/img/elements/to-top/hover.png',
+			'/khalalani/img/mangoadmin/img/elements/to-top/normal.png'
+		]);
+		
+		mango.utils.preload(['/khalalani/img/mangoadmin/img/elements/tooltips/bg.png']);
+		
+		mango.utils.preload([
+			'/khalalani/img/mangoadmin/img/elements/upload/bg-hover.png',
+			'/khalalani/img/mangoadmin/img/elements/upload/bg-normal.png'
 		]);
 		
 		mango.utils.preload([
-			'img/external/chosen-sprite.png'
+			'/khalalani/img/mangoadmin/img/elements/wizard/arrow-current.png',
+			'/khalalani/img/mangoadmin/img/elements/wizard/arrow-error.png',
+			'/khalalani/img/mangoadmin/img/elements/wizard/arrow-normal.png',
+			'/khalalani/img/mangoadmin/img/elements/wizard/arrow-success.png',
+			'/khalalani/img/mangoadmin/img/elements/wizard/bg-current.png',
+			'/khalalani/img/mangoadmin/img/elements/wizard/bg-error.png',
+			'/khalalani/img/mangoadmin/img/elements/wizard/bg-normal.png',
+			'/khalalani/img/mangoadmin/img/elements/wizard/bg-success.png',
+			'/khalalani/img/mangoadmin/img/elements/wizard/bg.png'
 		]);
 		
 		mango.utils.preload([
-			'img/external/colorpicker/blank.gif',
-			'img/external/colorpicker/colorpicker_background.png',
-			'img/external/colorpicker/colorpicker_hex.png',
-			'img/external/colorpicker/colorpicker_hsb_b.png',
-			'img/external/colorpicker/colorpicker_hsb_h.png',
-			'img/external/colorpicker/colorpicker_hsb_s.png',
-			'img/external/colorpicker/colorpicker_indic.gif',
-			'img/external/colorpicker/colorpicker_overlay.png',
-			'img/external/colorpicker/colorpicker_rgb_b.png',
-			'img/external/colorpicker/colorpicker_rgb_g.png',
-			'img/external/colorpicker/colorpicker_rgb_r.png',
-			'img/external/colorpicker/colorpicker_select.gif',
-			'img/external/colorpicker/colorpicker_submit.png',
-			'img/external/colorpicker/custom_background.png',
-			'img/external/colorpicker/custom_hex.png',
-			'img/external/colorpicker/custom_hsb_b.png',
-			'img/external/colorpicker/custom_hsb_h.png',
-			'img/external/colorpicker/custom_hsb_s.png',
-			'img/external/colorpicker/custom_indic.gif',
-			'img/external/colorpicker/custom_rgb_b.png',
-			'img/external/colorpicker/custom_rgb_g.png',
-			'img/external/colorpicker/custom_rgb_r.png',
-			'img/external/colorpicker/custom_submit.png',
-			'img/external/colorpicker/select.png',
-			'img/external/colorpicker/select2.png',
-			'img/external/colorpicker/slider.png'
+			'/khalalani/img/mangoadmin/img/external/chosen-sprite.png'
 		]);
 		
 		mango.utils.preload([
-			'img/external/editor/buttons.gif',
-			'img/external/editor/toolbar.gif'
+			'/khalalani/img/mangoadmin/img/external/colorpicker/blank.gif',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/colorpicker_background.png',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/colorpicker_hex.png',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/colorpicker_hsb_b.png',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/colorpicker_hsb_h.png',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/colorpicker_hsb_s.png',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/colorpicker_indic.gif',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/colorpicker_overlay.png',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/colorpicker_rgb_b.png',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/colorpicker_rgb_g.png',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/colorpicker_rgb_r.png',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/colorpicker_select.gif',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/colorpicker_submit.png',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/custom_background.png',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/custom_hex.png',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/custom_hsb_b.png',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/custom_hsb_h.png',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/custom_hsb_s.png',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/custom_indic.gif',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/custom_rgb_b.png',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/custom_rgb_g.png',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/custom_rgb_r.png',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/custom_submit.png',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/select.png',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/select2.png',
+			'/khalalani/img/mangoadmin/img/external/colorpicker/slider.png'
 		]);
 		
 		mango.utils.preload([
-			'img/external/explorer/arrows-active.png',
-			'img/external/explorer/arrows-normal.png',
-			'img/external/explorer/crop.gif',
-			'img/external/explorer/dialogs.png',
-			'img/external/explorer/icons-big.png',
-			'img/external/explorer/icons-small.png',
-			'img/external/explorer/logo.png',
-			'img/external/explorer/progress.gif',
-			'img/external/explorer/quicklook-bg.png',
-			'img/external/explorer/quicklook-icons.png',
-			'img/external/explorer/resize.png',
-			'img/external/explorer/spinner-mini.gif',
-			'img/external/explorer/toolbar.png'
+			'/khalalani/img/mangoadmin/img/external/editor/buttons.gif',
+			'/khalalani/img/mangoadmin/img/external/editor/toolbar.gif'
 		]);
 		
 		mango.utils.preload([
-			'img/external/gallery/blank.gif',
-			'img/external/gallery/fancybox_buttons.png',
-			'img/external/gallery/fancybox_loading.gif',
-			'img/external/gallery/fancybox_sprite.png'
+			'/khalalani/img/mangoadmin/img/external/explorer/arrows-active.png',
+			'/khalalani/img/mangoadmin/img/external/explorer/arrows-normal.png',
+			'/khalalani/img/mangoadmin/img/external/explorer/crop.gif',
+			'/khalalani/img/mangoadmin/img/external/explorer/dialogs.png',
+			'/khalalani/img/mangoadmin/img/external/explorer/icons-big.png',
+			'/khalalani/img/mangoadmin/img/external/explorer/icons-small.png',
+			'/khalalani/img/mangoadmin/img/external/explorer/logo.png',
+			'/khalalani/img/mangoadmin/img/external/explorer/progress.gif',
+			'/khalalani/img/mangoadmin/img/external/explorer/quicklook-bg.png',
+			'/khalalani/img/mangoadmin/img/external/explorer/quicklook-icons.png',
+			'/khalalani/img/mangoadmin/img/external/explorer/resize.png',
+			'/khalalani/img/mangoadmin/img/external/explorer/spinner-mini.gif',
+			'/khalalani/img/mangoadmin/img/external/explorer/toolbar.png'
 		]);
 		
 		mango.utils.preload([
-			'img/external/jquery-ui/ui-bg_flat_0_000000_40x100.png',
-			'img/external/jquery-ui/ui-bg_flat_30_000000_40x100.png',
-			'img/external/jquery-ui/ui-bg_flat_65_e3e3e3_40x100.png',
-			'img/external/jquery-ui/ui-bg_flat_75_ffffff_40x100.png',
-			'img/external/jquery-ui/ui-bg_glass_55_fbf9ee_1x400.png',
-			'img/external/jquery-ui/ui-bg_highlight-hard_100_f0f0f0_1x100.png',
-			'img/external/jquery-ui/ui-bg_highlight-soft_100_e8e8e8_1x100.png',
-			'img/external/jquery-ui/ui-bg_highlight-soft_75_b3bfcb_1x100.png',
-			'img/external/jquery-ui/ui-bg_inset-soft_95_fef1ec_1x100.png',
-			'img/external/jquery-ui/ui-icons_222222_256x240.png',
-			'img/external/jquery-ui/ui-icons_2e83ff_256x240.png',
-			'img/external/jquery-ui/ui-icons_3a4450_256x240.png',
-			'img/external/jquery-ui/ui-icons_454545_256x240.png',
-			'img/external/jquery-ui/ui-icons_888888_256x240.png',
-			'img/external/jquery-ui/ui-icons_cd0a0a_256x240.png'
+			'/khalalani/img/mangoadmin/img/external/gallery/blank.gif',
+			'/khalalani/img/mangoadmin/img/external/gallery/fancybox_buttons.png',
+			'/khalalani/img/mangoadmin/img/external/gallery/fancybox_loading.gif',
+			'/khalalani/img/mangoadmin/img/external/gallery/fancybox_sprite.png'
 		]);
 		
 		mango.utils.preload([
-			'img/external/uploader/backgrounds.gif',
-			'img/external/uploader/buttons-disabled.png',
-			'img/external/uploader/buttons.png',
-			'img/external/uploader/delete.gif',
-			'img/external/uploader/done.gif',
-			'img/external/uploader/error.gif',
-			'img/external/uploader/throbber.gif',
-			'img/external/uploader/transp50.png'
+			'/khalalani/img/mangoadmin/img/external/jquery-ui/ui-bg_flat_0_000000_40x100.png',
+			'/khalalani/img/mangoadmin/img/external/jquery-ui/ui-bg_flat_30_000000_40x100.png',
+			'/khalalani/img/mangoadmin/img/external/jquery-ui/ui-bg_flat_65_e3e3e3_40x100.png',
+			'/khalalani/img/mangoadmin/img/external/jquery-ui/ui-bg_flat_75_ffffff_40x100.png',
+			'/khalalani/img/mangoadmin/img/external/jquery-ui/ui-bg_glass_55_fbf9ee_1x400.png',
+			'/khalalani/img/mangoadmin/img/external/jquery-ui/ui-bg_highlight-hard_100_f0f0f0_1x100.png',
+			'/khalalani/img/mangoadmin/img/external/jquery-ui/ui-bg_highlight-soft_100_e8e8e8_1x100.png',
+			'/khalalani/img/mangoadmin/img/external/jquery-ui/ui-bg_highlight-soft_75_b3bfcb_1x100.png',
+			'/khalalani/img/mangoadmin/img/external/jquery-ui/ui-bg_inset-soft_95_fef1ec_1x100.png',
+			'/khalalani/img/mangoadmin/img/external/jquery-ui/ui-icons_222222_256x240.png',
+			'/khalalani/img/mangoadmin/img/external/jquery-ui/ui-icons_2e83ff_256x240.png',
+			'/khalalani/img/mangoadmin/img/external/jquery-ui/ui-icons_3a4450_256x240.png',
+			'/khalalani/img/mangoadmin/img/external/jquery-ui/ui-icons_454545_256x240.png',
+			'/khalalani/img/mangoadmin/img/external/jquery-ui/ui-icons_888888_256x240.png',
+			'/khalalani/img/mangoadmin/img/external/jquery-ui/ui-icons_cd0a0a_256x240.png'
 		]);
 		
 		mango.utils.preload([
-			'img/jquery-ui/accordion-header-active.png',
-			'img/jquery-ui/accordion-header-hover.png',
-			'img/jquery-ui/accordion-header.png',
-			'img/jquery-ui/datepicker/arrow-left.png',
-			'img/jquery-ui/datepicker/arrow-right.png',
-			'img/jquery-ui/datepicker/button-bg.png',
-			'img/jquery-ui/datepicker/button-hover-bg.png',
-			'img/jquery-ui/datepicker/button-seperator.png',
-			'img/jquery-ui/datepicker/day-current.png',
-			'img/jquery-ui/datepicker/day-hover.png',
-			'img/jquery-ui/datepicker/days-of-week-bg.png',
-			'img/jquery-ui/datepicker/header-bg.png',
-			'img/jquery-ui/datepicker/time-bg.png',
-			'img/jquery-ui/datepicker/top-arrow.png',
-			'img/jquery-ui/dialog-titlebar-close-hover.png',
-			'img/jquery-ui/dialog-titlebar.png',
-			'img/jquery-ui/loading.gif',
-			'img/jquery-ui/progressbar/bg.png',
-			'img/jquery-ui/progressbar/fill-blue-small.png',
-			'img/jquery-ui/progressbar/fill-blue.gif',
-			'img/jquery-ui/progressbar/fill-blue.png',
-			'img/jquery-ui/progressbar/fill-grey.gif',
-			'img/jquery-ui/progressbar/fill-grey.png',
-			'img/jquery-ui/progressbar/fill-orange-small.png',
-			'img/jquery-ui/progressbar/fill-orange.gif',
-			'img/jquery-ui/progressbar/fill-orange.png',
-			'img/jquery-ui/progressbar/fill-red-small.png',
-			'img/jquery-ui/progressbar/fill-red.gif',
-			'img/jquery-ui/progressbar/fill-red.png',
-			'img/jquery-ui/slider/bg-range.png',
-			'img/jquery-ui/slider/bg.png',
-			'img/jquery-ui/slider/disabled-bg-range.png',
-			'img/jquery-ui/slider/disabled-bg.png',
-			'img/jquery-ui/slider/disabled-picker.png',
-			'img/jquery-ui/slider/disabled-vertical-bg-range.png',
-			'img/jquery-ui/slider/disabled-vertical-bg.png',
-			'img/jquery-ui/slider/disabled-vertical-picker.png',
-			'img/jquery-ui/slider/picker.png',
-			'img/jquery-ui/slider/vertical-bg-range.png',
-			'img/jquery-ui/slider/vertical-bg.png',
-			'img/jquery-ui/slider/vertical-picker.png'
+			'/khalalani/img/mangoadmin/img/external/uploader/backgrounds.gif',
+			'/khalalani/img/mangoadmin/img/external/uploader/buttons-disabled.png',
+			'/khalalani/img/mangoadmin/img/external/uploader/buttons.png',
+			'/khalalani/img/mangoadmin/img/external/uploader/delete.gif',
+			'/khalalani/img/mangoadmin/img/external/uploader/done.gif',
+			'/khalalani/img/mangoadmin/img/external/uploader/error.gif',
+			'/khalalani/img/mangoadmin/img/external/uploader/throbber.gif',
+			'/khalalani/img/mangoadmin/img/external/uploader/transp50.png'
+		]);
+		
+		mango.utils.preload([
+			'/khalalani/img/mangoadmin/img/jquery-ui/accordion-header-active.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/accordion-header-hover.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/accordion-header.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/datepicker/arrow-left.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/datepicker/arrow-right.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/datepicker/button-bg.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/datepicker/button-hover-bg.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/datepicker/button-seperator.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/datepicker/day-current.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/datepicker/day-hover.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/datepicker/days-of-week-bg.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/datepicker/header-bg.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/datepicker/time-bg.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/datepicker/top-arrow.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/dialog-titlebar-close-hover.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/dialog-titlebar.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/loading.gif',
+			'/khalalani/img/mangoadmin/img/jquery-ui/progressbar/bg.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/progressbar/fill-blue-small.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/progressbar/fill-blue.gif',
+			'/khalalani/img/mangoadmin/img/jquery-ui/progressbar/fill-blue.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/progressbar/fill-grey.gif',
+			'/khalalani/img/mangoadmin/img/jquery-ui/progressbar/fill-grey.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/progressbar/fill-orange-small.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/progressbar/fill-orange.gif',
+			'/khalalani/img/mangoadmin/img/jquery-ui/progressbar/fill-orange.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/progressbar/fill-red-small.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/progressbar/fill-red.gif',
+			'/khalalani/img/mangoadmin/img/jquery-ui/progressbar/fill-red.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/slider/bg-range.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/slider/bg.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/slider/disabled-bg-range.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/slider/disabled-bg.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/slider/disabled-picker.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/slider/disabled-vertical-bg-range.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/slider/disabled-vertical-bg.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/slider/disabled-vertical-picker.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/slider/picker.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/slider/vertical-bg-range.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/slider/vertical-bg.png',
+			'/khalalani/img/mangoadmin/img/jquery-ui/slider/vertical-picker.png'
 		]);
 		
 	});
