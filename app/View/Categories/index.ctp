@@ -15,7 +15,7 @@
                     <div class="left">
                         <a class="open-add-category-dialog" href="javascript:void(0);"><i class="icon-plus"></i><?php echo __('New Category'); ?></a>
                     </div>
-                    <div class="right"></div>
+                    <!--<div class="right"></div>-->
                 </div>
                 <table class="dynamic styled with-prev-next" data-table-tools='{"display":true}'>
                     <thead>

@@ -48,7 +48,7 @@
             </div>
             <div class="row">
                 <p class="_50">
-                    <?php echo $this->Form->input('website'); ?>
+                    <?php echo $this->Form->input('website',array('value'=>'http://')); ?>
                 </p>
                 <p class="_50">
                     <?php echo $this->Form->input('email', array('type' => 'text')); ?>

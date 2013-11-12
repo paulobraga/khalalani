@@ -93,4 +93,9 @@ class PagesController extends AppController {
         public function consumer_dashboard(){
             
         }
+        
+        public function beforeFilter() {
+            parent::beforeFilter();
+            $this->Auth->allow('consumer_dashboard');
+        }
 }

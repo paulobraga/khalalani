@@ -1,4 +1,7 @@
 <section id="content" class="container_12 clearfix" data-sort=true>
+    <?php
+    echo $this->Session->flash();
+    ?>
     <div class="grid_12">
         <div class="box">
 
@@ -12,7 +15,7 @@
                     <div class="left">
                         <a class="open-add-company-dialog" href="javascript:void(0);"><i class="icon-plus"></i><?php echo __('New Company'); ?></a>
                     </div>
-                    <div class="right"></div>
+                    <!--<div class="right"></div>-->
                 </div>
                 <table class="dynamic styled with-prev-next" data-table-tools='{"display":true}'>
                     <thead>

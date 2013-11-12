@@ -58,10 +58,14 @@ class CompaniesController extends AppController {
         if ($this->request->is('post')) {
             $this->Company->create();
             if ($this->Company->save($this->request->data)) {
-                $this->Session->setFlash(__('The company has been saved'));
+                $this->Company->ComplaintCategory->create();
+                $this->Company->ComplaintCategory->saveField('company_id', $this->Company->id);
+                $this->Company->ComplaintCategory->saveField('name', 'Geral');
+                
+                $this->Session->setFlash(__('The company has been saved'),'custom_flash',array('type'=>'success'));
                 $this->redirect(array('action' => 'index'));
             } else {
-                $this->Session->setFlash(__('The company could not be saved. Please, try again.'));
+                $this->Session->setFlash(__('The company could not be saved. Please, try again.'),'custom_flash',array('type'=>'error'));
             }
         }
         $categories = $this->Company->Category->find('list');
@@ -131,5 +135,10 @@ class CompaniesController extends AppController {
         $companies = $this->Company->find('all', array('contain' => false, 'fields' => array('Company.id', 'Company.acronym', 'Company.name', 'Company.logo', 'Company.logo_dir')));
         $this->set(compact('companies'));
     }
+    
+    public function beforeFilter() {
+            parent::beforeFilter();
+            $this->Auth->allow('index','selectCompany');
+        }
 
 }

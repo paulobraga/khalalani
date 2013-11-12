@@ -372,7 +372,7 @@
 			<div class="left">
 				<ul class="breadcrumb">
 				
-					<li><a href="javascript:void(0);"><?php echo __('Home');?></a></li>
+					<li><a href="<?php echo $this->Html->url(array('controller'=>'pages','action'=>'consumer_dashboard'));?>"><?php echo __('Home');?></a></li>
 					<li><a href="javascript:void(0);"><?php echo __('Login');?></a></li>
 					
 				</ul>

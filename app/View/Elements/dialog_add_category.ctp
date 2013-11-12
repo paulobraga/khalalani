@@ -30,10 +30,10 @@
 <?php echo $this->Form->end(); ?>
     <div class="actions">
         <div class="left">
-            <button class="grey cancel">Cancel</button>
+            <button class="grey cancel"><?php echo __('Cancel');?></button>
         </div>
         <div class="right">
-            <button class="submit">Add Company</button>
+            <button class="submit"><?php echo __('Add Category');?></button>
         </div>
     </div>
 </div>

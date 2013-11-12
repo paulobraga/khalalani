@@ -133,4 +133,9 @@ class ComplaintsController extends AppController {
             $complaints = $this->Complaint->findAllByConsumerId($consumer_id);
             $this->set(compact('complaints'));
         }
+        
+        public function beforeFilter() {
+            parent::beforeFilter();
+            $this->Auth->allow('index');
+        }
 }
