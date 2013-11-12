@@ -75,7 +75,7 @@
 
         <div class="details grid_6">
             <h2><?php echo __('Details'); ?></h2>
-            <?php if ($role == 'manager'): ?>
+            <?php if ($role == 'manager' || $role =='admin'): ?>
                 <a class="open-edit-company-dialog" href="javascript:void(0);"><span class="icon icon-pencil"></span><?php echo __('Update Details'); ?></a>
             <?php endif; ?>
             <section>
@@ -153,7 +153,7 @@
 
         <div class="details grid_6">
             <h2><?php echo __('Categories'); ?></h2>
-            <?php if ($role == 'admin'): ?>
+            <?php if ($role == 'manager' || $role =='admin'): ?>
                 <a class="open-add-category-dialog" href="javascript:void(0);"><span class="icon icon-pencil"></span><?php echo __('Update Categories'); ?></a>
                 <!--<a class ="open-profile-dialog" href="javascript:void(0);"><span class="icon icon-remove"></span>Remove Coupon</a>-->
             <?php endif; ?>
@@ -176,7 +176,7 @@
         </div><!-- End of .details -->
         <div class="details grid_6">
             <h2><?php echo __('Complaint Categories'); ?></h2>
-            <?php if ($role == 'manager'): ?>
+            <?php if ($role == 'manager' || $role='admin'): ?>
                 <a class="open-add-complaintcategory-dialog" href="javascript:void(0);"><span class="icon icon-plus"></span><?php echo __('Add Complaint Category'); ?></a>
                 <!--<a class ="open-profile-dialog" href="javascript:void(0);"><span class="icon icon-remove"></span>Remove Coupon</a>-->
             <?php endif; ?>

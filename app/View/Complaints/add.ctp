@@ -52,7 +52,7 @@
             'class' => 'box validate',
             'type' => 'file'
         ));
-        ?>  
+        ?>
         <?php echo $this->Form->input('consumer_id', array('type' => 'hidden', 'value' => $this->Session->read('Auth.User.Consumer.id'))); ?>
 
         <div class="header">

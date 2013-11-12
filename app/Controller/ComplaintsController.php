@@ -60,6 +60,7 @@ class ComplaintsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Complaint->create();
                         $this->request->data['Complaint']['company_id']=$company_id;
+                        $this->request->data['Complaint']['status']=1;
                         $this->request->data['Complaint']['consumer_id']=$this->Session->read('Auth.User.Consumer.id');
 			if ($this->Complaint->save($this->request->data)) {
 				$this->Session->setFlash(__('The complaint has been saved'));

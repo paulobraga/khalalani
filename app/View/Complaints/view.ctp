@@ -102,7 +102,7 @@
                         <th><?php echo __('Subject'); ?>:</th><td><?php echo $this->Field->f(($complaint['Complaint']['subject'])); ?></td>
                     </tr>
                     <tr>
-                        <th><?php echo __('Description'); ?>:</th><td><?php echo $this->Field->f(h($complaint['Complaint']['description'])); ?></td>
+                        <th><?php echo __('Description'); ?>:</th><td><?php echo $this->Field->f(html_entity_decode($complaint['Complaint']['description'])); ?></td>
                     </tr>
                     <tr>
                         <td colspan="2">

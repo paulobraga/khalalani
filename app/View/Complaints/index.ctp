@@ -28,7 +28,7 @@
                     <tbody>
                         <?php foreach ($complaints as $complaint): ?>
 
-                            <tr class="gradeX tooltip" data-gravity=nw title="<?php echo h($complaint['Complaint']['description']); ?>" >
+                        <tr class="gradeX tooltip" data-gravity=nw title="<?php echo strip_tags($complaint['Complaint']['description']); ?>" >
                                 <td><?php echo h($complaint['Complaint']['id']); ?>&nbsp;</td>
                                 <td><?php echo h($complaint['Complaint']['subject']); ?>&nbsp;</td>
                                 <td><a href="<?php echo $this->Html->url(array('controller'=>'companies','action'=>'view',$complaint['Company']['id']));?>"><?php echo h($complaint['Company']['name']); ?></a>&nbsp;</td>

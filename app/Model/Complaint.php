@@ -32,7 +32,8 @@ class Complaint extends AppModel {
             'foreignKey' => 'company_id',
             'conditions' => '',
             'fields' => '',
-            'order' => ''
+            'order' => '',
+            'counterCache'=>true
         ),
         'Consumer' => array(
             'className' => 'Consumer',
