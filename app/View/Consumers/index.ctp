@@ -15,7 +15,7 @@
                     </div>
                     <div class="right"></div>
                 </div>
-                <table class="dynamic styled with-prev-next" data-table-tools='{"display":true}'>
+                <table class="dynamic styled with-prev-next" data-table-tools='{"display":true}' data-table='{"iDisplayLength":50}'>
                     <thead>
                         <tr>
                             <th><?php echo __('Id'); ?></th>
@@ -30,7 +30,7 @@
 
                             <tr class="gradeX tooltip" data-gravity=nw title="<?php echo h($consumer['User']['PersonalDetail']['name']); ?>" >
                                 <td><?php echo h($consumer['Consumer']['id']); ?>&nbsp;</td>
-                                <td><a href="<?php echo $this->Html->url(array('action'=>'view',$consumer['Consumer']['id']));?>"><?php echo h($consumer['User']['PersonalDetail']['name']); ?></a>&nbsp;</td>
+                                <td><a href="<?php echo $this->Html->url(array('controller'=>'users','action'=>'view',$consumer['User']['id']));?>"><?php echo h($consumer['User']['PersonalDetail']['name']); ?></a>&nbsp;</td>
                                 <td><?php echo h($consumer['Consumer']['created']); ?>&nbsp;</td>
                                 <td><?php echo h($consumer['Consumer']['modified']); ?>&nbsp;</td>
                                 <td class="center">

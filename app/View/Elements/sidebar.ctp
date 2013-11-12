@@ -5,7 +5,7 @@
 				<!-- Navigation -->
 				<nav><ul class="collapsible accordion">
 				
-					<li><a href="<?php echo $this->Html->url(array('controller'=>'pages','action'=>'dashboard'));?>"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/dashboard.png" alt="" height=16 width=16>Dashboard</a></li>
+					<li><a href="<?php echo $this->Html->url(array('controller'=>'pages','action'=>'dashboard'));?>"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/dashboard.png" alt="" height=16 width=16><?php echo __('Dashboard');?></a></li>
 					<li>
 						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/home.png" alt="" height=16 width=16><?php echo __('Companies');?></a>
 						<ul>
@@ -25,9 +25,9 @@
                                         <li>
 						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/exclamation.png" alt="" height=16 width=16><?php echo __('Complaints');?></a>
 						<ul>
-							<li><a href="<?php echo $this->Html->url(array('controller'=>'companies','action'=>'selectCompany'));?>"><span class="icon icon-plus"></span><?php echo __('Add');?></a></li>
+							<!--<li><a href="<?php echo $this->Html->url(array('controller'=>'companies','action'=>'selectCompany'));?>"><span class="icon icon-plus"></span><?php echo __('Add');?></a></li>-->
 							<li><a href="<?php echo $this->Html->url(array('controller'=>'complaints','action'=>'index'));?>"><span class="icon icon-list"></span><?php echo __('List');?></a></li>
-							
+							<li><a href="<?php echo $this->Html->url(array('controller'=>'configurations','action'=>'add'));?>"><span class="icon icon-list"></span><?php echo __('Settings');?></a></li>
 						</ul>
 					</li>
 					

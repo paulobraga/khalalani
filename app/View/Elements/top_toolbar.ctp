@@ -6,8 +6,8 @@
 			<div class="left">
 				<ul class="breadcrumb">
 				
-					<li><a href="dashboard.html">Mango</a></li>
-					<li><a href="javascript:void(0);">Dashboard</a></li>
+					<li><a href="dashboard.html"><?php echo __('Home');?></a></li>
+					<li><a href="javascript:void(0);"><?php echo __('Dashboard');?></a></li>
 
 				</ul>
 			</div>
@@ -100,7 +100,7 @@
 					
 					<li class="space"></li>
 					
-					<li><a href="javascript:void(0);" id="btn-lock"><span>--:--</span>Lock screen</a></li>
+					<!--<li><a href="javascript:void(0);" id="btn-lock"><span>--:--</span>Lock screen</a></li>-->
 					
 					<li class="red"><a href="<?php echo $this->Html->url(array('controller'=>'users','action'=>'logout'));?>"><?php echo __('Logout'); ?></a></li>
 					

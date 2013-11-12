@@ -36,7 +36,7 @@ msgstr ""
 
 #: Controller/CategoriesController.php:29;63;90
 msgid "Invalid category"
-msgstr ""
+msgstr "Categoria Inválida"
 
 #: Controller/CategoriesController.php:44;67
 msgid "The category has been saved"
@@ -891,7 +891,7 @@ msgstr ""
 #: View/Operators/index.ctp:48
 #: View/Operators/view.ctp:31
 msgid "New Company"
-msgstr ""
+msgstr "Nova Empresa"
 
 #: View/Branches/edit.ctp:4
 #: View/Branches/view.ctp:34
@@ -1123,8 +1123,8 @@ msgstr ""
 #: View/Managers/index.ctp:37
 #: View/Operators/index.ctp:37
 #: View/PersonalDetails/index.ctp:63
-msgid "next"
-msgstr ""
+msgid "Next"
+msgstr "Próximo"
 
 #: View/Branches/index.ctp:50
 #: View/Branches/view.ctp:37
@@ -1626,7 +1626,7 @@ msgstr ""
 
 #: View/ComplaintCategories/view.ctp:2
 msgid "Complaint Category"
-msgstr ""
+msgstr "Categoria de Reclamação"
 
 #: View/ComplaintCategories/view.ctp:35
 msgid "Delete Complaint Category"
@@ -1726,7 +1726,7 @@ msgstr ""
 #: View/Consumers/edit.ctp:23
 #: View/Consumers/view.ctp:38;154
 msgid "New Complaint"
-msgstr ""
+msgstr "Nova Reclamação"
 
 #: View/ComplaintComments/edit.ctp:4
 #: View/ComplaintComments/view.ctp:44
@@ -1818,7 +1818,7 @@ msgstr ""
 
 #: View/Complaints/add.ctp:18
 msgid "Complaint Details"
-msgstr ""
+msgstr "Detalhes da Reclamação"
 
 #: View/Complaints/add.ctp:100
 msgid "Add Complaint"
@@ -2757,3 +2757,77 @@ msgstr "Seleccione a Empresa"
 msgid "Select"
 msgstr "Seleccione"
 
+msgid "Select a Complaint Category"
+msgstr "Selecciona a Categoria de Reclamação"
+
+msgid "This complaint category already exists for this company"
+msgstr "Esta categoria de reclamação já existe para esta empresa"
+
+msgid "Error"
+msgstr "Erro"
+
+msgid "Success"
+msgstr "Sucesso"
+
+msgid "Update Categories"
+msgstr "Actualizar Categorias"
+
+msgid "Company Profile"
+msgstr "Perfil da Empresa"
+
+msgid "Settings"
+msgstr "Configurações"
+
+msgid "Admin"
+msgstr "Administração"
+
+msgid "Compare"
+msgstr "Comparar"
+
+msgid "Got no account?"
+msgstr "Não tem uma conta?"
+
+msgid "Register"
+msgstr "Registe-se"
+
+msgid "Username"
+msgstr "Nome de Utilizador"
+
+msgid "Password"
+msgstr "Palavra-passe"
+
+msgid "Or email address"
+msgstr "Ou correio electrónico"
+
+msgid "Sign In"
+msgstr "Entrar"
+
+msgid "Remember me?"
+msgstr "Lembrar-me?"
+
+msgid "Welcome back!"
+msgstr "Bem vindo de volta"
+
+msgid "My Complaints"
+msgstr "Minhas Reclamações"
+
+msgid "Privacy"
+msgstr "Privacidade"
+
+msgid "Account"
+msgstr "Conta"
+
+msgid "Back"
+msgstr "Voltar"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Save"
+msgstr "Salvar"
+
+msgid "Dashboard"
+msgstr "Painel de Controlo"
+
+msgid "Deactivate Account"
+msgstr "Desactivar Conta"

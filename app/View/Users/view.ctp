@@ -143,6 +143,15 @@
                     <tr>
                         <th><?php echo __('Status') . ':'; ?></th><td><?php echo $this->Field->f(h($user['User']['status'])); ?></td>
                     </tr>
+                    <tr>
+                        <td>
+                            
+                        </td>
+                        <td >
+                            <input class="grey change_password_button" type="button" id="settings-pw" value="Change Password..." data-lang-changed="Password changed" />
+                        </td>    
+                    </tr>
+
                 </table>
             </section>
         </div><!-- End of .details -->
@@ -151,7 +160,7 @@
         <div class="divider"></div>
 
         <div class="grid_12">
-            <a href="javascript:void(0);" class="button red right"><?php echo __('Delete Account');?></a>
+            <a href="javascript:void(0);" class="button red right"><?php echo __('Deactivate Account');?></a>
         </div>
 
         <!-- Example Profile Dialog -->							

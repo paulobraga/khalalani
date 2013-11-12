@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Application level Controller
  *
@@ -32,8 +33,8 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
-    
-        public $components = array(
+
+    public $components = array(
         'Acl',
         'Auth' => array(
             'authorize' => array(
@@ -42,26 +43,35 @@ class AppController extends Controller {
         ),
         'Session'
     );
-    public $helpers = array('Html', 'Form', 'Session','Field');
+    public $helpers = array('Html', 'Form', 'Session', 'Field');
 
     public function beforeFilter() {
         //Configure AuthComponent
-        //$this->Auth->allow();
+        $this->Auth->allow();
         $this->Auth->loginAction = array('controller' => 'users', 'action' => 'login');
         $this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login');
         $this->Auth->loginRedirect = array('controller' => 'pages', 'action' => 'dashboard');
     }
-    
+
     public function beforeRender() {
         parent::beforeRender();
-        //$this->layout = 'backend';
+        $role = 'guest';
+        $this->layout = 'guest';
         if ($this->Session->read('Auth.User.id')) {
             $role = 'normal';
-            if($this->Session->read('Auth.User.group_id')==1){
+            if ($this->Session->read('Auth.User.group_id') == 1) {
                 $role = 'admin';
+                $this->layout = 'admin';
+            } elseif ($this->Session->read('Auth.User.group_id') == 3) {
+                $role = 'manager';
+                $this->layout = 'manager';
+            }elseif ($this->Session->read('Auth.User.group_id') == 2) {
+                $role = 'consumer';
+                $this->layout = 'consumer';
             }
-            $this->layout = 'backend';
-            $this->set('role',$role);
+            
         }
+        $this->set('role', $role);
     }
+
 }

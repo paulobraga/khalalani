@@ -13,7 +13,7 @@
             <strong><?php echo __('Name'); ?></strong>
         </label>
         <div>
-<?php echo $this->Form->input('name'); ?>
+<?php echo $this->Form->input('name',array('class'=>'required')); ?>
                 <!--<input type="text" name=f1_normal_input id=f1_normal_input />-->
         </div>
     </div>

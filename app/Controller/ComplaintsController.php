@@ -6,6 +6,8 @@ App::uses('AppController', 'Controller');
  * @property Complaint $Complaint
  */
 class ComplaintsController extends AppController {
+    
+    
 
 /**
  * index method
@@ -28,6 +30,20 @@ class ComplaintsController extends AppController {
 		if (!$this->Complaint->exists($id)) {
 			throw new NotFoundException(__('Invalid complaint'));
 		}
+                $this->Complaint->contain(
+                        array(
+                            'Company',
+                            'Consumer'=>array(
+                                'User'=>array(
+                                    'PersonalDetail',
+                                    'ContactDetail'
+                                )
+                            ),
+                            'ComplaintCategory',
+                            'ComplaintComment',
+                            'ComplaintLike'
+                        )
+                        );
 		$options = array('conditions' => array('Complaint.' . $this->Complaint->primaryKey => $id));
 		$this->set('complaint', $this->Complaint->find('first', $options));
 	}
@@ -43,6 +59,8 @@ class ComplaintsController extends AppController {
             }
 		if ($this->request->is('post')) {
 			$this->Complaint->create();
+                        $this->request->data['Complaint']['company_id']=$company_id;
+                        $this->request->data['Complaint']['consumer_id']=$this->Session->read('Auth.User.Consumer.id');
 			if ($this->Complaint->save($this->request->data)) {
 				$this->Session->setFlash(__('The complaint has been saved'));
 				$this->redirect(array('action' => 'index'));
@@ -103,4 +121,16 @@ class ComplaintsController extends AppController {
 		$this->Session->setFlash(__('Complaint was not deleted'));
 		$this->redirect(array('action' => 'index'));
 	}
+        
+        public function listByCompanyId(){
+            $company_id = $this->Session->read('Auth.User.Manager.company_id');
+            $complaints = $this->Complaint->findAllByCompanyId($company_id);
+            $this->set(compact('complaints'));
+        }
+        
+        public function listByConsumerId(){
+            $consumer_id = $this->Session->read('Auth.User.Consumer.id');
+            $complaints = $this->Complaint->findAllByConsumerId($consumer_id);
+            $this->set(compact('complaints'));
+        }
 }

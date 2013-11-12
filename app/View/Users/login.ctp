@@ -1,4 +1,5 @@
 <?php
+$this->layout='login';
 echo $this->Form->create('User', array(
     'action' => 'login',
     'class' => 'box validate',
@@ -10,13 +11,13 @@ echo $this->Form->create('User', array(
 ));
 ?>
 <div class="header">
-    <h2><span class="icon icon-lock"></span>Login</h2>
+    <h2><span class="icon icon-lock"></span><?php echo __('Login')?></h2>
 </div>
 <div class="content">
 
     <!-- Login messages -->
     <div class="login-messages">
-        <div class="message welcome">Welcome back!</div>
+        <div class="message welcome"><?php echo __('Welcome back!');?></div>
         <div class="message failure">Invalid credentials.</div>
     </div>
 
@@ -24,8 +25,8 @@ echo $this->Form->create('User', array(
     <div class="form-box">
          <div class="row">
                 <label for="login_name">
-                    <strong>Username</strong>
-                    <small>Or email address</small>
+                    <strong><?php echo __('Username');?></strong>
+                    <small><?php echo __('Or email address');?></small>
                 </label>
                 <div>
                     <?php echo $this->Form->input('username');?>
@@ -35,7 +36,7 @@ echo $this->Form->create('User', array(
 
             <div class="row">
                 <label for="login_pw">
-                    <strong>Password</strong>
+                    <strong><?php echo __('Password');?></strong>
                     <small><a href="javascript:void(0);" id="">Forgot it?</a></small>
                 </label>
                 <div>
@@ -49,11 +50,11 @@ echo $this->Form->create('User', array(
     <div class="actions">
         <div class="left">
             <div class="rememberme">
-                <input tabindex=4 type="checkbox" name="login_remember" id="login_remember" checked /><label for="login_remember">Remember me?</label>
+                <input tabindex=4 type="checkbox" name="login_remember" id="login_remember" checked /><label for="login_remember"><?php echo __('Remember me?');?></label>
             </div>
         </div>
         <div class="right">
-            <input tabindex=3 type="submit" value="Sign In" name="login_btn" />
+            <input tabindex=3 type="submit" value="<?php echo __('Sign In');?>" name="login_btn" />
         </div>
     </div><!-- End of .actions -->
 <?php

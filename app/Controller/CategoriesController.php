@@ -14,7 +14,7 @@ class CategoriesController extends AppController {
  */
 	public function index() {
 		$this->Category->recursive = 0;
-		$this->set('categories', $this->paginate());
+		$this->set('categories', $this->Category->find('all'));
 	}
 
 /**
@@ -41,10 +41,10 @@ class CategoriesController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Category->create();
 			if ($this->Category->save($this->request->data)) {
-				$this->Session->setFlash(__('The category has been saved'));
+				$this->Session->setFlash(__('The category has been saved'),'custom_flash',array('type'=>'success'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The category could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The category could not be saved. Please, try again.'),'custom_flash',array('type'=>'error'));
 			}
 		}
 		$companies = $this->Category->Company->find('list');

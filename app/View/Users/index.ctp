@@ -10,7 +10,7 @@
 
                 <div class="tabletools">
                     <div class="left">
-                        <a class="open-add-user-dialog" href="javascript:void(0);"><i class="icon-plus"></i><?php echo __('New user'); ?></a>
+                        <a class="open-add-user-dialog" href="<?php echo $this->Html->url(array('controller'=>'users','action'=>'selectUserRole'));?>"><i class="icon-plus"></i><?php echo __('New user'); ?></a>
                     </div>
                     <div class="right"></div>
                 </div>

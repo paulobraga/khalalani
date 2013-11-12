@@ -1,6 +1,11 @@
-<?php // debug($company);  ?>
+<?php // debug($company);     ?>
 <!-- Here goes the content. -->
 <section id="content" class="container_12 clearfix" data-sort=true>
+    <?php echo $this->Session->flash(); ?>
+    <!--    <div class="alert error no-margin-top">
+                                            <span class="icon"></span>
+                                            <strong>Error!</strong> Something went wrong here!
+                                    </div>-->
     <div class="grid_12 profile">
 
         <div class="header">
@@ -11,7 +16,9 @@
             </div>
             <div class="avatar">
                 <?php echo $this->Html->image("{$company['Company']['logo_dir']}/{$company['Company']['logo']}", array('pathPrefix' => 'files/company/logo/')); ?>
+                <?php if ($role == 'manager'): ?>
                 <a href="javascript:void(0);">Change</a>
+                <?php endif;?>
             </div>
 
             <ul class="info">
@@ -39,34 +46,38 @@
 
             </ul><!-- End of ul.info -->
         </div><!-- End of .header -->
-        <div class="details grid_12">
-            <div class="box">
-                <div class="actions">
-                    <div class="left">
-                        <?php $like = ($companyLike) ? __('Liked') : __('Like'); ?>
-                        <?php $like_tooltip = ($companyLike) ? __('Unlike') : __('Like'); ?>
-                        <?php $action = ($companyLike) ? 'delete' : 'add' ?>
-                        <?php $icon = ($companyLike) ? 'icon-thumbs-down' : 'icon-thumbs-up'; ?>
-                        <?php
-                        if ($companyLike) {
-                            echo $this->Form->postLink('<span class="' . $icon . '"></span>' . $like, array('controller' => 'companylikes', 'action' => $action, $companyLike['CompanyLike']['id']), array('class' => 'button grey tooltip', 'original-title' => $like_tooltip, 'escape' => false), "CompanyLike.id:" . $companyLike['CompanyLike']['id']);
-                        } else {
-                            echo $this->Form->postLink('<span class="' . $icon . '"></span>' . $like, array('controller' => 'companylikes', 'action' => $action, $company['Company']['id'], $this->Session->read('Auth.User.Consumer.id')), array('class' => 'button grey tooltip', 'original-title' => $like_tooltip, 'escape' => false), "company_id:" . $company['Company']['id'] . ",consumer_id:" . $this->Session->read('Auth.User.Consumer.id'));
-                        }
-                        ?>
-                    </div>
-                    <div class="right"> 
-                        <a href="<?php echo $this->Html->url(array('controller' => 'complaints', 'action' => 'add')); ?>" class="right button" style="border: 1px solid #1d5d1c;
-                           background: url('../img/elements/badges/green.png') repeat-x #40913f;"><span class="icon icon-plus"></span><?php echo __('Send Complaint'); ?></a> 
+        <?php if ($role == 'consumer'): ?>
+            <div class="details grid_12">
+                <div class="box">
+                    <div class="actions">
+                        <div class="left">
+                            <?php $like = ($companyLike) ? __('Liked') : __('Like'); ?>
+                            <?php $like_tooltip = ($companyLike) ? __('Unlike') : __('Like'); ?>
+                            <?php $action = ($companyLike) ? 'delete' : 'add' ?>
+                            <?php $icon = ($companyLike) ? 'icon-thumbs-down' : 'icon-thumbs-up'; ?>
+                            <?php
+                            if ($companyLike) {
+                                echo $this->Form->postLink('<span class="' . $icon . '"></span>' . $like, array('controller' => 'companylikes', 'action' => $action, $companyLike['CompanyLike']['id']), array('class' => 'button grey tooltip', 'original-title' => $like_tooltip, 'escape' => false));
+                            } else {
+                                echo $this->Form->postLink('<span class="' . $icon . '"></span>' . $like, array('controller' => 'companylikes', 'action' => $action, $company['Company']['id'], $this->Session->read('Auth.User.Consumer.id')), array('class' => 'button grey tooltip', 'original-title' => $like_tooltip, 'escape' => false));
+                            }
+                            ?>
+                        </div>
+                        <div class="right"> 
+                            <a href="<?php echo $this->Html->url(array('controller' => 'complaints', 'action' => 'add', $company['Company']['id'])); ?>" class="right button" style="border: 1px solid #1d5d1c;
+                               background: url('../img/elements/badges/green.png') repeat-x #40913f;"><span class="icon icon-plus"></span><?php echo __('Send Complaint'); ?></a> 
 
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        <?php endif; ?>
 
         <div class="details grid_6">
             <h2><?php echo __('Details'); ?></h2>
-            <a class="open-edit-company-dialog" href="javascript:void(0);"><span class="icon icon-pencil"></span><?php echo __('Update Details'); ?></a>
+            <?php if ($role == 'manager'): ?>
+                <a class="open-edit-company-dialog" href="javascript:void(0);"><span class="icon icon-pencil"></span><?php echo __('Update Details'); ?></a>
+            <?php endif; ?>
             <section>
                 <table>
                     <tr>
@@ -142,10 +153,12 @@
 
         <div class="details grid_6">
             <h2><?php echo __('Categories'); ?></h2>
-            <a class="open-edit-company-dialog" href="javascript:void(0);"><span class="icon icon-plus"></span><?php echo __('Add Category'); ?></a>
-            <!--<a class ="open-profile-dialog" href="javascript:void(0);"><span class="icon icon-remove"></span>Remove Coupon</a>-->
+            <?php if ($role == 'admin'): ?>
+                <a class="open-add-category-dialog" href="javascript:void(0);"><span class="icon icon-pencil"></span><?php echo __('Update Categories'); ?></a>
+                <!--<a class ="open-profile-dialog" href="javascript:void(0);"><span class="icon icon-remove"></span>Remove Coupon</a>-->
+            <?php endif; ?>
             <section>
-                <?php if (!empty($company['Category'])): ?>
+                <?php if (!empty($company['Category'])) { ?>
                     <ul class="logs">
                         <?php foreach ($company['Category'] as $category): ?>
                             <li>
@@ -156,13 +169,17 @@
                         <?php endforeach; ?>
 
                     </ul>
-                <?php endif; ?>
+                <?php }else { ?>
+                    <p><i><?php echo __('No Categories'); ?></i></p>
+                <?php } ?>
             </section>
         </div><!-- End of .details -->
         <div class="details grid_6">
             <h2><?php echo __('Complaint Categories'); ?></h2>
-            <a class="open-edit-company-dialog" href="javascript:void(0);"><span class="icon icon-plus"></span><?php echo __('Add Complaint Category'); ?></a>
-            <!--<a class ="open-profile-dialog" href="javascript:void(0);"><span class="icon icon-remove"></span>Remove Coupon</a>-->
+            <?php if ($role == 'manager'): ?>
+                <a class="open-add-complaintcategory-dialog" href="javascript:void(0);"><span class="icon icon-plus"></span><?php echo __('Add Complaint Category'); ?></a>
+                <!--<a class ="open-profile-dialog" href="javascript:void(0);"><span class="icon icon-remove"></span>Remove Coupon</a>-->
+            <?php endif; ?>
             <section>
                 <?php if (!empty($company['ComplaintCategory'])) { ?>
                     <ul class="logs">
@@ -176,7 +193,7 @@
 
                     </ul>
                 <?php }else { ?>
-                <p><i><?php echo __('No Complaint Categories');?></i></p>
+                    <p><i><?php echo __('No Complaint Categories'); ?></i></p>
                 <?php } ?>
             </section>
         </div><!-- End of .details -->
@@ -213,11 +230,11 @@
 
         <div class="clearfix"></div>
         <div class="divider"></div>
-
-        <div class="grid_12">
-            <a href="javascript:void(0);" class="button red right"><?php echo __('Deactivate Company') ?></a>
-        </div>
-
+        <?php if ($role == 'admin'): ?>
+            <div class="grid_12">
+                <a href="javascript:void(0);" class="button red right"><?php echo __('Deactivate Company') ?></a>
+            </div>
+        <?php endif; ?>
         <!-- Example Profile Dialog -->							
         <div style="display: none;" id="profile-dialog" title="Example Profile Dialog">
 
@@ -294,7 +311,15 @@
                 $("#edit-company-dialog").dialog("open");
                 return false;
             });
+
+            // Profile Dialog
+
+
+
+
         });
     </script>
 </section><!-- End of #content -->
 <?php echo $this->Element('companies/dialog_edit_company'); ?>
+<?php echo $this->Element('companies/dialog_add_complaintcategory', array('company_id' => $company['Company']['id'])); ?>
+<?php echo $this->Element('companies/dialog_add_category'); ?>

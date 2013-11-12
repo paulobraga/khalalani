@@ -369,10 +369,12 @@
             <?php
             echo $this->Element('blue_toolbar');
             echo $this->Element('sidebar');
+            echo $this->Session->flash();
             echo $this->fetch('content');
             ?>
         </div><!-- End of #main -->
         <?php
+        
         echo $this->Element('footer');
         ?>
 

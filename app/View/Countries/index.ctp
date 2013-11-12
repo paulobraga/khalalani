@@ -45,4 +45,4 @@
         </div><!-- End of .box -->
     </div><!-- End of .grid_12 -->
 </section>
-<?php echo $this->Element('dialog_add_country'); ?>
+<?php //echo $this->Element('dialog_add_country'); ?>

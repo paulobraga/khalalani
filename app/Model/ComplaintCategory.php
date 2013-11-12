@@ -7,6 +7,17 @@ App::uses('AppModel', 'Model');
  * @property Complaint $Complaint
  */
 class ComplaintCategory extends AppModel {
+    
+    public $validate = array(
+        'name' => array
+            (
+            'unique' => array
+                (
+                'rule' => array('checkUnique', array('company_id', 'name')),
+                'message' => 'This Category is Already Registered',
+            )
+        )
+    );
 
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed

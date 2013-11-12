@@ -372,23 +372,24 @@
 			<div class="left">
 				<ul class="breadcrumb">
 				
-					<li><a href="javascript:void(0);">Mango</a></li>
-					<li><a href="javascript:void(0);">Login</a></li>
+					<li><a href="javascript:void(0);"><?php echo __('Home');?></a></li>
+					<li><a href="javascript:void(0);"><?php echo __('Login');?></a></li>
 					
 				</ul>
 			</div>
 			<!-- End of .left -->
 			
 			<!-- Right side -->
-			<div class="right">
+<!--			<div class="right">
 				<ul>
 				
-					<li><a href="dashboard.html"><span class="icon i14_bended-arrow-left"></span>Back to Dashboard</a></li>
+					<li><a href="dashboard.html"><span class="icon i14_bended-arrow-left"></span><?php echo __('Back to Dashboard'); ?></a></li>
 					
 					<li class="red"><a href="#">Purchase</a></li>
 					
 				</ul>
-			</div><!-- End of .right -->
+			</div>-->
+                        <!-- End of .right -->
 			
 			<!-- Phone only items -->
 			<div class="phone">
@@ -409,13 +410,14 @@
 		<div class="container">
 		
 			<!-- Your logos -->
-			<a href="/tf-mango/"><img src="<?php echo '/khalalani/'.IMAGES_URL.'mangoadmin/img/logo-light.png'?>" alt="Mango" width="210" height="67"></a>
-			<a class="phone-title" href="login.html"><img src="<?php echo '/khalalani/'.IMAGES_URL.'mangoadmin/img/logo-mobile.png'?>" alt="Mango" height="22" width="70" /></a>
+			<a href="/tf-mango/"><img src="<?php echo '/khalalani/'.IMAGES_URL.'mangoadmin/img/logo.png'?>" alt="Mango" width="210" height="67"></a>
+			<!--<a href="/tf-mango/"><img src="<?php echo '/khalalani/'.IMAGES_URL.'mangoadmin/img/logo-light.png'?>" alt="Mango" width="210" height="67"></a>-->
+                        <a class="phone-title" href="login.html"><img src="<?php echo '/khalalani/'.IMAGES_URL.'mangoadmin/img/logo-mobile.png'?>" alt="Mango" height="22" width="70" /></a>
 			
 			<!-- Right link -->
 			<div class="right">
-				<span>Got no account?</span>
-				<a href="javascript:void(0);">Register</a>
+				<span><?php echo __('Got no account?');?></span>
+				<a href="<?php echo $this->Html->url(array('controller'=>'consumers','action'=>'add'));?>"><?php echo __('Register');?></a>
 			</div>
 			
 		</div><!-- End of .container -->

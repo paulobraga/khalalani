@@ -2,13 +2,68 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Locale/por/LC_MESSAGES/default.po</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Elements/blue_toolbar.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Controller/ComplaintsController.php</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Elements/manager/sidebar.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Complaints/list_by_company_id.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/ComplaintCategories/list_by_company_id.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/ComplaintCategories/index.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Controller/ComplaintCategoriesController.php</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Controller/OperatorsController.php</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Companies/index.ctp</file>
         <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Companies/view.ctp</file>
         <file>file:/Applications/MAMP/htdocs/khalalani/app/Controller/AppController.php</file>
-        <file>file:/Applications/MAMP/htdocs/khalalani/app/Model/Company.php</file>
-        <file>file:/Applications/MAMP/htdocs/khalalani/app/Config/bootstrap.php</file>
-        <file>file:/Applications/MAMP/htdocs/khalalani/app/Locale/por/LC_MESSAGES/default.po</file>
-        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Elements/sidebar.ctp</file>
-        <file>file:/Applications/MAMP/htdocs/khalalani/app/Config/core.php</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Helper/FieldHelper.php</file>
         <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Users/view.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Layouts/manager.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Layouts/consumer.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Layouts/admin.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Layouts/operator.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Elements/consumer/sidebar.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Elements/header.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Controller/PagesController.php</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Pages/consumer_dashboard.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Elements/consumer/blue_toolbar.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Elements/consumer/top_toolbar.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Layouts/login.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Locale/por/LC_MESSAGES/empty</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Users/login.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Companies/select_company.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Complaints/add.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Controller/CompanyLikesController.php</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/ComplaintCategories/view.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Pages/company_dashboard.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Complaints/view.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Controller/UsersController.php</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Model/Complaint.php</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Model/ComplaintCategory.php</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Elements/consumer/header.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Elements/sidebar.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Layouts/default.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Elements/lock_screen.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Elements/top_toolbar.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Complaints/index.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Pages/dashboard.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Layouts/guest.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Elements/guest/blue_toolbar.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Elements/guest/top_toolbar.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Elements/guest/sidebar.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Model/AppModel.php</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Model/Branch.php</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Controller/ConsumersController.php</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Model/User.php</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Model/PersonalDetail.php</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Model/Nationality.php</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Model/CompaniesCategory.php</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Model/Company.php</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Model/Category.php</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Model/Consumer.php</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Model/City.php</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Controller/CategoriesController.php</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Companies/add.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/Config/database.php</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/View/Categories/index.ctp</file>
+        <file>file:/Applications/MAMP/htdocs/khalalani/app/webroot/js/mangoadmin/js/app.js</file>
     </open-files>
 </project-private>

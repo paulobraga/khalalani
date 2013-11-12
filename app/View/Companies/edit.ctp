@@ -1,4 +1,5 @@
 <section id="content" class="container_12 clearfix" data-sort=true>
+    <?php debug($this->request->data);?>
     <h1 class="grid_12">Add Company</h1>
     <!--<form action="" class="grid_12">-->
     <div class="grid_12">

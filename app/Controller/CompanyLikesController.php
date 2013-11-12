@@ -48,10 +48,10 @@ class CompanyLikesController extends AppController {
             $this->request->data[$this->CompanyLike->alias]['company_id'] = $company_id;
             $this->request->data[$this->CompanyLike->alias]['consumer_id'] = $consumer_id;
             if ($this->CompanyLike->save($this->request->data)) {
-                $this->Session->setFlash(__('The company like has been saved'));
+               // $this->Session->setFlash(__('The company like has been saved'));
                 $this->redirect(array('controller' => 'companies', 'action' => 'view', $company_id));
             } else {
-                $this->Session->setFlash(__('The company like could not be saved. Please, try again.'));
+                //$this->Session->setFlash(__('The company like could not be saved. Please, try again.'));
                 $this->redirect(array('controller' => 'companies', 'action' => 'view', $company_id));
             }
         }
@@ -102,10 +102,10 @@ class CompanyLikesController extends AppController {
         $company_id = $this->CompanyLike->field('company_id');
         $this->request->onlyAllow('post', 'delete');
         if ($this->CompanyLike->delete()) {
-            $this->Session->setFlash(__('Company like deleted'));
+            //$this->Session->setFlash(__('Company like deleted'));
             $this->redirect(array('controller' => 'companies', 'action' => 'view', $company_id));
         }
-        $this->Session->setFlash(__('Company like was not deleted'));
+        //$this->Session->setFlash(__('Company like was not deleted'));
         $this->redirect(array('controller' => 'companies', 'action' => 'view', $company_id));
     }
 

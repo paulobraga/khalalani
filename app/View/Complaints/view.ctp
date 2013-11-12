@@ -1,160 +1,130 @@
-<div class="complaints view">
-<h2><?php  echo __('Complaint'); ?></h2>
-	<dl>
-		<dt><?php echo __('Id'); ?></dt>
-		<dd>
-			<?php echo h($complaint['Complaint']['id']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Company'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($complaint['Company']['name'], array('controller' => 'companies', 'action' => 'view', $complaint['Company']['id'])); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Consumer'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($complaint['Consumer']['id'], array('controller' => 'consumers', 'action' => 'view', $complaint['Consumer']['id'])); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Status'); ?></dt>
-		<dd>
-			<?php echo h($complaint['Complaint']['status']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Rate'); ?></dt>
-		<dd>
-			<?php echo h($complaint['Complaint']['rate']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Review'); ?></dt>
-		<dd>
-			<?php echo h($complaint['Complaint']['review']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Description'); ?></dt>
-		<dd>
-			<?php echo h($complaint['Complaint']['description']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Created'); ?></dt>
-		<dd>
-			<?php echo h($complaint['Complaint']['created']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Privacy'); ?></dt>
-		<dd>
-			<?php echo h($complaint['Complaint']['privacy']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Allow Comments'); ?></dt>
-		<dd>
-			<?php echo h($complaint['Complaint']['allow_comments']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Subject'); ?></dt>
-		<dd>
-			<?php echo h($complaint['Complaint']['subject']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Complaint Category'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($complaint['ComplaintCategory']['name'], array('controller' => 'complaint_categories', 'action' => 'view', $complaint['ComplaintCategory']['id'])); ?>
-			&nbsp;
-		</dd>
-	</dl>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Edit Complaint'), array('action' => 'edit', $complaint['Complaint']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Complaint'), array('action' => 'delete', $complaint['Complaint']['id']), null, __('Are you sure you want to delete # %s?', $complaint['Complaint']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Complaints'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Complaint'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Companies'), array('controller' => 'companies', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Company'), array('controller' => 'companies', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Consumers'), array('controller' => 'consumers', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Consumer'), array('controller' => 'consumers', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Complaint Categories'), array('controller' => 'complaint_categories', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Complaint Category'), array('controller' => 'complaint_categories', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Complaint Comments'), array('controller' => 'complaint_comments', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Complaint Comment'), array('controller' => 'complaint_comments', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Complaint Likes'), array('controller' => 'complaint_likes', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Complaint Like'), array('controller' => 'complaint_likes', 'action' => 'add')); ?> </li>
-	</ul>
-</div>
-<div class="related">
-	<h3><?php echo __('Related Complaint Comments'); ?></h3>
-	<?php if (!empty($complaint['ComplaintComment'])): ?>
-	<table cellpadding = "0" cellspacing = "0">
-	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('User Id'); ?></th>
-		<th><?php echo __('Comment'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th><?php echo __('Is Deleted'); ?></th>
-		<th><?php echo __('Status'); ?></th>
-		<th><?php echo __('Complaint Id'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
-	</tr>
-	<?php
-		$i = 0;
-		foreach ($complaint['ComplaintComment'] as $complaintComment): ?>
-		<tr>
-			<td><?php echo $complaintComment['id']; ?></td>
-			<td><?php echo $complaintComment['user_id']; ?></td>
-			<td><?php echo $complaintComment['comment']; ?></td>
-			<td><?php echo $complaintComment['created']; ?></td>
-			<td><?php echo $complaintComment['is_deleted']; ?></td>
-			<td><?php echo $complaintComment['status']; ?></td>
-			<td><?php echo $complaintComment['complaint_id']; ?></td>
-			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'complaint_comments', 'action' => 'view', $complaintComment['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'complaint_comments', 'action' => 'edit', $complaintComment['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'complaint_comments', 'action' => 'delete', $complaintComment['id']), null, __('Are you sure you want to delete # %s?', $complaintComment['id'])); ?>
-			</td>
-		</tr>
-	<?php endforeach; ?>
-	</table>
-<?php endif; ?>
+<?php //   debug($complaint);           ?>
+<!-- Here goes the content. -->
+<section id="content" class="container_12 clearfix" data-sort=true>
+    <div class="grid_6 profile">
+        <?php if($role!='consumer'):?>
+        <div class="header">
 
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Complaint Comment'), array('controller' => 'complaint_comments', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
-</div>
-<div class="related">
-	<h3><?php echo __('Related Complaint Likes'); ?></h3>
-	<?php if (!empty($complaint['ComplaintLike'])): ?>
-	<table cellpadding = "0" cellspacing = "0">
-	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Complaint Id'); ?></th>
-		<th><?php echo __('Consumer Id'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
-	</tr>
-	<?php
-		$i = 0;
-		foreach ($complaint['ComplaintLike'] as $complaintLike): ?>
-		<tr>
-			<td><?php echo $complaintLike['id']; ?></td>
-			<td><?php echo $complaintLike['complaint_id']; ?></td>
-			<td><?php echo $complaintLike['consumer_id']; ?></td>
-			<td><?php echo $complaintLike['created']; ?></td>
-			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'complaint_likes', 'action' => 'view', $complaintLike['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'complaint_likes', 'action' => 'edit', $complaintLike['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'complaint_likes', 'action' => 'delete', $complaintLike['id']), null, __('Are you sure you want to delete # %s?', $complaintLike['id'])); ?>
-			</td>
-		</tr>
-	<?php endforeach; ?>
-	</table>
-<?php endif; ?>
+            <div class="title">
+                <h2><?php echo h($complaint['Consumer']['User']['PersonalDetail']['name']); ?></h2>
+                <h3><?php echo h($complaint['Consumer']['User']['ContactDetail']['personal_email']); ?></h3>
+            </div>
+            <div class="avatar">
+                <img src="/khalalani/img/mangoadmin/img/elements/profile/avatar.png" />
+                <!--<a href="javascript:void(0);">Change</a>-->
+            </div>
 
-	<div class="actions">
-		<ul>
-			<li><?php echo $this->Html->link(__('New Complaint Like'), array('controller' => 'complaint_likes', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
-</div>
+            <ul class="info">
+
+               
+
+            </ul><!-- End of ul.info -->
+        </div><!-- End of .header -->
+        <?php endif;?>
+        <div class="spacer"></div>
+        <div class="grid_6">
+            <form class="box validate">
+
+                <div class="header">
+                    <h2><img class="icon" src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/newspaper.png">Messages</h2>
+                </div>
+
+                <div class="content">
+                    <div class="spacer"></div>
+                    <div class="messages full chat">
+
+                        <div class="msg reply">
+                            <img src="/khalalani/img/mangoadmin/img/icons/packs/iconsweets2/25x25/user-2.png"/>
+                            <div class="content">
+                                <h3><a href="pages_profile.html">John Doe</a> <span>says:</span><small>3 hours ago</small></h3>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                                    et dolore magna aliquyam erat, sed diam voluptua.</p>
+                            </div>
+                        </div>
+
+                        <div class="msg">
+                            <img src="/khalalani/img/mangoadmin/img/icons/packs/iconsweets2/25x25/user-2.png"/>
+                            <div class="content">
+                                <h3><a href="pages_profile.html">Peter Doe</a> <span>says:</span><small>5 hours ago</small></h3>
+                                <p>At vero eos et accusam et justo duo dolores et ea rebum.
+                                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div class="msg">
+                            <img src="/khalalani/img/mangoadmin/img/icons/packs/iconsweets2/25x25/user-2.png"/>
+                            <div class="content">
+                                <h3><a href="pages_profile.html">Peter Doe</a> <span>says:</span><small>5 hours ago</small></h3>
+                                <p>At vero eos et accusam et justo duo dolores et ea rebum.
+                                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!-- End of .content -->
+
+
+                <div class="actions">
+                    <div class="left">
+                        <label for="fb_pin" class=inline >Message to John Doe:</label>
+                        <input type="text" class="required" name=fb_pin id=fb_pin />
+                    </div>
+                    <div class="right">
+                        <input type="reset" value="Cancel" class="grey" />
+                        <input type="submit" value="Send" name=send />
+                    </div>
+                </div><!-- End of .actions -->
+
+            </form><!-- End of .box -->
+        </div>
+        <div class="details grid_6">
+            <section>
+                <table>
+                    <tr>
+                        <td>                
+                            <?php echo $this->Html->image("{$complaint['Company']['logo_dir']}/{$complaint['Company']['logo']}", array('pathPrefix' => 'files/company/logo/')); ?>
+                        </td>
+                        <td>
+                            <table>
+                                <tr>                        
+                                    <th><?php echo __('Company'); ?>:</th><td><?php echo $this->Field->f(($complaint['Company']['name'])); ?></td>
+                                </tr>
+                                <tr>
+                                    <th><?php echo __('Complaint Category'); ?>:</th><td><?php echo $this->Field->f(($complaint['ComplaintCategory']['name'])); ?></td>
+                                </tr>
+                                <tr>
+                                    <th><?php echo __('Created'); ?>:</th><td><?php echo $this->Field->f(h($complaint['Complaint']['created'])); ?></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th><?php echo __('Subject'); ?>:</th><td><?php echo $this->Field->f(($complaint['Complaint']['subject'])); ?></td>
+                    </tr>
+                    <tr>
+                        <th><?php echo __('Description'); ?>:</th><td><?php echo $this->Field->f(h($complaint['Complaint']['description'])); ?></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="box">
+                            <div class="actions">
+                                <div class="left">
+                                    <table>
+                                        <i style="color: <?php echo $complaint['Complaint']['status_color'];?>"><?php echo h($complaint['Complaint']['status_description']);?>&nbsp;</i>
+                                      
+                                    </table>
+                                </div>
+                                <div class="right">
+                                    <input type="submit" value="<?php echo __('Encerrar'); ?>" />
+                                </div>
+                            </div><!-- End of .actions -->
+                            </div>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </section>
+        </div><!-- End of .details -->
+    </div>
+</section>

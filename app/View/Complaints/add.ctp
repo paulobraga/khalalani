@@ -1,5 +1,43 @@
-<?php //debug($company);?>
 <section id="content" class="container_12 clearfix" data-sort=true>
+    <div class="grid_12 profile">
+
+        <div class="header">
+
+            <div class="title">
+                <h2><?php echo h($company['Company']['acronym']); ?></h2>
+                <h3><?php echo h($company['Company']['name']); ?></h3>
+            </div>
+            <div class="avatar">
+                <?php echo $this->Html->image("{$company['Company']['logo_dir']}/{$company['Company']['logo']}", array('pathPrefix' => 'files/company/logo/')); ?>
+                <!--<a href="javascript:void(0);">Change</a>-->
+            </div>
+
+            <ul class="info">
+
+                <li>
+                    <a href="javascript:void(0);">
+                        <strong><?php echo count($company['CompanyLike']); ?></strong>
+                        <small><?php echo __('Likes'); ?></small>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:void(0);">
+                        <strong>5,216</strong>
+                        <small><?php echo __('Views'); ?></small>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:void(0);">
+                        <strong><?php echo count($company['Category']); ?></strong>
+                        <small><?php echo __('Categories'); ?></small>
+                    </a>
+                </li>
+
+            </ul><!-- End of ul.info -->
+        </div><!-- End of .header -->
+    </div>
     <h1 class="grid_12"><?php echo __('Add Complaint'); ?></h1>
     <!--<form action="" class="grid_12">-->
     <div class="grid_12">
@@ -23,19 +61,13 @@
         <div class="content">
             <div style="height:10px" class="clear"></div>
             <div class="row">
-                <p class="_25">
-                    <?php echo $this->Html->image("{$company['Company']['logo_dir']}/{$company['Company']['logo']}", array('pathPrefix' => 'files/company/logo/')); ?>
-                    <a href="javascript:void(0);">Change</a>
-                </p>
-            </div>
-            <div class="row">
                 <p class="_100">
                     <?php echo $this->Form->input('subject'); ?>
                 </p>
             </div>
             <div class="row">
                 <p class="_100">
-                    <?php echo $this->Form->input('ComplaintCategory'); ?>
+                    <?php echo $this->Form->input('complaint_category_id',array('class'=>'search','data-placeholder'=>__('Select a Complaint Category'),'empty'=>'')); ?>
                 </p>
             </div>
             <div class="row">
@@ -43,12 +75,13 @@
                     <?php echo $this->Form->textarea('description', array('class' => 'editor')); ?>
                 </p>
             </div>
+        </div>
             <div class="actions">
                 <div class="left">
-                    <input type="reset" value="Cancel"/>
+                    <input type="reset" value="<?php echo __('Cancel');?>"/>
                 </div>
                 <div class="right">
-                    <input type="submit" value="Save"/>
+                    <input type="submit" value="<?php echo __('Save');?>"/>
                 </div>
             </div>
 
@@ -56,40 +89,3 @@
             <?php echo $this->Form->end(); ?>
         </div>
 </section>
-
-<div class="complaints form">
-    <?php echo $this->Form->create('Complaint'); ?>
-    <fieldset>
-        <legend><?php echo __('Add Complaint'); ?></legend>
-        <?php
-        echo $this->Form->input('company_id');
-        echo $this->Form->input('consumer_id');
-        echo $this->Form->input('status');
-        echo $this->Form->input('rate');
-        echo $this->Form->input('review');
-        echo $this->Form->input('description');
-        echo $this->Form->input('privacy');
-        echo $this->Form->input('allow_comments');
-        echo $this->Form->input('subject');
-        echo $this->Form->input('complaint_category_id');
-        ?>
-    </fieldset>
-    <?php echo $this->Form->end(__('Submit')); ?>
-</div>
-<div class="actions">
-    <h3><?php echo __('Actions'); ?></h3>
-    <ul>
-
-        <li><?php echo $this->Html->link(__('List Complaints'), array('action' => 'index')); ?></li>
-        <li><?php echo $this->Html->link(__('List Companies'), array('controller' => 'companies', 'action' => 'index')); ?> </li>
-        <li><?php echo $this->Html->link(__('New Company'), array('controller' => 'companies', 'action' => 'add')); ?> </li>
-        <li><?php echo $this->Html->link(__('List Consumers'), array('controller' => 'consumers', 'action' => 'index')); ?> </li>
-        <li><?php echo $this->Html->link(__('New Consumer'), array('controller' => 'consumers', 'action' => 'add')); ?> </li>
-        <li><?php echo $this->Html->link(__('List Complaint Categories'), array('controller' => 'complaint_categories', 'action' => 'index')); ?> </li>
-        <li><?php echo $this->Html->link(__('New Complaint Category'), array('controller' => 'complaint_categories', 'action' => 'add')); ?> </li>
-        <li><?php echo $this->Html->link(__('List Complaint Comments'), array('controller' => 'complaint_comments', 'action' => 'index')); ?> </li>
-        <li><?php echo $this->Html->link(__('New Complaint Comment'), array('controller' => 'complaint_comments', 'action' => 'add')); ?> </li>
-        <li><?php echo $this->Html->link(__('List Complaint Likes'), array('controller' => 'complaint_likes', 'action' => 'index')); ?> </li>
-        <li><?php echo $this->Html->link(__('New Complaint Like'), array('controller' => 'complaint_likes', 'action' => 'add')); ?> </li>
-    </ul>
-</div>

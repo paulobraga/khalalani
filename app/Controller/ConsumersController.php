@@ -20,7 +20,7 @@ class ConsumersController extends AppController {
             'User' => array('PersonalDetail')
         )
                 );
-        $this->set('consumers', $this->paginate());
+        $this->set('consumers', $this->Consumer->find('all'));
     }
 
     /**

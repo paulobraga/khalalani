@@ -74,6 +74,23 @@ class PagesController extends AppController {
 	}
         
         public function dashboard(){
+            App::uses('Complaint', 'Model');
+            App::uses('Company', 'Model');
+            App::uses('Consumer', 'Model');
+            $complaint = new Complaint();
+            $company = new Company();
+            $consumer = new Consumer();
+            $total_complaints = $complaint->find('count');
+            $total_companies = $company->find('count');
+            $total_consumers = $consumer->find('count');
+            $this->set(compact('total_complaints','total_companies','total_consumers'));
+        }
+        
+        public function company_dashboard(){
+            
+        }
+        
+        public function consumer_dashboard(){
             
         }
 }

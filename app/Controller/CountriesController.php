@@ -41,7 +41,7 @@ class CountriesController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Country->create();
 			if ($this->Country->save($this->request->data)) {
-				$this->Session->setFlash(__('The country has been saved'));
+				$this->Session->setFlash(__('The country has been saved'),'default',array('class'=>'alert success no-margin-top'));
 				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The country could not be saved. Please, try again.'));

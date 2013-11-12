@@ -78,7 +78,6 @@
                     <?php echo $this->Form->input('Category'); ?>
                 </p>
             </div>
-            <div style="height:10px" class="clear"></div>
         </div>
         <div class="actions">
             <div class="left">

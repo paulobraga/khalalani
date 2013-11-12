@@ -99,4 +99,15 @@ class OperatorsController extends AppController {
 		$this->Session->setFlash(__('Operator was not deleted'));
 		$this->redirect(array('action' => 'index'));
 	}
+        
+        public function listByCompanyId(){
+            //debug($this->Session->read('Auth.User'));
+            $this->Operator->contain(array(
+                    'User'=>array('PersonalDetail'),
+                'Company'
+                )
+                    );
+            $operators = $this->Operator->findAllByCompanyId($this->Session->read('Auth.User.Manager.company_id'));
+            $this->set(compact('operators'));
+        }
 }
