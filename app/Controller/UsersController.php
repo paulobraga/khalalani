@@ -131,7 +131,7 @@ class UsersController extends AppController {
         parent::beforeFilter();
 
         // For CakePHP 2.0
-        $this->Auth->allow('logout', 'add');
+        $this->Auth->allow('logout', 'signUp');
 
         // For CakePHP 2.1 and up
 //        $this->Auth->allow();
@@ -190,5 +190,57 @@ class UsersController extends AppController {
             $this->set('groups', $this->User->Group->find('list'));
         }
     }
+    
+    public function signUp(){
+        
+    if($this->request->is('post')){
+        $this->User->create();
+        $this->request->data['User']['username']=$this->request->data['ContactDetail']['personal_email'];
+        $this->request->data['User']['group_id']=2;
+        $this->request->data['Consumer']['mofified']=null;
+        if($this->User->saveAssociated($this->request->data,array('deep' => true))){
+            $this->Session->setFlash(__('Success'),'custom_flash',array('type'=>'success'));
+        } else{
+            $this->Session->setFlash(__('Error'),'custom_flash',array('type'=>'error'));
+        }
+        
+    }
+        
+    }
+    
+    public function addManager(){
+        
+    if($this->request->is('post')){
+        $this->User->create();
+        $this->request->data['User']['username']=$this->request->data['ContactDetail']['personal_email'];
+        $this->request->data['User']['group_id']=3;
+        if($this->User->saveAssociated($this->request->data,array('deep' => true))){
+            $this->Session->setFlash(__('Success'),'custom_flash',array('type'=>'success'));
+        } else{
+            $this->Session->setFlash(__('Error'),'custom_flash',array('type'=>'error'));
+        }
+        
+    }
+    $this->set('companies',$this->User->Manager->Company->find('list'));
+        
+    }
+    public function addOperator(){
+        
+    if($this->request->is('post')){
+        $this->User->create();
+        $this->request->data['Operator']['company_id'] = $this->Session->read('Auth.User.Manager.company_id');
+        $this->request->data['User']['username']=$this->request->data['ContactDetail']['personal_email'];
+        $this->request->data['User']['group_id']=4;
+        if($this->User->saveAssociated($this->request->data,array('deep' => true))){
+            $this->Session->setFlash(__('Success'),'custom_flash',array('type'=>'success'));
+        } else{
+            $this->Session->setFlash(__('Error'),'custom_flash',array('type'=>'error'));
+        }
+        
+    }
+    $this->set('companies',$this->User->Manager->Company->find('list'));
+        
+    }
+  
 
 }

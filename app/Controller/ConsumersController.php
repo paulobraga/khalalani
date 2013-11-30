@@ -105,5 +105,9 @@ class ConsumersController extends AppController {
         $this->Session->setFlash(__('Consumer was not deleted'));
         $this->redirect(array('action' => 'index'));
     }
+    
+
+      
+  
 
 }

@@ -92,16 +92,25 @@ class PagesController extends AppController {
     }
 
     public function consumer_dashboard() {
+        $complaint = new Complaint();
         $company = new Company();
         $company->contain(array('Complaint'));
         $companies = $company->find('all');
-        $most_complained_companies = $company->find('all',
-                array(
-                    'limit'=>'5',
-                    'order'=>array('complaint_count'=>'desc')
-                    )
-                );
-        $this->set(compact('companies','most_complained_companies'));
+        $most_complained_companies = $company->find('all', array(
+            'limit' => '5',
+            'order' => array('complaint_count' => 'desc')
+                )
+        );
+        $less_complained_companies = $company->find('all', array(
+            'limit' => '5',
+            'order' => array('complaint_count' => 'asc')
+                )
+        );
+        $recent_complaints = $complaint->find('all', array(
+                'order' => array('Complaint.created' => 'desc'),
+                'limit' => '5',
+        ));
+        $this->set(compact('companies', 'most_complained_companies', 'less_complained_companies', 'recent_complaints'));
     }
 
     public function beforeFilter() {

@@ -68,6 +68,9 @@ class AppController extends Controller {
             }elseif ($this->Session->read('Auth.User.group_id') == 2) {
                 $role = 'consumer';
                 $this->layout = 'consumer';
+            }elseif ($this->Session->read('Auth.User.group_id') == 4) {
+                $role = 'operator';
+                $this->layout = 'operator';
             }
             
         }

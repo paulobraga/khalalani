@@ -197,35 +197,7 @@
                 <?php } ?>
             </section>
         </div><!-- End of .details -->
-
-        <!--        <div class="details grid_6">
-                    <h2>Subscription</h2>
-                    <a class="open-profile-dialog" href="javascript:void(0);"><span class="icon icon-plus"></span>Add Subscription</a>
-                    <section class="center-elements">
-                        <p><i>No active subscription</i></p>
-                    </section>
-                </div> End of .details -->
-
-        <!--        <div class="details grid_12">
-                    <h2>Logs</h2>
-                    <a href="javascript:void(0);">More<span class="icon icon-hand-right right"></span></a>
-                    <section>
-                        <ul class="logs">
-                            <li class="error">
-                                <a href="javascript:void(0);">
-                                    <strong>Failed Login</strong>
-                                    <small>2012/01/15 11:36:03</small>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <strong>Created Category “Overdue Tickets”</strong>
-                                    <small>2012/01/15 08:57:17</small>	
-                                </a>
-                            </li>
-                        </ul>
-                    </section>
-                </div> End of .details -->
+    
 
 
         <div class="clearfix"></div>
@@ -281,6 +253,28 @@
 
         </div><!-- End of #profile-dialog -->
 
+    </div>
+    <div class="clearfix"></div>
+ <div class="grid_6">
+        <div class="box">
+            <div class="header"><h2><?php echo __('Últimas Reclamações'); ?></h2></div>
+            <div class="content">
+                <table class="styled borders" width="100%">
+                    <thead>
+                        <tr>
+                            <th><?php echo __('Complaints'); ?></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($company['Complaint'] as $complaint): ?>
+                            <tr>
+                                <td><a href="<?php echo $this->Html->url(array('controller'=>'complaints','action'=>'view',$complaint['id']));?>"><?php echo $complaint['subject'];?></a></td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 
     <script>

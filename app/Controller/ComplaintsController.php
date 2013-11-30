@@ -41,7 +41,8 @@ class ComplaintsController extends AppController {
                             ),
                             'ComplaintCategory',
                             'ComplaintComment',
-                            'ComplaintLike'
+                            'ComplaintLike',
+                            'Message'
                         )
                         );
 		$options = array('conditions' => array('Complaint.' . $this->Complaint->primaryKey => $id));
@@ -63,10 +64,10 @@ class ComplaintsController extends AppController {
                         $this->request->data['Complaint']['status']=1;
                         $this->request->data['Complaint']['consumer_id']=$this->Session->read('Auth.User.Consumer.id');
 			if ($this->Complaint->save($this->request->data)) {
-				$this->Session->setFlash(__('The complaint has been saved'));
+				$this->Session->setFlash(__('The complaint has been saved'),'custom_flash',array('type'=>'success'));
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The complaint could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The complaint could not be saved. Please, try again.'),'custom_flash',array('type'=>'error'));
 			}
 		}
 		$company = $this->Complaint->Company->find('first',array('conditions'=>array('Company.id'=>$company_id)));
@@ -125,6 +126,9 @@ class ComplaintsController extends AppController {
         
         public function listByCompanyId(){
             $company_id = $this->Session->read('Auth.User.Manager.company_id');
+            if(!$company_id){
+                $company_id =$this->Session->read('Auth.User.Operator.company_id');
+            }
             $complaints = $this->Complaint->findAllByCompanyId($company_id);
             $this->set(compact('complaints'));
         }
@@ -133,10 +137,17 @@ class ComplaintsController extends AppController {
             $consumer_id = $this->Session->read('Auth.User.Consumer.id');
             $complaints = $this->Complaint->findAllByConsumerId($consumer_id);
             $this->set(compact('complaints'));
+            $this->render('index');
         }
         
         public function beforeFilter() {
             parent::beforeFilter();
             $this->Auth->allow('index');
+        }
+        
+        public function reply(){
+            if($this->request->is('post')){
+                
+            }
         }
 }

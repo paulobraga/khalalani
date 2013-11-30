@@ -6,6 +6,7 @@ App::uses('AppModel', 'Model');
  * Complaint Model
  *
  * @property Company $Company
+ * @property Company $Message
  * @property Consumer $Consumer
  * @property ComplaintCategory $ComplaintCategory
  * @property ComplaintComment $ComplaintComment
@@ -72,6 +73,19 @@ class Complaint extends AppModel {
         ),
         'ComplaintLike' => array(
             'className' => 'ComplaintLike',
+            'foreignKey' => 'complaint_id',
+            'dependent' => false,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => ''
+        ),
+        'Message' => array(
+            'className' => 'Message',
             'foreignKey' => 'complaint_id',
             'dependent' => false,
             'conditions' => '',

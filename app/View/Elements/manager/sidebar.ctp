@@ -25,7 +25,7 @@
                                         <li>
 						<a href="javascript:void(0);"><img src="/khalalani/img/mangoadmin/img/icons/packs/fugue/16x16/users.png" alt="" height=16 width=16><?php echo __('Operators');?></a>
 						<ul>
-							<li><a href="<?php echo $this->Html->url(array('controller'=>'operators','action'=>'add'));?>"><span class="icon icon-plus"></span><?php echo __('Add');?></a></li>
+							<li><a href="<?php echo $this->Html->url(array('controller'=>'users','action'=>'addOperator'));?>"><span class="icon icon-plus"></span><?php echo __('Add');?></a></li>
 							<li><a href="<?php echo $this->Html->url(array('controller'=>'operators','action'=>'listByCompanyId'));?>"><span class="icon icon-list"></span><?php echo __('List');?></a></li>
 							
 						</ul>

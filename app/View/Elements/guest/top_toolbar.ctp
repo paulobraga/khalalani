@@ -103,7 +103,7 @@
 					<!--<li><a href="javascript:void(0);" id="btn-lock"><span>--:--</span>Lock screen</a></li>-->
 					
 					<li class="red"><a href="<?php echo $this->Html->url(array('controller'=>'users','action'=>'login'));?>"><?php echo __('Sign In'); ?></a></li>
-                                        <li class="red"><a href="<?php echo $this->Html->url(array('controller'=>'consumers','action'=>'add'));?>"><?php echo __('Register'); ?></a></li>
+                                        <li class="red"><a href="<?php echo $this->Html->url(array('controller'=>'users','action'=>'signUp'));?>"><?php echo __('Register'); ?></a></li>
 					
 				</ul>
 			</div><!-- End of .right -->

@@ -410,14 +410,14 @@
 		<div class="container">
 		
 			<!-- Your logos -->
-			<a href="/tf-mango/"><img src="<?php echo '/khalalani/'.IMAGES_URL.'mangoadmin/img/logo.png'?>" alt="Mango" width="210" height="67"></a>
+			<a href="<?php echo $this->Html->url(array('controller'=>'pages','action'=>'consumer_dashboard'));?>"><img src="<?php echo '/khalalani/'.IMAGES_URL.'mangoadmin/img/logo.png'?>" alt="Mango" width="210" height="67"></a>
 			<!--<a href="/tf-mango/"><img src="<?php echo '/khalalani/'.IMAGES_URL.'mangoadmin/img/logo-light.png'?>" alt="Mango" width="210" height="67"></a>-->
                         <a class="phone-title" href="login.html"><img src="<?php echo '/khalalani/'.IMAGES_URL.'mangoadmin/img/logo-mobile.png'?>" alt="Mango" height="22" width="70" /></a>
 			
 			<!-- Right link -->
 			<div class="right">
 				<span><?php echo __('Got no account?');?></span>
-				<a href="<?php echo $this->Html->url(array('controller'=>'consumers','action'=>'add'));?>"><?php echo __('Register');?></a>
+				<a href="<?php echo $this->Html->url(array('controller'=>'users','action'=>'signUp'));?>"><?php echo __('Register');?></a>
 			</div>
 			
 		</div><!-- End of .container -->

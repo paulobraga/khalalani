@@ -2831,3 +2831,6 @@ msgstr "Painel de Controlo"
 
 msgid "Deactivate Account"
 msgstr "Desactivar Conta"
+
+msgid "pending"
+msgstr "pendente"

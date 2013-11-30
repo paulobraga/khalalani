@@ -36,7 +36,7 @@ class CompaniesController extends AppController {
             'City',
             'Branch',
             'ComplaintCategory',
-            'Complaint',
+            'Complaint'=>array('order'=>array('Complaint.created'=>'desc'),'limit'=>'5'),
             'Manager',
             'Operator',
             'Category',
@@ -47,6 +47,7 @@ class CompaniesController extends AppController {
         $this->request->data = $this->Company->find('first', $options);
         $this->set('companyLike', $this->Company->CompanyLike->find('first', array('conditions' => array('CompanyLike.consumer_id' => $this->Session->read('Auth.User.Consumer.id'), 'CompanyLike.company_id' => $id))));
         $this->set('categories', $this->Company->Category->find('list'));
+        
     }
 
     /**
